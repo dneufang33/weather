@@ -1,0 +1,111 @@
+{
+  "updated": "2026-03-20",
+  "models": {
+    "best_match": {
+      "new_york": {
+        "n": 2,
+        "bias_c": 0.05,
+        "mae_c": 0.15,
+        "rmse_c": 0.158,
+        "weight": 1.0
+      },
+      "washington": {
+        "n": 7,
+        "bias_c": 0.5,
+        "mae_c": 0.5,
+        "rmse_c": 0.5,
+        "weight": 0.8
+      },
+      "london": {
+        "n": 191,
+        "bias_c": 0.576,
+        "mae_c": 0.657,
+        "rmse_c": 0.787,
+        "weight": 0.6181
+      },
+      "global": {
+        "n": 200,
+        "bias_c": 0.568,
+        "mae_c": 0.646,
+        "rmse_c": 0.775,
+        "weight": 0.6252
+      }
+    },
+    "gfs_seamless": {
+      "new_york": {
+        "n": 2,
+        "bias_c": 0.05,
+        "mae_c": 0.15,
+        "rmse_c": 0.158,
+        "weight": 1.0
+      },
+      "washington": {
+        "n": 7,
+        "bias_c": 0.5,
+        "mae_c": 0.5,
+        "rmse_c": 0.5,
+        "weight": 0.8
+      },
+      "london": {
+        "n": 191,
+        "bias_c": -0.008,
+        "mae_c": 0.514,
+        "rmse_c": 0.627,
+        "weight": 0.7759
+      },
+      "global": {
+        "n": 200,
+        "bias_c": 0.01,
+        "mae_c": 0.51,
+        "rmse_c": 0.62,
+        "weight": 0.7815
+      }
+    },
+    "icon_seamless": {
+      "washington": {
+        "n": 7,
+        "bias_c": 1.0,
+        "mae_c": 1.0,
+        "rmse_c": 1.0,
+        "weight": 0.4
+      },
+      "london": {
+        "n": 191,
+        "bias_c": 0.38,
+        "mae_c": 0.504,
+        "rmse_c": 0.61,
+        "weight": 0.7975
+      },
+      "global": {
+        "n": 198,
+        "bias_c": 0.402,
+        "mae_c": 0.521,
+        "rmse_c": 0.628,
+        "weight": 0.7716
+      }
+    },
+    "ecmwf_ifs025": {
+      "washington": {
+        "n": 7,
+        "bias_c": 0.2,
+        "mae_c": 0.2,
+        "rmse_c": 0.2,
+        "weight": 2.0
+      },
+      "london": {
+        "n": 191,
+        "bias_c": -0.099,
+        "mae_c": 0.173,
+        "rmse_c": 0.269,
+        "weight": 1.8085
+      },
+      "global": {
+        "n": 198,
+        "bias_c": -0.089,
+        "mae_c": 0.174,
+        "rmse_c": 0.266,
+        "weight": 1.8216
+      }
+    }
+  }
+}
