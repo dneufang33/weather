@@ -1,0 +1,39 @@
+name: Data pull (research)
+
+on:
+  push:
+    branches: [claude/data-pull]
+    paths: [".github/workflows/data_pull.yml", "tools/**", "run.txt"]
+
+permissions:
+  contents: write
+
+concurrency:
+  group: data-pull
+  cancel-in-progress: false
+
+jobs:
+  pull:
+    runs-on: ubuntu-latest
+    timeout-minutes: 340
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: claude/data-pull
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Run job
+        run: |
+          mkdir -p data
+          JOB=$(cat run.txt)
+          echo "Running $JOB"
+          python -u tools/$JOB 2>&1 | tee data/last_run.log || true
+      - name: Commit results
+        run: |
+          git config user.email "action@github.com"
+          git config user.name "GitHub Actions"
+          git add -A data
+          git diff --staged --quiet || git commit -m "data: $(cat run.txt) $(date -u '+%Y-%m-%d %H:%M')"
+          git pull --rebase origin claude/data-pull || true
+          git push origin HEAD:claude/data-pull
