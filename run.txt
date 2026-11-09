@@ -1,1 +1,1 @@
-pull.py 3 30
+pull.py 120 300
