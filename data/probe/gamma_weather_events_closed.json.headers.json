@@ -1,0 +1,18 @@
+{
+ "Content-Type": "application/json",
+ "Transfer-Encoding": "chunked",
+ "Connection": "close",
+ "Cache-Control": "public, max-age=300",
+ "deprecation": "true",
+ "sunset": "Fri, 01 May 2026 00:00:00 GMT",
+ "Warning": "299 - \"use /events/keyset\"",
+ "Date": "Mon, 09 Nov 2026 22:00:15 GMT",
+ "x-envoy-upstream-service-time": "174",
+ "Server": "istio-envoy",
+ "Vary": "Accept-Encoding,Origin",
+ "X-Cache": "Miss from cloudfront",
+ "Via": "1.1 312cc2b2351d4d9512783521cd4a9fcc.cloudfront.net (CloudFront)",
+ "X-Amz-Cf-Pop": "IAD55-P10",
+ "Alt-Svc": "h3=\":443\"; ma=86400",
+ "X-Amz-Cf-Id": "OwR42o4T4KmOGCMRifj2WJi1OUlPseWRoKEowNJ8gpfGHw_LvAjvKQ=="
+}

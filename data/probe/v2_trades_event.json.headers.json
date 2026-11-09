@@ -1,0 +1,23 @@
+{
+ "Date": "Mon, 09 Nov 2026 22:00:16 GMT",
+ "Content-Type": "application/json",
+ "Transfer-Encoding": "chunked",
+ "Connection": "close",
+ "x-trace-id": "0cd64e926e8e4033bb3a1535a2827bbe",
+ "set-cookie": "__cf_bm=WCpZWNpXAoM0EujyvErY0YFx5RGpcz931VvduSwBHds-1794261615.918171-1.0.1.1-VYZpwF3rlt9dmx07YW1wxE8NvPJMysLS70Hue5CI6oLTGahXqFBx8dEH744kKuw3bCB9yUQW8.98uMEOWpr018VElfEb7vujUXTSQs7Z_h1FtESphswX8FjsND9J8RqQ; HttpOnly; SameSite=None; Partitioned; Secure; Path=/; Domain=polymarket.com; Expires=Mon, 09 Nov 2026 22:30:16 GMT",
+ "access-control-allow-origin": "*",
+ "access-control-expose-headers": "retry-after,x-trace-id",
+ "x-envoy-upstream-service-time": "133",
+ "Server": "cloudflare",
+ "vary": "accept-encoding,origin",
+ "via": "1.1 e1f3f2ebef55f9ee8a49ae05308c1852.cloudfront.net (CloudFront)",
+ "Cache-Control": "public, max-age=300",
+ "x-cache": "Miss from cloudfront",
+ "x-amz-cf-pop": "IAD55-P10",
+ "x-amz-cf-id": "YTMnC8HasExjpD8HoSkpB1v14CcCeMM30Fe7qcArnAay6AysRRPxGQ==",
+ "cf-cache-status": "DYNAMIC",
+ "Server-Timing": "cfCacheStatus;desc=\"DYNAMIC\"",
+ "Strict-Transport-Security": "max-age=7776000; includeSubDomains",
+ "Speculation-Rules": "\"/cdn-cgi/speculation\"",
+ "CF-RAY": "a58016db7ee30c59-IAD"
+}

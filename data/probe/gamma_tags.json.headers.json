@@ -1,0 +1,15 @@
+{
+ "Content-Type": "application/json",
+ "Transfer-Encoding": "chunked",
+ "Connection": "close",
+ "Cache-Control": "public, max-age=1800",
+ "Date": "Mon, 09 Nov 2026 22:00:14 GMT",
+ "x-envoy-upstream-service-time": "2",
+ "Server": "istio-envoy",
+ "Vary": "Accept-Encoding,Origin",
+ "X-Cache": "Miss from cloudfront",
+ "Via": "1.1 3483bb08dcec46a109a14ce9ac39dea6.cloudfront.net (CloudFront)",
+ "X-Amz-Cf-Pop": "IAD55-P10",
+ "Alt-Svc": "h3=\":443\"; ma=86400",
+ "X-Amz-Cf-Id": "WuE4s2AuL0ppdjCgG_yJWV7mHNDONEyHwY_dD214puZX1WwAcGjuyQ=="
+}
