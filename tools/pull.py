@@ -45,24 +45,34 @@ def get(url, tries=8):
 
 # ---------- 1. events ----------
 cutoff = (datetime.now(timezone.utc) - timedelta(days=DAYS)).date().isoformat()
-events = []
-offset = 0
-while True:
-    q = urllib.parse.urlencode({"tag_slug": "highest-temperature", "closed": "true", "limit": 100,
-                                "offset": offset, "order": "endDate", "ascending": "false"})
-    page = get("https://gamma-api.polymarket.com/events?" + q)
-    if not page:
-        break
-    stop = False
-    for e in page:
-        ed = e.get("eventDate") or (e.get("endDate") or "")[:10]
-        if ed < cutoff:
-            stop = True
-            continue
-        events.append(e)
-    offset += len(page)
-    if stop or len(page) < 100:
-        break
+events, seen = [], set()
+day = datetime.now(timezone.utc).date()
+for k in range(DAYS + 2):
+    d0 = day - timedelta(days=k)
+    offset = 0
+    while True:
+        q = urllib.parse.urlencode({"tag_slug": "highest-temperature", "closed": "true", "limit": 100,
+                                    "offset": offset,
+                                    "end_date_min": f"{d0.isoformat()}T00:00:00Z",
+                                    "end_date_max": f"{d0.isoformat()}T23:59:59Z"})
+        try:
+            page = get("https://gamma-api.polymarket.com/events?" + q)
+        except Exception as err:
+            print("gamma fail", d0, offset, err)
+            break
+        if not page:
+            break
+        for e in page:
+            ed = e.get("eventDate") or (e.get("endDate") or "")[:10]
+            if ed < cutoff or e["id"] in seen:
+                continue
+            seen.add(e["id"])
+            events.append(e)
+        offset += len(page)
+        if len(page) < 100:
+            break
+    if k % 10 == 0:
+        print("gamma day", d0, "events so far", len(events))
 print(f"events since {cutoff}: {len(events)}  ({time.time()-T0:.0f}s)")
 
 ev_rows, mk_rows, cond_map = [], [], {}
