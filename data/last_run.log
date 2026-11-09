@@ -1,11 +1,10 @@
-OK 158115 https://data-api.polymarket.com/v2/openapi.json
-ERR https://data-api.polymarket.com/trades?limit=3 HTTP Error 410: Gone
-OK 15625 https://gamma-api.polymarket.com/tags?limit=1000
-OK 3258574 https://gamma-api.polymarket.com/events?tag_slug=weather&closed=true&limit=50&order=endDate&ascending=false
-OK 4459086 https://gamma-api.polymarket.com/events?tag_slug=highest-temperature&closed=true&limit=50&order=endDate&ascending=false
-OK 302834 https://gamma-api.polymarket.com/events?tag_slug=weather&closed=false&limit=20
-OK 366205 https://data-api.polymarket.com/v2/trades?event_id=1108649&limit=500
-OK 370210 https://data-api.polymarket.com/v2/trades?condition=0xbc0f8352360f41bf0c09f05fae925026b831037a44c97f8cf79060c3f92f4967&limit=500
-ERR https://data-api.polymarket.com/trades?market=0xbc0f8352360f41bf0c09f05fae925026b831037a44c97f8cf79060c3f92f4967&limit=500 HTTP Error 410: Gone
-ERR https://data-api.polymarket.com/v2/activity?condition=0xbc0f8352360f41bf0c09f05fae925026b831037a44c97f8cf79060c3f92f4967&limit=100 HTTP Error 400: Bad Request
-done
+events since 2026-11-06: 169  (2s)
+20/169 events, 54915 rows, 119 req, 0 retries, 0.1 min
+40/169 events, 114027 rows, 216 req, 0 retries, 0.2 min
+60/169 events, 178310 rows, 320 req, 0 retries, 0.3 min
+80/169 events, 239326 rows, 439 req, 0 retries, 0.4 min
+100/169 events, 297279 rows, 523 req, 0 retries, 0.5 min
+120/169 events, 366447 rows, 647 req, 0 retries, 0.6 min
+140/169 events, 430476 rows, 749 req, 0 retries, 0.7 min
+160/169 events, 489737 rows, 863 req, 0 retries, 0.8 min
+DONE events=169 rows=533751 req=905 retries=0 minutes=0.9
