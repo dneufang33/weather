@@ -3,7 +3,7 @@ name: Data pull (research)
 on:
   push:
     branches: [claude/data-pull]
-    paths: [".github/workflows/data_pull.yml", "tools/**", "run.txt"]
+    paths: ["run.txt"]
 
 permissions:
   contents: write

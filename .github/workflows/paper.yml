@@ -1,0 +1,57 @@
+name: Paper trading bot (simulation only)
+
+on:
+  push:
+    branches: [claude/data-pull]
+    paths: ["paper/START"]
+  workflow_dispatch:
+    inputs:
+      minutes:
+        default: "330"
+      mode:
+        default: "chain"
+
+permissions:
+  contents: write
+  actions: write
+
+concurrency:
+  group: paper-bot
+  cancel-in-progress: false
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    timeout-minutes: 355
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: claude/data-pull
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Params
+        id: p
+        run: |
+          if [ "${{ github.event_name }}" = "push" ]; then read MIN MODE < paper/START; else MIN="${{ inputs.minutes }}"; MODE="${{ inputs.mode }}"; fi
+          echo "min=$MIN" >> $GITHUB_OUTPUT
+          echo "mode=$MODE" >> $GITHUB_OUTPUT
+      - name: Run bot
+        run: |
+          git config user.email "action@github.com"
+          git config user.name "GitHub Actions"
+          python -u tools/paper_bot.py ${{ steps.p.outputs.min }} || true
+      - name: Chain next run
+        if: always()
+        env:
+          GH_TOKEN: ${{ github.token }}
+          GH_REPO: ${{ github.repository }}
+        run: |
+          MODE="${{ steps.p.outputs.mode }}"
+          git pull -q --rebase origin claude/data-pull || true
+          if [ -f paper/STOP ] || [ -f paper/DONE ]; then echo "stop/done marker present"; exit 0; fi
+          if [ "$MODE" = "chain" ]; then
+            gh workflow run paper.yml --ref claude/data-pull -f minutes=330 -f mode=chain
+          elif [ "$MODE" = "chaintest" ]; then
+            gh workflow run paper.yml --ref claude/data-pull -f minutes=2 -f mode=single
+          fi
