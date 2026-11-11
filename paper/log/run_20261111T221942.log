@@ -1,4 +1,0 @@
-[11-11 22:19:42] start run 20261111T221942 minutes=2.0 strats={'hs1': 0.01, 'hs2': 0.02, 'hs4': 0.04}
-[11-11 22:19:42] discover: 33 markets in 3 events
-[11-11 22:19:44] tick 1 S=74504 mkts=33 quoted=9 fills={'hs1': 0, 'hs2': 0, 'hs4': 0} equity={'hs1': 0.0, 'hs2': 0.0, 'hs4': 0.0}
-[11-11 22:21:42] end run, ticks 6

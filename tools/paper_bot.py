@@ -12,7 +12,8 @@ import bisect, csv, datetime as dt, gzip, json, math, os, re, subprocess, sys, t
 MINUTES = float(sys.argv[1]) if len(sys.argv) > 1 else 5
 BASE, LOG = "paper", "paper/log"
 os.makedirs(LOG, exist_ok=True)
-STRATS = {"hs1": 0.01, "hs2": 0.02, "hs4": 0.04}   # half-spread in price units
+STRATS = {"hs1": 0.01, "hs2": 0.02, "hs4": 0.04, "hs2b": 0.02}   # half-spread in price units
+BLEND = {"hs2b": 0.5}                               # weight of Polymarket mid in the quote centre
 SIZE, MAXINV = 200, 1000                            # shares per quote, max |inventory| per market
 TICK_S, FLUSH_S, SNAP_S, EQ_S, DISC_S = 20, 900, 60, 300, 600
 FEE_PM, REBATE, PERP_FEE = 0.07, 0.20, 0.0005
@@ -332,7 +333,8 @@ def main():
                     else:
                         tk = m["tick"] if (0.04 < f < 0.96 and m["tick"] >= 0.01) else m["tick"]
                         inv = st["strats"][s]["inv"].get(cid, 0.0)
-                        c = f - max(-0.03, min(0.03, 0.01 * inv / SIZE))
+                        fb = f * (1 - BLEND.get(s, 0)) + BLEND.get(s, 0) * (bb[0] + ba[0]) / 2
+                        c = fb - max(-0.03, min(0.03, 0.01 * inv / SIZE))
                         bid = math.floor((c - hs) / tk + 1e-9) * tk
                         ask = math.ceil((c + hs) / tk - 1e-9) * tk
                         ask = max(ask, bb[0] + tk)
