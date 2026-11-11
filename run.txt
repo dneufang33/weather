@@ -1,1 +1,1 @@
-pull.py 120 300
+probe2.py
