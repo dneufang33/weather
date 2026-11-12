@@ -12,9 +12,10 @@ import bisect, csv, datetime as dt, gzip, json, math, os, re, subprocess, sys, t
 MINUTES = float(sys.argv[1]) if len(sys.argv) > 1 else 5
 BASE, LOG = "paper", "paper/log"
 os.makedirs(LOG, exist_ok=True)
-STRATS = {"hs1": 0.01, "hs2": 0.02, "hs4": 0.04, "hs2b": 0.02, "hs1q": 0.01, "hs2q": 0.02, "hs2bq": 0.02}   # half-spread in price units
-BLEND = {"hs2b": 0.5, "hs2bq": 0.5}
-QUEUE = {"hs1q", "hs2q", "hs2bq"}   # fills also at our price once the displayed queue ahead of us has traded
+STRATS = {"hs1": 0.01, "hs2": 0.02, "hs4": 0.04, "hs2b": 0.02, "hs1q": 0.01, "hs2q": 0.02, "hs2bq": 0.02,
+          "hs03q": 0.003, "hs03bq": 0.003}   # half-spread in price units
+BLEND = {"hs2b": 0.5, "hs2bq": 0.5, "hs03bq": 0.5}
+QUEUE = {"hs1q", "hs2q", "hs2bq", "hs03q", "hs03bq"}   # fills also at our price once the displayed queue ahead of us has traded
 #                               # weight of Polymarket mid in the quote centre
 SIZE, MAXINV = 200, 1000                            # shares per quote, max |inventory| per market
 TICK_S, FLUSH_S, SNAP_S, EQ_S, DISC_S = 20, 900, 60, 300, 600
@@ -144,6 +145,7 @@ seen = set(st["seen"])
 seen_order = list(st["seen"])
 orders = {s: {} for s in QUEUE}    # strat -> cid -> {"bid": order, "ask": order}
 quotes = {s: {} for s in STRATS}   # strat -> cid -> list of [ts, bid, ask, bid_sz, ask_sz, fair]
+DIAG = {"prints": 0, "prints_quoted": 0, "shares_quoted": 0.0}
 active = {}                        # cid -> market dict (currently listed)
 
 
@@ -294,6 +296,10 @@ def main():
                     if ts < run_start or not m:
                         continue
                     buy = r["side"] == "BUY"
+                    DIAG["prints"] += 1
+                    if (quotes["hs2"].get(m["cid"]) or [[0, None]])[-1][1] is not None:
+                        DIAG["prints_quoted"] += 1
+                        DIAG["shares_quoted"] += float(r["size"])
                     if r["token_id"] == m["yes"]:
                         side, P = (1 if buy else -1), float(r["price"])
                     else:
@@ -418,7 +424,7 @@ def main():
                                            round(sum(abs(v) for v in S_["inv"].values())), round(eq, 2)])
                 e = {s: rows["equity"][-len(STRATS) + i][-1] for i, s in enumerate(STRATS)}
                 log(f"tick {nt} S={S:.0f} mkts={len(mks)} quoted={sum(1 for m in mks if (quotes['hs2'].get(m['cid']) or [[0, None]])[-1][1] is not None)}"
-                    f" fills={ {s: st['strats'][s]['n_fills'] for s in STRATS} } equity={e}")
+                    f" fills={ {s: st['strats'][s]['n_fills'] for s in STRATS} } equity={e} diag={DIAG}")
             if not ok and nt % 15 == 1:
                 log("tick not ok: spot", bool(b), "perp", bool(p), "surf", len(surf), "mkts", len(mks))
         except Exception:
