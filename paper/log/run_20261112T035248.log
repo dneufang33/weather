@@ -27,3 +27,7 @@
 [11-12 05:16:49] tick 253 S=73579 mkts=33 quoted=9 fills={'hs1': 11, 'hs2': 3, 'hs4': 0, 'hs2b': 0} equity={'hs1': 9.5, 'hs2': 6.15, 'hs4': 0.0, 'hs2b': 0.0}
 [11-12 05:22:09] tick 269 S=73563 mkts=33 quoted=9 fills={'hs1': 11, 'hs2': 3, 'hs4': 0, 'hs2b': 0} equity={'hs1': 9.18, 'hs2': 6.1, 'hs4': 0.0, 'hs2b': 0.0}
 [11-12 05:22:48] discover: 33 markets in 3 events
+[11-12 05:27:09] tick 284 S=73626 mkts=33 quoted=7 fills={'hs1': 11, 'hs2': 3, 'hs4': 0, 'hs2b': 0} equity={'hs1': 10.26, 'hs2': 6.39, 'hs4': 0.0, 'hs2b': 0.0}
+[11-12 05:32:29] tick 300 S=73663 mkts=33 quoted=7 fills={'hs1': 11, 'hs2': 3, 'hs4': 0, 'hs2b': 0} equity={'hs1': 11.11, 'hs2': 6.58, 'hs4': 0.0, 'hs2b': 0.0}
+[11-12 05:32:48] discover: 33 markets in 3 events
+[11-12 05:37:49] tick 316 S=73610 mkts=33 quoted=7 fills={'hs1': 11, 'hs2': 3, 'hs4': 0, 'hs2b': 0} equity={'hs1': 8.85, 'hs2': 6.7, 'hs4': 0.0, 'hs2b': 0.0}
