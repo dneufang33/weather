@@ -12,8 +12,10 @@ import bisect, csv, datetime as dt, gzip, json, math, os, re, subprocess, sys, t
 MINUTES = float(sys.argv[1]) if len(sys.argv) > 1 else 5
 BASE, LOG = "paper", "paper/log"
 os.makedirs(LOG, exist_ok=True)
-STRATS = {"hs1": 0.01, "hs2": 0.02, "hs4": 0.04, "hs2b": 0.02}   # half-spread in price units
-BLEND = {"hs2b": 0.5}                               # weight of Polymarket mid in the quote centre
+STRATS = {"hs1": 0.01, "hs2": 0.02, "hs4": 0.04, "hs2b": 0.02, "hs1q": 0.01, "hs2q": 0.02, "hs2bq": 0.02}   # half-spread in price units
+BLEND = {"hs2b": 0.5, "hs2bq": 0.5}
+QUEUE = {"hs1q", "hs2q", "hs2bq"}   # fills also at our price once the displayed queue ahead of us has traded
+#                               # weight of Polymarket mid in the quote centre
 SIZE, MAXINV = 200, 1000                            # shares per quote, max |inventory| per market
 TICK_S, FLUSH_S, SNAP_S, EQ_S, DISC_S = 20, 900, 60, 300, 600
 FEE_PM, REBATE, PERP_FEE = 0.07, 0.20, 0.0005
@@ -140,6 +142,7 @@ for s in STRATS:
                                 "rebate_est": 0.0, "n_fills": 0})
 seen = set(st["seen"])
 seen_order = list(st["seen"])
+orders = {s: {} for s in QUEUE}    # strat -> cid -> {"bid": order, "ask": order}
 quotes = {s: {} for s in STRATS}   # strat -> cid -> list of [ts, bid, ask, bid_sz, ask_sz, fair]
 active = {}                        # cid -> market dict (currently listed)
 
@@ -263,7 +266,8 @@ def main():
                 for x in bk or []:
                     bids = [(float(y["price"]), float(y["size"])) for y in x.get("bids") or []]
                     asks = [(float(y["price"]), float(y["size"])) for y in x.get("asks") or []]
-                    books[x.get("asset_id")] = (max(bids) if bids else None, min(asks) if asks else None)
+                    books[x.get("asset_id")] = (max(bids) if bids else None, min(asks) if asks else None,
+                                                {round(a, 4): b_ for a, b_ in bids}, {round(a, 4): b_ for a, b_ in asks})
                 if not bk:
                     ok = False
             now = time.time()
@@ -295,21 +299,38 @@ def main():
                     else:
                         side, P = (-1 if buy else 1), 1 - float(r["price"])
                     for s in STRATS:
-                        ql = quotes[s].get(m["cid"]) or []
-                        i = bisect.bisect_right([x[0] for x in ql], ts) - 1
-                        if i < 0 or ql[i][1] is None:
-                            continue
-                        qt = ql[i]
                         S_ = st["strats"][s]
                         inv = S_["inv"].get(m["cid"], 0.0)
-                        if side == 1 and qt[4] > 0 and P > qt[2] + 1e-9:      # taker buys YES through our ask
-                            sz, px, sgn = min(float(r["size"]), qt[4]), qt[2], -1
-                            qt[4] -= sz
-                        elif side == -1 and qt[3] > 0 and P < qt[1] - 1e-9:   # taker sells YES through our bid
-                            sz, px, sgn = min(float(r["size"]), qt[3]), qt[1], 1
-                            qt[3] -= sz
+                        if s in QUEUE:
+                            o = (orders[s].get(m["cid"]) or {}).get("ask" if side == 1 else "bid")
+                            if not o or o["sz"] <= 0 or ts < o["ts"]:
+                                continue
+                            through = (P > o["px"] + 1e-6) if side == 1 else (P < o["px"] - 1e-6)
+                            if through:
+                                sz = min(float(r["size"]), o["sz"])
+                            elif abs(P - o["px"]) <= 1e-6:
+                                o["ahead"] -= float(r["size"])
+                                if o["ahead"] >= 0:
+                                    continue
+                                sz, o["ahead"] = min(-o["ahead"], o["sz"]), 0.0
+                            else:
+                                continue
+                            o["sz"] -= sz
+                            px, sgn, qt = o["px"], -side, [0, 0, 0, 0, 0, o["fair"]]
                         else:
-                            continue
+                            ql = quotes[s].get(m["cid"]) or []
+                            i = bisect.bisect_right([x[0] for x in ql], ts) - 1
+                            if i < 0 or ql[i][1] is None:
+                                continue
+                            qt = ql[i]
+                            if side == 1 and qt[4] > 0 and P > qt[2] + 1e-9:      # taker buys YES through our ask
+                                sz, px, sgn = min(float(r["size"]), qt[4]), qt[2], -1
+                                qt[4] -= sz
+                            elif side == -1 and qt[3] > 0 and P < qt[1] - 1e-9:   # taker sells YES through our bid
+                                sz, px, sgn = min(float(r["size"]), qt[3]), qt[1], 1
+                                qt[3] -= sz
+                            else:
+                                continue
                         inv += sgn * sz
                         S_["inv"][m["cid"]] = inv
                         S_["pm_cash"] -= sgn * sz * px
@@ -326,10 +347,12 @@ def main():
                     cid = m["cid"]
                     ql = quotes[s].setdefault(cid, [])
                     f = fair.get(cid)
-                    bb, ba = books.get(m["yes"], (None, None))
+                    bb, ba = books.get(m["yes"], (None, None))[:2]
                     if (not ok or f is None or not (0.05 <= f <= 0.95) or m["end"] - now < STOP_QUOTE_S
                             or bb is None or ba is None or time.time() > DEADLINE):
                         ql.append([now, None, None, 0, 0, f])
+                        if s in QUEUE:
+                            orders[s][cid] = {"bid": None, "ask": None}
                     else:
                         tk = m["tick"] if (0.04 < f < 0.96 and m["tick"] >= 0.01) else m["tick"]
                         inv = st["strats"][s]["inv"].get(cid, 0.0)
@@ -342,6 +365,17 @@ def main():
                         bsz = SIZE if (inv < MAXINV and 0 < bid < 1) else 0
                         asz = SIZE if (inv > -MAXINV and 0 < ask < 1) else 0
                         ql.append([now, round(bid, 4), round(ask, 4), bsz, asz, f])
+                        if s in QUEUE:
+                            od = orders[s].setdefault(cid, {"bid": None, "ask": None})
+                            dp = books[m["yes"]]
+                            for nm, px_, sz_, lv in (("bid", round(bid, 4), bsz, dp[2]), ("ask", round(ask, 4), asz, dp[3])):
+                                o = od[nm]
+                                if sz_ <= 0:
+                                    od[nm] = None
+                                elif o and abs(o["px"] - px_) < 1e-6 and o["sz"] > 0:
+                                    o["fair"] = f                      # same price: keep queue position
+                                else:
+                                    od[nm] = {"px": px_, "sz": sz_, "ahead": lv.get(px_, 0.0), "ts": now, "fair": f}
                     del ql[:-90]
 
             # ---- 3. hedge ----
@@ -362,7 +396,7 @@ def main():
             if ok and now - last["snap"] > SNAP_S:
                 last["snap"] = now
                 for m in mks:
-                    bb, ba = books.get(m["yes"], (None, None))
+                    bb, ba = books.get(m["yes"], (None, None))[:2]
                     rows["snap"].append([round(now), m["cid"], m["K"], m["end"], S, perp,
                                          round(fair[m["cid"]], 5) if m["cid"] in fair else "",
                                          bb[0] if bb else "", ba[0] if ba else "", bb[1] if bb else "", ba[1] if ba else ""])
