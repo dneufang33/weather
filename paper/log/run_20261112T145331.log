@@ -36,3 +36,5 @@
 [11-12 15:59:53] http fail https://gamma-api.polymarket.com/events?tag_slug=bitcoin&closed=false&limit=100&order=volu <HTTPError 406: 'Not Acceptable'>
 [11-12 16:01:13] tick 204 S=71624 mkts=0 quoted=0 fills={'hs1': 105, 'hs2': 72, 'hs4': 54, 'hs2b': 82, 'hs1q': 15, 'hs2q': 14, 'hs2bq': 9, 'hs03q': 0, 'hs03bq': 0} equity={'hs1': -341.07, 'hs2': -210.13, 'hs4': -104.0, 'hs2b': -28.38, 'hs1q': -255.62, 'hs2q': -257.37, 'hs2bq': -171.02, 'hs03q': 0.0, 'hs03bq': 0.0} diag={'prints': 0, 'prints_quoted': 0, 'shares_quoted': 0.0}
 [11-12 16:06:13] tick 219 S=71880 mkts=0 quoted=0 fills={'hs1': 105, 'hs2': 72, 'hs4': 54, 'hs2b': 82, 'hs1q': 15, 'hs2q': 14, 'hs2bq': 9, 'hs03q': 0, 'hs03bq': 0} equity={'hs1': -341.07, 'hs2': -210.13, 'hs4': -104.0, 'hs2b': -28.38, 'hs1q': -255.62, 'hs2q': -257.37, 'hs2bq': -171.02, 'hs03q': 0.0, 'hs03bq': 0.0} diag={'prints': 0, 'prints_quoted': 0, 'shares_quoted': 0.0}
+[11-12 16:09:35] STOP file found, exiting
+[11-12 16:09:35] end run, ticks 229
