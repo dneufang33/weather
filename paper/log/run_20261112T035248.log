@@ -1,0 +1,6 @@
+[11-12 03:52:48] start run 20261112T035248 minutes=330.0 strats={'hs1': 0.01, 'hs2': 0.02, 'hs4': 0.04, 'hs2b': 0.02}
+[11-12 03:52:48] discover: 33 markets in 3 events
+[11-12 03:52:51] tick 1 S=73764 mkts=33 quoted=7 fills={'hs1': 10, 'hs2': 3, 'hs4': 0, 'hs2b': 0} equity={'hs1': 8.37, 'hs2': 4.75, 'hs4': 0.0, 'hs2b': 0.0}
+[11-12 03:58:10] tick 17 S=73780 mkts=33 quoted=7 fills={'hs1': 10, 'hs2': 3, 'hs4': 0, 'hs2b': 0} equity={'hs1': 8.01, 'hs2': 4.67, 'hs4': 0.0, 'hs2b': 0.0}
+[11-12 04:02:48] discover: 33 markets in 3 events
+[11-12 04:03:10] tick 32 S=73844 mkts=33 quoted=7 fills={'hs1': 10, 'hs2': 3, 'hs4': 0, 'hs2b': 0} equity={'hs1': 8.22, 'hs2': 4.7, 'hs4': 0.0, 'hs2b': 0.0}
