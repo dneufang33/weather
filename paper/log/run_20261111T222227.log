@@ -93,3 +93,7 @@
 [11-12 03:32:28] discover: 33 markets in 3 events
 [11-12 03:34:08] tick 936 S=73783 mkts=33 quoted=7 fills={'hs1': 10, 'hs2': 3, 'hs4': 0, 'hs2b': 0} equity={'hs1': 8.61, 'hs2': 4.49, 'hs4': 0.0, 'hs2b': 0.0}
 [11-12 03:39:28] tick 952 S=73740 mkts=33 quoted=7 fills={'hs1': 10, 'hs2': 3, 'hs4': 0, 'hs2b': 0} equity={'hs1': 8.4, 'hs2': 4.57, 'hs4': 0.0, 'hs2b': 0.0}
+[11-12 03:42:28] discover: 33 markets in 3 events
+[11-12 03:44:28] tick 967 S=73774 mkts=33 quoted=7 fills={'hs1': 10, 'hs2': 3, 'hs4': 0, 'hs2b': 0} equity={'hs1': 8.51, 'hs2': 4.7, 'hs4': 0.0, 'hs2b': 0.0}
+[11-12 03:49:48] tick 983 S=73781 mkts=33 quoted=7 fills={'hs1': 10, 'hs2': 3, 'hs4': 0, 'hs2b': 0} equity={'hs1': 8.39, 'hs2': 4.7, 'hs4': 0.0, 'hs2b': 0.0}
+[11-12 03:52:27] end run, ticks 990
