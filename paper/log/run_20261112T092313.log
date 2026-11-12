@@ -93,3 +93,7 @@
 [11-12 14:33:14] http fail https://gamma-api.polymarket.com/events?tag_slug=bitcoin&closed=false&limit=100&order=volu <HTTPError 406: 'Not Acceptable'>
 [11-12 14:33:36] tick 932 S=72019 mkts=33 quoted=8 fills={'hs1': 80, 'hs2': 51, 'hs4': 41, 'hs2b': 64, 'hs1q': 12, 'hs2q': 12, 'hs2bq': 7} equity={'hs1': -437.82, 'hs2': -342.01, 'hs4': -278.85, 'hs2b': -206.67, 'hs1q': -120.36, 'hs2q': -119.48, 'hs2bq': -75.57}
 [11-12 14:38:54] tick 948 S=72110 mkts=33 quoted=7 fills={'hs1': 85, 'hs2': 54, 'hs4': 42, 'hs2b': 67, 'hs1q': 13, 'hs2q': 12, 'hs2bq': 7} equity={'hs1': -455.49, 'hs2': -348.58, 'hs4': -277.38, 'hs2b': -210.58, 'hs1q': -122.89, 'hs2q': -122.4, 'hs2bq': -75.93}
+[11-12 14:43:14] http fail https://gamma-api.polymarket.com/events?tag_slug=bitcoin&closed=false&limit=100&order=volu <HTTPError 406: 'Not Acceptable'>
+[11-12 14:43:54] tick 963 S=71850 mkts=33 quoted=8 fills={'hs1': 89, 'hs2': 57, 'hs4': 43, 'hs2b': 69, 'hs1q': 13, 'hs2q': 12, 'hs2bq': 7} equity={'hs1': -508.72, 'hs2': -397.11, 'hs4': -294.17, 'hs2b': -246.23, 'hs1q': -135.49, 'hs2q': -134.96, 'hs2bq': -84.54}
+[11-12 14:49:17] tick 979 S=71670 mkts=33 quoted=8 fills={'hs1': 96, 'hs2': 63, 'hs4': 47, 'hs2b': 74, 'hs1q': 14, 'hs2q': 13, 'hs2bq': 8} equity={'hs1': -507.7, 'hs2': -394.41, 'hs4': -289.19, 'hs2b': -242.87, 'hs1q': -141.07, 'hs2q': -140.43, 'hs2bq': -88.64}
+[11-12 14:53:13] end run, ticks 990
