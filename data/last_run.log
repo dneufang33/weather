@@ -1,19 +1,12 @@
-OK 39295 https://gamma-api.polymarket.com/events?slug=bitcoin-above-on-november-11
-OK 42201 https://gamma-api.polymarket.com/events?slug=bitcoin-price-on-november-11
-OK 39218 https://gamma-api.polymarket.com/events?slug=ethereum-above-on-november-11
-OK 3 https://gamma-api.polymarket.com/events?slug=bitcoin-above-on-november-12
-OK 42401 https://gamma-api.polymarket.com/events?slug=bitcoin-price-on-november-12
-OK 39323 https://gamma-api.polymarket.com/events?slug=ethereum-above-on-november-12
-OK 39529 https://gamma-api.polymarket.com/events?slug=bitcoin-above-on-november-13
-OK 42241 https://gamma-api.polymarket.com/events?slug=bitcoin-price-on-november-13
-OK 39333 https://gamma-api.polymarket.com/events?slug=ethereum-above-on-november-13
-OK 1802907 https://gamma-api.polymarket.com/events?tag_slug=bitcoin&closed=false&limit=100&order=volume24hr&ascending=false
-OK 559578 https://gamma-api.polymarket.com/events?tag_slug=gold&closed=false&limit=50
-ERR https://clob.polymarket.com/book?token_id=58347547601472807712649493898758353380118845235415826468002245665143321034556 HTTP Error 404: Not Found
-OK 3 https://clob.polymarket.com/books
-OK 39768 https://data-api.polymarket.com/v2/trades?event_id=73004&limit=50
-OK 475889 https://www.deribit.com/api/v2/public/get_book_summary_by_currency?currency=BTC&kind=option
-OK 891 https://www.deribit.com/api/v2/public/ticker?instrument_name=BTC-PERPETUAL
-OK 165 https://www.deribit.com/api/v2/public/get_index_price?index_name=btc_usd
-OK 45 https://data-api.binance.vision/api/v3/ticker/price?symbol=BTCUSDT
-done
+ERR 406 b'{"error":"gzip_required","hint":"send the header Accept-Encoding: gzip. /events and /events/keyset pages with limit above 50 are served compressed only."}' | vents?tag_slug=bitcoin&closed=false&limit=100&order=volume24hr&ascending=false {'User-Agent': 'paper-research/0.1'}
+ERR 406 b'{"error":"gzip_required","hint":"send the header Accept-Encoding: gzip. /events and /events/keyset pages with limit above 50 are served compressed only."}' | vents?tag_slug=bitcoin&closed=false&limit=100 {'User-Agent': 'paper-research/0.1'}
+OK 41623 1 ['bitcoin-above-on-november-13-2026'] | vents?slug=bitcoin-above-on-november-13-2026 {'User-Agent': 'paper-research/0.1'}
+OK 82732 2 ['bitcoin-above-on-november-14-2026', 'bitcoin-above-on-november-15-2026'] | vents?slug=bitcoin-above-on-november-14-2026&slug=bitcoin-above-on-november-15-2026 {'User-Agent': 'paper-research/0.1'}
+OK 289025 7 ['bitcoin-above-on-november-12-2026', 'bitcoin-above-on-november-13-2026', 'bitcoin-above-on-november-14-2026', 'bitcoin-above-on-november-15-2026'] | vents?series_slug=btc-multi-strikes-weekly&closed=false&limit=20 {'User-Agent': 'paper-research/0.1'}
+OK 2776242 50 ['aapl-above-in-november-2026', 'msft-above-in-november-2026', 'amzn-above-in-november-2026', 'googl-above-in-november-2026'] | vents?tag_slug=multi-strikes&closed=false&limit=50 {'User-Agent': 'paper-research/0.1'}
+ERR 406 b'{"error":"gzip_required","hint":"send the header Accept-Encoding: gzip. /events and /events/keyset pages with limit above 50 are served compressed only."}' | vents?tag_slug=bitcoin&closed=false&limit=100&order=volume24hr&ascending=false {'User-Agent': 'Mozilla/5.0', 'Accept': 'application/json'}
+ERR 406 b'{"error":"gzip_required","hint":"send the header Accept-Encoding: gzip. /events and /events/keyset pages with limit above 50 are served compressed only."}' | vents?tag_slug=bitcoin&closed=false&limit=100 {'User-Agent': 'Mozilla/5.0', 'Accept': 'application/json'}
+OK 41623 1 ['bitcoin-above-on-november-13-2026'] | vents?slug=bitcoin-above-on-november-13-2026 {'User-Agent': 'Mozilla/5.0', 'Accept': 'application/json'}
+OK 82732 2 ['bitcoin-above-on-november-14-2026', 'bitcoin-above-on-november-15-2026'] | vents?slug=bitcoin-above-on-november-14-2026&slug=bitcoin-above-on-november-15-2026 {'User-Agent': 'Mozilla/5.0', 'Accept': 'application/json'}
+OK 289025 7 ['bitcoin-above-on-november-12-2026', 'bitcoin-above-on-november-13-2026', 'bitcoin-above-on-november-14-2026', 'bitcoin-above-on-november-15-2026'] | vents?series_slug=btc-multi-strikes-weekly&closed=false&limit=20 {'User-Agent': 'Mozilla/5.0', 'Accept': 'application/json'}
+OK 2776242 50 ['aapl-above-in-november-2026', 'msft-above-in-november-2026', 'amzn-above-in-november-2026', 'googl-above-in-november-2026'] | vents?tag_slug=multi-strikes&closed=false&limit=50 {'User-Agent': 'Mozilla/5.0', 'Accept': 'application/json'}
