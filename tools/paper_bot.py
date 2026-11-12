@@ -49,11 +49,15 @@ def http(url, data=None, timeout=15, tries=2):
     for i in range(tries):
         try:
             h = dict(UA)
+            h["Accept-Encoding"] = "gzip"
             if data is not None:
                 h["Content-Type"] = "application/json"
             req = urllib.request.Request(url, headers=h, data=json.dumps(data).encode() if data is not None else None)
             with urllib.request.urlopen(req, timeout=timeout) as r:
-                return json.loads(r.read())
+                body = r.read()
+                if body[:2] == b"\x1f\x8b":
+                    body = gzip.decompress(body)
+                return json.loads(body)
         except Exception as e:
             err = e
             time.sleep(0.5)
@@ -175,8 +179,8 @@ def flush(final=False):
 
 
 def discover(now):
-    ev = http("https://gamma-api.polymarket.com/events?tag_slug=bitcoin&closed=false&limit=100"
-              "&order=volume24hr&ascending=false", timeout=40)
+    ev = http("https://gamma-api.polymarket.com/events?series_slug=btc-multi-strikes-weekly&closed=false&limit=20",
+              timeout=40)
     if not ev:
         return
     found = {}
