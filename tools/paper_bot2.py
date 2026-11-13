@@ -15,10 +15,8 @@ MINUTES = float(sys.argv[2]) if len(sys.argv) > 2 else 5
 CFG = {
     "ETH": dict(kind="above", series=["ethereum-multi-strikes-weekly"], binance="ETHUSDT", deribit="ETH",
                 perp="ETH-PERPETUAL", band=0.2),
-    "XAU": dict(kind="hit", series=["xauusd-hit-month", "gold-hit-price-weekly"], vol="PAXGUSDT", band=0.1,
-                pyth="765d2ba906dbc32ca17cc11f5310a89e9ee1f6420508c63861f2f8ba4ee34bb2"),
-    "XAG": dict(kind="hit", series=["xagusd-hit-month", "silver-hit-price-weekly"], vol="fit", band=8.0,
-                pyth="f2fb02c32b055c805e7238d628e5e9dadef274376114eb1f012337cabe93871e"),
+    "XAU": dict(kind="hit", series=["xauusd-hit-month", "gold-hit-price-weekly"], vol="GC=F", band=0.1, sq="XAU"),
+    "XAG": dict(kind="hit", series=["xagusd-hit-month", "silver-hit-price-weekly"], vol="SI=F", band=8.0, sq="XAG"),
 }[ASSET]
 KIND = CFG["kind"]
 BASE, LOG = f"paper2/{ASSET}", f"paper2/{ASSET}/log"
@@ -58,10 +56,12 @@ def log(*a):
     logbuf.append(s)
 
 
-def http(url, data=None, timeout=15, tries=2):
+def http(url, data=None, timeout=15, tries=2, ua=None):
     for i in range(tries):
         try:
             h = dict(UA)
+            if ua:
+                h["User-Agent"] = ua
             h["Accept-Encoding"] = "gzip"
             if data is not None:
                 h["Content-Type"] = "application/json"
@@ -228,13 +228,18 @@ def update_vol(now, S, mks, books, hrs):
     if CFG["vol"] != "fit":
         if now - VOL["ts"] < 1800 and VOL["var_h"]:
             return
-        k = http(f"https://data-api.binance.vision/api/v3/klines?symbol={CFG['vol']}&interval=1h&limit=720", timeout=25)
-        if not k:
+        if now - VOL.get("try", 0) < 120:
             return
-        r2 = []
-        for a_, b_ in zip(k[:-1], k[1:]):
-            if trading_hours(b_[0] / 1000, b_[0] / 1000 + 3600) > 0.5:
-                r2.append(math.log(float(b_[4]) / float(a_[4])) ** 2)
+        VOL["try"] = now
+        k = http(f"https://query1.finance.yahoo.com/v8/finance/chart/{CFG['vol']}?interval=1h&range=1mo", timeout=25,
+                 ua="Mozilla/5.0 (X11; Linux x86_64)")
+        VOL["ts"] = now if VOL["var_h"] else VOL["ts"]
+        try:
+            res = k["chart"]["result"][0]
+            pts_ = [(t_, c_) for t_, c_ in zip(res["timestamp"], res["indicators"]["quote"][0]["close"]) if c_]
+        except Exception:
+            return
+        r2 = [math.log(b_[1] / a_[1]) ** 2 for a_, b_ in zip(pts_[:-1], pts_[1:]) if 0 < b_[0] - a_[0] <= 3700]
         if len(r2) > 100:
             VOL["var_h"], VOL["ts"] = sum(r2) / len(r2), now
             log(f"vol update: {math.sqrt(VOL['var_h'] * 23 * 5 * 52) * 100:.1f}% annualised from {len(r2)} hourly returns")
@@ -366,12 +371,12 @@ def main():
                 if ok:
                     S, perp = float(b["price"]), float(p["result"]["mark_price"])
             else:
-                b = http("https://hermes.pyth.network/v2/updates/price/latest?ids[]=" + CFG["pyth"] + "&parsed=true")
+                b = http(f"https://forex-data-feed.swissquote.com/public-quotes/bboquotes/instrument/{CFG['sq']}/USD")
                 ok = False
                 try:
-                    pp = b["parsed"][0]["price"]
-                    if now - float(pp["publish_time"]) < 120 and is_open(now):
-                        S = perp = float(pp["price"]) * 10 ** int(pp["expo"])
+                    pp = b[0]["spreadProfilePrices"][0]
+                    if now - float(b[0]["ts"]) / 1000 < 120 and is_open(now):
+                        S = perp = (float(pp["bid"]) + float(pp["ask"])) / 2
                         ok = True
                 except Exception:
                     pass
