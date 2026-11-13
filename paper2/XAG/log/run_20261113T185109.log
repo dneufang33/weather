@@ -12,3 +12,7 @@
 [11-13 19:21:09] discover: 29 markets in 2 events; 25 closed
 [11-13 19:21:30] vol update: 40.0% annualised from 507 hourly returns
 [11-13 19:22:30] tick 95 S=49 mkts=29 quoted=8 fills={'hs1': 0, 'hs2': 0, 'hs4': 0, 'hs2b': 0, 'hs1q': 0, 'hs2q': 0, 'hs2bq': 0, 'hs03q': 0, 'hs03bq': 0} equity={'hs1': 0.0, 'hs2': 0.0, 'hs4': 0.0, 'hs2b': 0.0, 'hs1q': 0.0, 'hs2q': 0.0, 'hs2bq': 0.0, 'hs03q': 0.0, 'hs03bq': 0.0} diag={'prints': 0, 'prints_quoted': 0, 'shares_quoted': 0.0}
+[11-13 19:27:50] tick 111 S=49 mkts=29 quoted=8 fills={'hs1': 0, 'hs2': 0, 'hs4': 0, 'hs2b': 0, 'hs1q': 0, 'hs2q': 0, 'hs2bq': 0, 'hs03q': 0, 'hs03bq': 0} equity={'hs1': 0.0, 'hs2': 0.0, 'hs4': 0.0, 'hs2b': 0.0, 'hs1q': 0.0, 'hs2q': 0.0, 'hs2bq': 0.0, 'hs03q': 0.0, 'hs03bq': 0.0} diag={'prints': 0, 'prints_quoted': 0, 'shares_quoted': 0.0}
+[11-13 19:31:09] discover: 29 markets in 2 events; 25 closed
+[11-13 19:32:50] tick 126 S=49 mkts=29 quoted=8 fills={'hs1': 0, 'hs2': 0, 'hs4': 0, 'hs2b': 0, 'hs1q': 0, 'hs2q': 0, 'hs2bq': 0, 'hs03q': 0, 'hs03bq': 0} equity={'hs1': 0.0, 'hs2': 0.0, 'hs4': 0.0, 'hs2b': 0.0, 'hs1q': 0.0, 'hs2q': 0.0, 'hs2bq': 0.0, 'hs03q': 0.0, 'hs03bq': 0.0} diag={'prints': 0, 'prints_quoted': 0, 'shares_quoted': 0.0}
+[11-13 19:38:10] tick 142 S=49 mkts=29 quoted=8 fills={'hs1': 0, 'hs2': 0, 'hs4': 0, 'hs2b': 0, 'hs1q': 0, 'hs2q': 0, 'hs2bq': 0, 'hs03q': 0, 'hs03bq': 0} equity={'hs1': 0.0, 'hs2': 0.0, 'hs4': 0.0, 'hs2b': 0.0, 'hs1q': 0.0, 'hs2q': 0.0, 'hs2bq': 0.0, 'hs03q': 0.0, 'hs03bq': 0.0} diag={'prints': 0, 'prints_quoted': 0, 'shares_quoted': 0.0}
