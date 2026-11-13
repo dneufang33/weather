@@ -1,14 +1,51 @@
-ERR https://hermes.pyth.network/api/latest_price_feeds?ids[]=765d2ba906dbc32ca17cc11f5310a89e9ee1f6 | <HTTPError 401: 'Unauthorized'>
-ERR https://hermes.pyth.network/v2/updates/price/latest?ids%5B%5D=0x765d2ba906dbc32ca17cc11f5310a89 | <HTTPError 401: 'Unauthorized'>
-ERR https://hermes-beta.pyth.network/v2/updates/price/latest?ids[]=765d2ba906dbc32ca17cc11f5310a89e | <HTTPError 401: 'Unauthorized'>
-OK  https://forex-data-feed.swissquote.com/public-quotes/bboquotes/instrument/XAU/USD | [{"topo":{"platform":"SwissquoteCapitalMarkets","server":"Live7"},"spreadProfilePrices":[{"spreadProfile":"premium","bidSpread":25.40,"askSpread":25.40,"bid":3882.391,"ask":3883.049},{"spreadProfile":"prime","bidSpread":24.40,"askSpread":24.40,"bid":3882.401,"ask":3883.039},{"spreadProfile":"elite","bidSpread":17.70,"askSpread":17.70,"bid":3882.468,"ask":3882.972}],"ts":1794595088534},{"topo":{"platform":"SwissquoteL
-OK  https://api.gold-api.com/price/XAU | {"currency":"USD","currencySymbol":"$","exchangeRate":1.0,"name":"Gold","price":3885.399902,"symbol":"XAU","updatedAt":"2026-11-13T18:37:55Z","updatedAtReadable":"a few seconds ago"}
-ERR https://stooq.com/q/l/?s=xauusd&f=sd2t2ohlcv&h&e=csv | URLError(TimeoutError('timed out'))
-ERR https://query1.finance.yahoo.com/v8/finance/chart/XAUUSD=X?interval=1m&range=1h | <HTTPError 404: 'Not Found'>
-OK  https://forex-data-feed.swissquote.com/public-quotes/bboquotes/instrument/XAG/USD | [{"topo":{"platform":"SwissquoteCapitalMarkets","server":"Live7"},"spreadProfilePrices":[{"spreadProfile":"premium","bidSpread":17.50,"askSpread":17.50,"bid":49.0885,"ask":49.1295},{"spreadProfile":"prime","bidSpread":17.30,"askSpread":17.30,"bid":49.0887,"ask":49.1293},{"spreadProfile":"elite","bidSpread":13.95,"askSpread":13.95,"bid":49.0921,"ask":49.1260}],"ts":1794595148967},{"topo":{"platform":"AT","server":"AT"
-OK  https://api.gold-api.com/price/XAG | {"currency":"USD","currencySymbol":"$","exchangeRate":1.0,"name":"Silver","price":49.028,"symbol":"XAG","updatedAt":"2026-11-13T18:38:55Z","updatedAtReadable":"a few seconds ago"}
-ERR https://stooq.com/q/l/?s=xagusd&f=sd2t2ohlcv&h&e=csv | URLError(TimeoutError('timed out'))
-ERR https://query1.finance.yahoo.com/v8/finance/chart/XAGUSD=X?interval=1m&range=1h | <HTTPError 404: 'Not Found'>
-OK  https://query1.finance.yahoo.com/v8/finance/chart/GC=F?interval=1h&range=1mo | {"chart":{"result":[{"meta":{"currency":"USD","symbol":"GC=F","exchangeName":"CMX","fullExchangeName":"COMEX","instrumentType":"FUTURE","firstTradeDate":967608000,"regularMarketTime":1794594608,"hasPrePostMarketData":false,"gmtoffset":-18000,"timezone":"EST","exchangeTimezoneName":"America/New_York","regularMarketPrice":3886.2,"regularMarketChangePercent":0.023,"fulldayPrice":3886.2,"fulldayChange":0.9,"fulldayChange
-OK  https://query1.finance.yahoo.com/v8/finance/chart/SI=F?interval=1h&range=1mo | {"chart":{"result":[{"meta":{"currency":"USD","symbol":"SI=F","exchangeName":"CMX","fullExchangeName":"COMEX","instrumentType":"FUTURE","firstTradeDate":967608000,"regularMarketTime":1794594608,"hasPrePostMarketData":false,"gmtoffset":-18000,"timezone":"EST","exchangeTimezoneName":"America/New_York","regularMarketPrice":49.075,"regularMarketChangePercent":-1.977,"fulldayPrice":49.075,"fulldayChange":-0.99,"fulldayCha
-ERR https://stooq.com/q/d/l/?s=xagusd&i=d | URLError(TimeoutError('timed out'))
+now 1794607254
+OK  https://forex-data-feed.swissquote.com/public-quotes/bboquotes/instrument/XTI/USD  | []
+OK  https://forex-data-feed.swissquote.com/public-quotes/bboquotes/instrument/WTI/USD  | []
+OK  https://forex-data-feed.swissquote.com/public-quotes/bboquotes/instrument/USOIL/USD  | []
+OK  https://forex-data-feed.swissquote.com/public-quotes/bboquotes/instrument/CL/USD  | []
+OK  https://forex-data-feed.swissquote.com/public-quotes/bboquotes/instrument/XBR/USD  | []
+OK  https://query1.finance.yahoo.com/v8/finance/chart/CL=F?interval=1m&range=1d  | {"chart":{"result":[{"meta":{"currency":"USD","symbol":"CL=F","exchangeName":"NYM","fullExchangeName":"NY Mercantile","instrumentType":"FUTURE","firstTradeDate":967003200,"regularMarketTime":1794606641,"hasPrePostMarketData":false,"gmtoffset":-18000,"timezone":"EST","exchangeTimezoneName":"America/New_York","regularMarketPrice":89.01,"regularMarketChangePercent":0.304,"fulldayPrice":89.01,"fulldayChange":0.27,"fulldayChangePercent":0.304,"fiftyTwoWeekHigh":119.48,"fiftyTwoWeekLow":54.98,"regularMarketDayHigh":89.64,"regularMarketDayLow":87.8,"regularMarketVolume":179932,"shortName":"Crude Oil Dec 26","chartPreviousClose":88.74,"previousClose":88.74,"scale":3,"priceHint":2,"currentTradingPeri
+yahoo last ts [1794606540, 1794606600, 1794606641] [89.06999969482422, 89.0, 89.01000213623047] 1794606641
+OK  https://query1.finance.yahoo.com/v8/finance/chart/CL=F?interval=1h&range=1mo  | {"chart":{"result":[{"meta":{"currency":"USD","symbol":"CL=F","exchangeName":"NYM","fullExchangeName":"NY Mercantile","i
+OK  https://api.hyperliquid.xyz/info {"type": "allMids", "dex": ""} | {"#114910":"0.5","#114911":"0.5","#114920":"0.142335","#1149
+ 1425 {}
+OK  https://api.hyperliquid.xyz/info {"type": "allMids", "dex": "xyz"} | {"xyz:AAOI":"49.06","xyz:AAPL":"355.395","xyz:ACN":"250.2","
+xyz 144 {'xyz:BRENTOIL': '93.3565', 'xyz:CL': '87.588', 'xyz:CRCL': '61.766', 'xyz:GOLD': '3886.75', 'xyz:NCLD': '13.4', 'xyz:ORCL': '124.675', 'xyz:SILVER': '48.743'}
+OK  https://api.hyperliquid.xyz/info {"type": "allMids", "dex": "flx"} | {"flx:BTC":"91470.2","flx:COIN":"164.78","flx:COPPER":"6.33"
+flx 16 {'flx:CRCL': '80.037', 'flx:GOLD': '4153.2', 'flx:OIL': '76.4', 'flx:SILVER': '65.65'}
+OK  https://api.hyperliquid.xyz/info {"type": "allMids", "dex": "vntl"} | {"vntl:ANTHROPIC":"1619.3","vntl:BIOTECH":"140.88","vntl:DEF
+vntl 15 {'vntl:GOLDJM': '124.0', 'vntl:NUCLEAR': '128.05', 'vntl:SILVERJM': '31.5'}
+OK  https://api.hyperliquid.xyz/info {"type": "allMids", "dex": "hyna"} | {"hyna:1000PEPE":"0.003494","hyna:ADA":"0.1969","hyna:BASED"
+hyna 25 {'hyna:GOLD': '4993.2', 'hyna:SILVER': '85.97'}
+OK  https://api.hyperliquid.xyz/info {"type": "allMids", "dex": "km"} | {"km:AAPL":"292.11","km:BABA":"116.54","km:BMNR":"15.749","k
+km 23 {'km:GOLD': '4348.8', 'km:SILVER': '70.451', 'km:USOIL': '114.1'}
+OK  https://api.hyperliquid.xyz/info {"type": "perpDexs"} | [null,{"name":"xyz","fullName":"XYZ","deployer":"0x88806a71d74ad0a510b350545c9ae490912f0888","oracleUpdater":null,"feeRecipient":"0x83ffcfb1f2ad843c474b2e28df86c721cb869d3a","assetToStreamingOiCap":[["xyz:AAOI","25000000.0"],["xyz:AAPL","200000000.0"],["xyz:ACN","25000000.0"],["xyz:ALUMINIUM","25000000.0"],["xyz:AMAT","25000000.0"],["xyz:AMD","100000000.0"],["xyz:AMZN","100000000.0"],["xyz:ANT","150000000.0"],["xyz:ARM","50000000.0"],["xyz:ASML","25000000.0"],["xyz:AVGO","75000000.0"],["xyz:BABA","50000000.0"],["xyz:BB","75000000.0"],["xyz:BE","25000000.0"],["xyz:BIRD","25000000.0"],["xyz:BMNR","25000000.0"],["xyz:BOT","25000000.0"],["xyz:BRENTOIL","750000000.0"],["xyz:BX","25000000.0"],["xyz:CAMBRICON","25000000.0"],["xyz:CBRS","150000000.0"],["xyz:CL","1000000000.0"],["xyz:COIN","50000000.0"],["xyz:COPPER","300000000.0"],["xyz:CORN","25000000.0"],["xyz:COST","25000000.0"],["xyz:CRCL","
+ERR https://api.gold-api.com/price/WTI | <HTTPError 404: 'Not Found'>
+ERR https://api.gold-api.com/price/CL | <HTTPError 404: 'Not Found'>
+ERR https://api.gold-api.com/price/BRENT | <HTTPError 404: 'Not Found'>
+OK  https://gamma-api.polymarket.com/events?series_slug=crude-oil-cl-hit&closed=false&limit=20  | [{"id":"12
+crude-oil-cl-hit what-price-will-wti-hit-in-november-2026 2026-12-01T04:59:59.999Z 28 ['Will WTI Crude Oil (WTI) hit (HIGH) $160 in November?', 'Will WTI Crude Oil (WTI) hit (HIGH) $150 in November?', 'Will WTI Crude Oil (WTI) hit (HIGH) $140 in November?']
+This market will resolve to "Yes" if, at any point after market creation and during a Pyth market session of November 2026, any Pyth 1-minute candle for the Active Month of ICE Futures Europe WTI Crude Futures (denoted by Pyth as "CLL") has a final "High" or "Low" price equal to or beyond (above for ↑ High Prices, below for ↓ Low Prices) the listed price. Otherwise, this market will resolve to "No".
+
+Prices will be used exactly as published by Pyth, without rounding.
+
+Only prices achieved during the Pyth market session on the specified timeframe's business days will be considered. The Pyth market session for a given business day can be seen under "Schedule" in the "Data Coverage" section of the respective CLL price feed on Pyth (See: https://app.pyth.com/explore?search=CLL), and may be modified for holiday or other special hours.
+
+The Active Month is the nearest listed contract, except during that contract's final three trading sessions. At the open of the third-to-last trading session, the next listed contract becomes the Active Month.
+
+Each contract's last trading day will be determined by ICE Futures Europe per the WTI Crude Futures contract specification (generally the 4th US business day prior to the 25th calendar day of the month preceding the contract month, or five US business days prior if the 25th calendar day is not a US business day). The last trading day for each contract is posted at https://www.ice.com/products/213/WTI-Crude-Futures/expiry.
+
+For example, if the last trading session for the nearest listed contract is the session for Monday the 20th, the next l
+OK  https://gamma-api.polymarket.com/events?series_slug=wti-crude-oil-hit-price-weekly&closed=  | [{"id":"13
+wti-crude-oil-hit-price-weekly will-wti-hit-week-of-november-9-2026 2026-11-13T23:00:00Z 16 ['Will WTI Crude Oil (WTI) hit (HIGH) $125 Week of November 9 2026?', 'Will WTI Crude Oil (WTI) hit (HIGH) $120 Week of November 9 2026?', 'Will WTI Crude Oil (WTI) hit (HIGH) $115 Week of November 9 2026?']
+This market will resolve to "Yes" if, at any point after market creation and during a Pyth market session of the week of November 9 2026, any Pyth 1-minute candle for the Active Month of ICE Futures Europe WTI Crude Futures (denoted by Pyth as "CLL") has a final "High" or "Low" price equal to or beyond (above for ↑ High Prices, below for ↓ Low Prices) the listed price. Otherwise, this market will resolve to "No".
+
+Prices will be used exactly as published by Pyth, without rounding.
+
+Only prices achieved during the Pyth market session on the specified timeframe's business days will be considered. The Pyth market session for a given business day can be seen under "Schedule" in the "Data Coverage" section of the respective CLL price feed on Pyth (See: https://app.pyth.com/explore?search=CLL), and may be modified for holiday or other special hours.
+
+The Active Month is the nearest listed contract, except during that contract's final three trading sessions. At the open of the third-to-last trading session, the next listed contract becomes the Active Month.
+
+Each contract's last trading day will be determined by ICE Futures Europe per the WTI Crude Futures contract specification (generally the 4th US business day prior to the 25th calendar day of the month preceding the contract month, or five US business days prior if the 25th calendar day is not a US business day). The last trading day for each contract is posted at https://www.ice.com/products/213/WTI-Crude-Futures/expiry.
+
+For example, if the last trading session for the nearest listed contract is the session for Monday the 20
