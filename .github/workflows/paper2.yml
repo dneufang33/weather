@@ -1,0 +1,60 @@
+name: Paper trading bot 2 - ETH, gold, silver (simulation only)
+
+on:
+  push:
+    branches: [claude/data-pull]
+    paths: ["paper2/START"]
+  workflow_dispatch:
+    inputs:
+      minutes:
+        default: "330"
+      mode:
+        default: "chain"
+
+permissions:
+  contents: write
+  actions: write
+
+concurrency:
+  group: paper-bot2
+  cancel-in-progress: false
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    timeout-minutes: 355
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: claude/data-pull
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Params
+        id: p
+        run: |
+          if [ "${{ github.event_name }}" = "push" ]; then read MIN MODE < paper2/START; else MIN="${{ inputs.minutes }}"; MODE="${{ inputs.mode }}"; fi
+          echo "min=$MIN" >> $GITHUB_OUTPUT
+          echo "mode=$MODE" >> $GITHUB_OUTPUT
+      - name: Run bots
+        run: |
+          git config user.email "action@github.com"
+          git config user.name "GitHub Actions"
+          for A in ETH XAU XAG; do python -u tools/paper_bot2.py $A ${{ steps.p.outputs.min }} > /tmp/$A.out 2>&1 & done
+          commit() { git add paper2 && (git diff --staged --quiet || git commit -qm "paper2: $(date -u +%Y%m%dT%H%M%S)") && git pull -q --rebase --autostash origin claude/data-pull && git push -q origin HEAD:claude/data-pull || echo "commit cycle failed"; }
+          sleep 20
+          while pgrep -f paper_bot2.py > /dev/null; do sleep 300; commit; done
+          commit
+          tail -n 5 /tmp/*.out || true
+      - name: Chain next run
+        if: always()
+        env:
+          GH_TOKEN: ${{ github.token }}
+          GH_REPO: ${{ github.repository }}
+        run: |
+          MODE="${{ steps.p.outputs.mode }}"
+          git pull -q --rebase --autostash origin claude/data-pull || true
+          if [ -f paper2/STOP ] || [ -f paper2/ETH/DONE ]; then echo "stop/done marker present"; exit 0; fi
+          if [ "$MODE" = "chain" ]; then
+            gh workflow run paper2.yml --ref claude/data-pull -f minutes=330 -f mode=chain
+          fi

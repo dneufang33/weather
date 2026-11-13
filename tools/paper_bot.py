@@ -22,7 +22,7 @@ TICK_S, FLUSH_S, SNAP_S, EQ_S, DISC_S = 20, 900, 60, 300, 600
 FEE_PM, REBATE, PERP_FEE = 0.07, 0.20, 0.0005
 STOP_QUOTE_S, MAX_AHEAD_S = 3600, 72 * 3600
 HEDGE_BAND = 0.005                                  # BTC
-DEADLINE = dt.datetime(2026, 11, 15, 18, 0, tzinfo=dt.timezone.utc).timestamp()
+DEADLINE = dt.datetime(2026, 11, 20, 18, 0, tzinfo=dt.timezone.utc).timestamp()
 YEAR = 365.0 * 86400
 UA = {"User-Agent": "paper-research/0.1"}
 T0 = time.time()
