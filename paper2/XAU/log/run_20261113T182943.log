@@ -14,3 +14,16 @@
 [11-13 18:33:04] http fail https://hermes.pyth.network/v2/updates/price/latest?ids[]=765d2ba906dbc32ca17cc11f5310a89e <HTTPError 401: 'Unauthorized'>
 [11-13 18:33:24] http fail https://hermes.pyth.network/v2/updates/price/latest?ids[]=765d2ba906dbc32ca17cc11f5310a89e <HTTPError 401: 'Unauthorized'>
 [11-13 18:33:44] http fail https://hermes.pyth.network/v2/updates/price/latest?ids[]=765d2ba906dbc32ca17cc11f5310a89e <HTTPError 401: 'Unauthorized'>
+[11-13 18:34:04] http fail https://hermes.pyth.network/v2/updates/price/latest?ids[]=765d2ba906dbc32ca17cc11f5310a89e <HTTPError 401: 'Unauthorized'>
+[11-13 18:34:24] http fail https://hermes.pyth.network/v2/updates/price/latest?ids[]=765d2ba906dbc32ca17cc11f5310a89e <HTTPError 401: 'Unauthorized'>
+[11-13 18:34:44] http fail https://hermes.pyth.network/v2/updates/price/latest?ids[]=765d2ba906dbc32ca17cc11f5310a89e <HTTPError 401: 'Unauthorized'>
+[11-13 18:34:44] tick not ok: spot False perp True surf 0 mkts 32
+[11-13 18:35:04] http fail https://hermes.pyth.network/v2/updates/price/latest?ids[]=765d2ba906dbc32ca17cc11f5310a89e <HTTPError 401: 'Unauthorized'>
+[11-13 18:35:24] http fail https://hermes.pyth.network/v2/updates/price/latest?ids[]=765d2ba906dbc32ca17cc11f5310a89e <HTTPError 401: 'Unauthorized'>
+[11-13 18:35:44] http fail https://hermes.pyth.network/v2/updates/price/latest?ids[]=765d2ba906dbc32ca17cc11f5310a89e <HTTPError 401: 'Unauthorized'>
+[11-13 18:36:04] http fail https://hermes.pyth.network/v2/updates/price/latest?ids[]=765d2ba906dbc32ca17cc11f5310a89e <HTTPError 401: 'Unauthorized'>
+[11-13 18:39:43] discover: 32 markets in 2 events; 18 closed
+[11-13 18:39:45] tick not ok: spot False perp True surf 0 mkts 32
+[11-13 18:44:44] tick not ok: spot False perp True surf 0 mkts 32
+[11-13 18:48:44] STOP file found, exiting
+[11-13 18:48:44] end run, ticks 58
