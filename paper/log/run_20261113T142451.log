@@ -45,3 +45,12 @@
 [11-13 16:50:52] tick 439 S=68669 mkts=33 quoted=4 fills={'hs1': 442, 'hs2': 285, 'hs4': 151, 'hs2b': 274, 'hs1q': 72, 'hs2q': 58, 'hs2bq': 31, 'hs03q': 68, 'hs03bq': 68} equity={'hs1': -2234.37, 'hs2': -1999.51, 'hs4': -1894.85, 'hs2b': -1516.75, 'hs1q': -907.4, 'hs2q': -827.9, 'hs2bq': -431.0, 'hs03q': -558.91, 'hs03bq': -529.01} diag={'prints': 1110, 'prints_quoted': 307, 'shares_quoted': 21557.126230999987}
 [11-13 16:54:51] discover: 33 markets in 3 events
 [11-13 16:56:12] tick 455 S=68681 mkts=33 quoted=4 fills={'hs1': 442, 'hs2': 285, 'hs4': 151, 'hs2b': 274, 'hs1q': 72, 'hs2q': 58, 'hs2bq': 31, 'hs03q': 68, 'hs03bq': 68} equity={'hs1': -2235.91, 'hs2': -1999.9, 'hs4': -1895.24, 'hs2b': -1516.66, 'hs1q': -907.55, 'hs2q': -827.98, 'hs2bq': -431.09, 'hs03q': -559.88, 'hs03bq': -529.2} diag={'prints': 1134, 'prints_quoted': 316, 'shares_quoted': 21716.114654999987}
+[11-13 17:01:32] tick 471 S=68642 mkts=22 quoted=4 fills={'hs1': 442, 'hs2': 285, 'hs4': 151, 'hs2b': 274, 'hs1q': 72, 'hs2q': 58, 'hs2bq': 31, 'hs03q': 68, 'hs03bq': 68} equity={'hs1': -2235.76, 'hs2': -2000.06, 'hs4': -1894.7, 'hs2b': -1516.27, 'hs1q': -907.29, 'hs2q': -827.84, 'hs2bq': -430.91, 'hs03q': -559.41, 'hs03bq': -528.86} diag={'prints': 1146, 'prints_quoted': 326, 'shares_quoted': 22047.42499999999}
+[11-13 17:02:13] settled 66000.0 close 68621.8 payout 1.0
+[11-13 17:02:13] settled 68000.0 close 68621.8 payout 1.0
+[11-13 17:02:13] settled 70000.0 close 68621.8 payout 0.0
+[11-13 17:02:13] settled 72000.0 close 68621.8 payout 0.0
+[11-13 17:02:13] settled 74000.0 close 68621.8 payout 0.0
+[11-13 17:02:13] settled 76000.0 close 68621.8 payout 0.0
+[11-13 17:04:51] discover: 33 markets in 3 events
+[11-13 17:06:32] tick 486 S=68773 mkts=33 quoted=7 fills={'hs1': 446, 'hs2': 286, 'hs4': 151, 'hs2b': 274, 'hs1q': 72, 'hs2q': 58, 'hs2bq': 31, 'hs03q': 68, 'hs03bq': 68} equity={'hs1': -2228.72, 'hs2': -1998.87, 'hs4': -1893.84, 'hs2b': -1515.9, 'hs1q': -905.91, 'hs2q': -828.23, 'hs2bq': -431.49, 'hs03q': -558.82, 'hs03bq': -528.69} diag={'prints': 1196, 'prints_quoted': 343, 'shares_quoted': 24133.317359999986}
