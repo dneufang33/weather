@@ -27,7 +27,7 @@ YEAR = 365.0 * 86400
 UA = {"User-Agent": "paper-research/0.1"}
 T0 = time.time()
 RUN = dt.datetime.now(dt.timezone.utc).strftime("%Y%m%dT%H%M%S")
-logbuf, rows = [], {"fills": [], "hedges": [], "snap": [], "equity": [], "settle": []}
+logbuf, rows = [], {"fills": [], "hedges": [], "snap": [], "equity": [], "settle": [], "ov": []}
 HDR = {
     "fills": ["ts", "trade_ts", "strat", "cid", "strike", "end", "side", "px", "size", "fair_quote", "fair_now",
               "spot", "trade_px_yes", "inv_after"],
@@ -35,6 +35,8 @@ HDR = {
     "snap": ["ts", "cid", "strike", "end", "spot", "perp", "fair", "best_bid", "best_ask", "bid_sz", "ask_sz"],
     "equity": ["ts", "strat", "pm_cash", "inv_value", "perp_cash", "perp_pos", "perp_mark", "fees_perp",
                "rebate_est", "n_fills", "gross_inv_shares", "equity"],
+    "ov": ["ts", "strat", "overlay", "pm_cash", "inv_value", "perp_pos", "perp_cash", "fees_perp", "n_trades",
+           "perp_mark", "equity"],
     "settle": ["ts", "strat", "cid", "strike", "end", "close", "payout", "inv", "cash_delta"],
 }
 
@@ -149,6 +151,10 @@ seen = set(st["seen"])
 seen_order = list(st["seen"])
 orders = {s: {} for s in QUEUE}    # strat -> cid -> {"bid": order, "ask": order}
 quotes = {s: {} for s in STRATS}   # strat -> cid -> list of [ts, bid, ask, bid_sz, ask_sz, fair]
+# hedge overlays: same Polymarket fills, different perp-hedging rules -> (band in BTC, min seconds between
+# rebalances, stop hedging a market this many seconds before its resolution); None = no hedge at all
+OVERLAYS = {"tick": (0.005, 0, 0), "band03": (0.03, 0, 0), "5min": (0.01, 300, 0), "30min": (0.01, 1800, 0),
+            "stop3h": (0.03, 0, 3 * 3600), "30min_stop3h": (0.01, 1800, 3 * 3600), "none": None}
 DIAG = {"prints": 0, "prints_quoted": 0, "shares_quoted": 0.0}
 active = {}                        # cid -> market dict (currently listed)
 
@@ -400,6 +406,19 @@ def main():
                         S_["fees_perp"] += fee
                         S_["perp_pos"] = tgt
                         rows["hedges"].append([round(now, 1), s, round(dq, 5), perp, round(fee, 4), round(tgt, 5)])
+                    for ov, cfg in OVERLAYS.items():
+                        O = st.setdefault("ov", {}).setdefault(s, {}).setdefault(
+                            ov, {"pos": 0.0, "cash": 0.0, "fees": 0.0, "last": 0, "n": 0})
+                        if cfg is None:
+                            continue
+                        band, minint, stop_s = cfg
+                        tgt = -sum(S_["inv"].get(m["cid"], 0.0) * dpds.get(m["cid"], 0.0)
+                                   for m in mks if m["end"] - now > stop_s)
+                        dq = tgt - O["pos"]
+                        if abs(dq) > band and now - O["last"] >= minint:
+                            O["cash"] -= dq * perp
+                            O["fees"] += abs(dq) * perp * PERP_FEE
+                            O["pos"], O["last"], O["n"] = tgt, now, O["n"] + 1
             settle(now)
 
             # ---- 4. logging ----
@@ -426,6 +445,10 @@ def main():
                                            round(S_["perp_pos"], 5), perp, round(S_["fees_perp"], 2),
                                            round(S_["rebate_est"], 2), S_["n_fills"],
                                            round(sum(abs(v) for v in S_["inv"].values())), round(eq, 2)])
+                    for ov, O in (st.get("ov", {}).get(s) or {}).items():
+                        rows["ov"].append([round(now), s, ov, round(S_["pm_cash"], 2), round(iv_, 2), round(O["pos"], 5),
+                                           round(O["cash"], 2), round(O["fees"], 2), O["n"], perp,
+                                           round(S_["pm_cash"] + iv_ + O["cash"] + O["pos"] * perp - O["fees"], 2)])
                 e = {s: rows["equity"][-len(STRATS) + i][-1] for i, s in enumerate(STRATS)}
                 log(f"tick {nt} S={S:.0f} mkts={len(mks)} quoted={sum(1 for m in mks if (quotes['hs2'].get(m['cid']) or [[0, None]])[-1][1] is not None)}"
                     f" fills={ {s: st['strats'][s]['n_fills'] for s in STRATS} } equity={e} diag={DIAG}")
