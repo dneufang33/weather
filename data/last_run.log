@@ -1,101 +1,78 @@
-multi-strikes total events so far 66
-gold total events so far 91
-silver total events so far 114
-commodities total events so far 127
-oil total events so far 169
-stocks total events so far 279
-indices total events so far 279
-finance total events so far 574
-forex total events so far 575
-ethereum total events so far 1058
-solana total events so far 1531
-xrp total events so far 2001
-nasdaq total events so far 2001
-sp500 total events so far 2001
-equities total events so far 2001
-earnings total events so far 2001
-economy total events so far 2152
-fed-rates total events so far 2159
-crypto-prices total events so far 2488
-hit-price total events so far 2489
-fomc                                                    events=  4 vol24=$   4,171,316 liq=$   2,636,130
-bitcoin-hit-price-monthly                               events=  2 vol24=$   2,490,999 liq=$   4,121,432
-anthropic-ipo                                           events=  3 vol24=$     713,524 liq=$     816,986
-bitcoin-hit-price-weekly                                events=  1 vol24=$     588,351 liq=$     304,746
-btc-multi-strikes-weekly                                events=  7 vol24=$     482,446 liq=$   1,086,175
-bitcoin-hit-price-daily                                 events=  1 vol24=$     425,054 liq=$     277,523
-jensen-huang-divorce-in-2026                            events=  1 vol24=$     362,575 liq=$      81,932
-anthropic-valuation                                     events=  2 vol24=$     304,608 liq=$     382,166
-us-announces-end-of-iranian-blockade-byptptpt-20260713152715080 events=  1 vol24=$     255,919 liq=$     811,696
-ethereum-hit-price-monthly                              events=  2 vol24=$     224,447 liq=$   1,789,852
-next-affair                                             events=  1 vol24=$     163,828 liq=$      75,807
-ethereum-multi-strikes-weekly                           events=  7 vol24=$     138,781 liq=$     634,978
-largest-company                                         events=  2 vol24=$     134,734 liq=$   1,754,249
-ethereum-hit-price-weekly                               events=  1 vol24=$     130,645 liq=$     206,185
-hormuz-traffic-returns-to-normal                        events=  2 vol24=$     121,040 liq=$     498,880
-crude-oil-all-time-high-by                              events=  1 vol24=$     121,031 liq=$     283,924
-anthropic-ipo-by                                        events=  1 vol24=$     114,197 liq=$     541,467
-crude-oil-cl-hit                                        events=  1 vol24=$      97,208 liq=$     413,043
-how-many-jensen-huang-affairs-will-be-reported-by-december-31 events=  1 vol24=$      92,072 liq=$     101,850
-jensen-huang-admits-to-another-affair-by-december-31    events=  1 vol24=$      89,160 liq=$       6,171
-solana-hit-price-monthly                                events=  2 vol24=$      65,914 liq=$   1,038,294
-us-iran-hormuz-agreement-byptptpt-20260803235957575     events=  1 vol24=$      55,747 liq=$     181,542
-bitcoin-neg-risk-weekly                                 events=  6 vol24=$      55,511 liq=$     447,216
-ai-bubble-burst-by                                      events=  1 vol24=$      53,256 liq=$     173,305
-new-nvidia-ceo-named-by-december-31-2026                events=  1 vol24=$      48,000 liq=$      18,205
-ethereum-hit-price-daily                                events=  1 vol24=$      44,848 liq=$     165,211
-how-many-fed-rate-cuts-in-2026                          events=  1 vol24=$      38,911 liq=$   3,102,149
-spx-daily-up-or-down                                    events=  2 vol24=$      35,373 liq=$       8,237
-jensen-huang-resigned-or-removed-and-nvidia-market-cap-above-4t-end-of-2026 events=  1 vol24=$      32,542 liq=$      22,440
-fed-3-parlay                                            events=  2 vol24=$      31,505 liq=$     243,600
-xrp-hit-price-monthly                                   events=  2 vol24=$      28,454 liq=$     769,551
-ethereum-neg-risk-weekly                                events=  7 vol24=$      24,078 liq=$     274,056
-largest-ipo-by-market-cap-in-2026-287                   events=  1 vol24=$      23,135 liq=$   1,128,306
-spy-daily-up-or-down                                    events=  2 vol24=$      22,851 liq=$       2,966
-bab-el-mandeb-strait-effectively-closed-by              events=  1 vol24=$      22,693 liq=$     264,976
-kharg-island-no-longer-under-iranian-control-by-march-31 events=  1 vol24=$      22,270 liq=$     213,723
-nvidia-s-market-cap                                     events=  1 vol24=$      21,085 liq=$     227,694
-openai-ipo                                              events=  2 vol24=$      20,630 liq=$     250,860
-spy-daily-close-uo                                      events=  2 vol24=$      20,085 liq=$      26,413
-military-action-against-saudi-oil-pipeline-east-west-byptptpt events=  1 vol24=$      18,547 liq=$      23,167
-nvidia-vp-kimberly-powell-announced-resignation-or-removal-byptptpt events=  1 vol24=$      18,410 liq=$      11,597
-anthropic-announces-bankruptcy-by                       events=  1 vol24=$      18,002 liq=$     455,756
-us-recession-by                                         events=  2 vol24=$      17,849 liq=$     174,086
-fed-rate-hike                                           events=  1 vol24=$      15,884 liq=$     188,503
-how-high-10-year-treasury                               events=  2 vol24=$      15,689 liq=$      46,193
-microsoft-hit-price-weekly                              events=  1 vol24=$      15,381 liq=$      41,182
-anthropic-ipo-closing-market-cap-above                  events=  1 vol24=$      14,461 liq=$     159,944
-what-will-openais-ipo-valuation-be                      events=  1 vol24=$      13,736 liq=$      66,339
-nvidia-hit-price-monthly                                events=  1 vol24=$      12,844 liq=$      21,660
-what-will-gold-gc-hit                                   events=  1 vol24=$      11,933 liq=$     549,813
-iran-oman-hormuz-management-agreement-byptptpt-20260804222725871 events=  1 vol24=$      11,390 liq=$      76,634
-xrp-hit-price-weekly                                    events=  1 vol24=$      11,377 liq=$      59,272
-what-will-anthropics-ipo-valuation-be                   events=  1 vol24=$      11,159 liq=$      80,342
-us-imports-russian-diesel-by-october-31                 events=  1 vol24=$      10,766 liq=$      95,564
-core-cpi                                                events=  2 vol24=$       9,660 liq=$      36,774
-tesla-multi-strikes-weekly                              events=  1 vol24=$       9,241 liq=$      10,300
-how-high-5-year-treasury                                events=  2 vol24=$       8,901 liq=$       9,617
-anthropic-ipo-date                                      events=  1 vol24=$       8,823 liq=$     114,849
-how-high-30-year-treasury                               events=  2 vol24=$       8,664 liq=$      35,663
-japan-core-cpi-yoy-in-2026-20260617224131789            events=  1 vol24=$       8,625 liq=$      15,351
-spy-hit-price-weekly                                    events=  1 vol24=$       8,578 liq=$      15,118
-3rd-largest-company                                     events=  2 vol24=$       8,513 liq=$     233,686
-how-high-2-year-treasury                                events=  2 vol24=$       8,191 liq=$       7,303
-ecb-interest-rates                                      events=  3 vol24=$       8,181 liq=$      70,840
-eth-up-or-down-daily                                    events=  2 vol24=$       7,725 liq=$      11,182
-nvidia-multi-strikes-weekly                             events=  1 vol24=$       7,521 liq=$      30,507
-spx-open-daily-up-or-down                               events=  2 vol24=$       7,024 liq=$      36,317
-reserve-bank-of-australia-decision                      events=  3 vol24=$       7,011 liq=$      88,416
-nvidia-multi-strikes-monthly                            events=  1 vol24=$       6,991 liq=$      28,517
-us-annual-inflation                                     events=  2 vol24=$       6,963 liq=$      84,830
-tesla-hit-price-weekly                                  events=  1 vol24=$       6,824 liq=$      13,491
-nvidia-hit-price-weekly                                 events=  1 vol24=$       6,481 liq=$      18,119
-will-gamestop-acquire-ebay                              events=  1 vol24=$       6,342 liq=$      55,409
-bank-of-england-decision                                events=  3 vol24=$       6,289 liq=$      38,232
-will-china-unban-bitcoin-by-2027                        events=  1 vol24=$       6,212 liq=$      22,533
-second-largest-company                                  events=  2 vol24=$       6,178 liq=$     322,088
-hyperliquid-hit-price-monthly                           events=  2 vol24=$       6,176 liq=$     125,742
-tsla-multi-strikes-weekly                               events=  2 vol24=$       6,004 liq=$      13,520
-gas-price-hits                                          events=  1 vol24=$       5,887 liq=$      15,673
-when-will-bitcoin-hit-100k                              events=  1 vol24=$       5,862 liq=$     130,939
-books 987
+XAU [{"id": "765d2ba906dbc32ca17cc11f5310a89e9ee1f6420508c63861f2f8ba4ee34bb2", "market_hours": {"is_open": true, "next_open": 1794783600, "next_close": 1794607200}, "attributes": {"asset_type": "Metal", "description": "GOLD / US DOLLAR", "display_symbol": "XAUUSD", "quote_currency": "USD", "schedule": "America/New_York;0000-1700&1800-2400,0000-1700&1800-2400,0000-1700&1800-2400,0000-1700&1800-2400,0000-1700,C,1800-2400;0907/0000-1430&1800-2400,1126/0000-1430&1800-2400,1127/0000-1445,1224/0000-1345,1225/C,1231/0000-1700,0101/C,0118/0000-1430&1800-2400,0215/0000-1430&1800-2400,0325/0000-1700,0326/C,0531/0000-1430&1800-2400,0618/0000-1300,0705/0000-1430&1800-2400", "symbol": "Metal.XAU/USD", "min_channel": "fixed_rate@200ms"}}]
+match []
+XAG [{"id": "f2fb02c32b055c805e7238d628e5e9dadef274376114eb1f012337cabe93871e", "market_hours": {"is_open": true, "next_open": 1794783600, "next_close": 1794607200}, "attributes": {"asset_type": "Metal", "description": "SILVER / US DOLLAR", "display_symbol": "XAGUSD", "quote_currency": "USD", "schedule": "America/New_York;0000-1700&1800-2400,0000-1700&1800-2400,0000-1700&1800-2400,0000-1700&1800-2400,0000-1700,C,1800-2400;0907/0000-1430&1800-2400,1126/0000-1430&1800-2400,1127/0000-1445,1224/0000-1345,1225/C,1231/0000-1700,0101/C,0118/0000-1430&1800-2400,0215/0000-1430&1800-2400,0325/0000-1700,0326/C,0531/0000-1430&1800-2400,0618/0000-1300,0705/0000-1430&1800-2400", "symbol": "Metal.XAG/USD", "min_channel": "fixed_rate@200ms"}}]
+match []
+ERR https://benchmarks.pyth.network/v1/shims/tradingview/history?symbol=Metal.XAU/USD&resolution=60&from=179200236 <HTTPError 404: 'Not Found'>
+ERR https://benchmarks.pyth.network/v1/shims/tradingview/history?symbol=Metal.XAU/USD&resolution=1&from=1794590760 <HTTPError 404: 'Not Found'>
+ERR https://benchmarks.pyth.network/v1/shims/tradingview/history?symbol=Metal.XAG/USD&resolution=60&from=179200236 <HTTPError 404: 'Not Found'>
+ERR https://benchmarks.pyth.network/v1/shims/tradingview/history?symbol=Metal.XAG/USD&resolution=1&from=1794590760 <HTTPError 404: 'Not Found'>
+eth opts 790 ETH-20NOV26-2050-C
+{"jsonrpc": "2.0", "result": {"timestamp": 1794594361079, "state": "open", "stats": {"high": 2025.85, "low": 1893.9, "price_change": -3.9469, "volume": 153052.032835, "volume_delayed": 0.0, "volume_re
+{'symbol': 'ETHUSDT', 'price': '1941.56000000'} {'symbol': 'PAXGUSDT', 'price': '3880.01000000'}
+usdc opts Counter({'SOL_USDC': 640, 'BTC_USDC': 624, 'ETH_USDC': 522, 'HYPE_USDC': 416, 'XRP_USDC': 394, 'AVAX_USDC': 330, 'TRX_USDC': 280})
+[('ethereum-above-on-november-14-2026', '2026-11-14T17:00:00Z'), ('ethereum-above-on-november-15-2026', '2026-11-15T17:00:00Z'), ('ethereum-above-on-november-16-2026', '2026-11-16T17:00:00Z'), ('ethereum-above-on-november-17-2026', '2026-11-17T17:00:00Z'), ('ethereum-above-on-november-18-2026', '2026-11-18T17:00:00Z'), ('ethereum-above-on-november-19-2026', '2026-11-19T17:00:00Z'), ('ethereum-above-on-november-20-2026', '2026-11-20T17:00:00Z')]
+This market will resolve to "Yes" if the Binance 1 minute candle for ETH/USDT closing at 12:00 in the ET timezone (noon) on the date specified in the title has a final "Close" price higher than the price specified in the title. Otherwise, this market will resolve to "No".
+
+The resolution source for this market is Binance, specifically the ETH/USDT "Close" prices currently available at https://www.binance.com/en/trade/ETH_USDT with "1m" and "Candles" selected on the top bar.
+
+Please note that thi
+xauusd-hit-month [('what-price-will-xauusd-hit-in-november-2026', '2026-12-01T04:59:59.999Z', 25, 10)]
+[('Will Gold (XAUUSD) hit (HIGH) $4,600 in November?', False, '["0.0155", "0.9845"]'), ('Will Gold (XAUUSD) hit (HIGH) $4,500 in November?', False, '["0.0135", "0.9865"]'), ('Will Gold (XAUUSD) hit (HIGH) $4,400 in November?', False, '["0.026", "0.974"]'), ('Will Gold (XAUUSD) hit (HIGH) $4,300 in November?', False, '["0.04", "0.96"]')]
+This market will resolve to "Yes" if, at any point after market creation and during a trading session of November 2026, any 1-minute candle for Gold (XAUUSD) has a final "High" or "Low" price equal to or beyond (above for ↑ High Prices, below for ↓ Low Prices) the listed price. Otherwise, this market will resolve to "No".
+
+Only prices achieved during an applicable trading session of the specified timeframe's business days will be considered. The trading session for a given business day typically begins at 6:00 PM ET on the prior calendar date. Under the standard schedule, trading is open from 6:00:00 PM ET Sunday through 5:00:00 PM ET Friday, with a daily break from 5:00:00 PM ET to 6:00:00 PM ET, except where modified by holiday or special-session hours.
+
+Prices will be used exactly as published by Pyth, without rounding.
+
+If Gold (XAUUSD) does not trade at all during the listed time frame, this market will resolve to "No".
+
+In the event of a contract specification change, feed change, or similar structural modification affecting the market during the listed time frame, this market will resolve based on adjusted prices as displayed on Pyth.
+
+The resolution source for this market is Pyth — specifically, the Gold (XAUUSD) "High" and "Low" prices available at https://pythdata.app/explore/Metal.XAU%2FUSD, with the chart settings configured for 1-minute candles.
+
+Historical 1-minute candles may be accessed by appending a Unix timestamp (seconds) to the Pyth chart URL using the "t
+gold-hit-price-weekly [('will-xauusd-hit-week-of-november-9-2026', '2026-11-13T22:00:00Z', 25, 8)]
+[('Will Gold (XAUUSD) hit (HIGH) $4,400 Week of November 9 2026?', False, '["0.039", "0.961"]'), ('Will Gold (XAUUSD) hit (HIGH) $4,350 Week of November 9 2026?', False, '["0.23", "0.77"]'), ('Will Gold (XAUUSD) hit (HIGH) $4,300 Week of November 9 2026?', False, '["0.09", "0.91"]'), ('Will Gold (XAUUSD) hit (HIGH) $4,250 Week of November 9 2026?', False, '["0.21", "0.79"]')]
+This market will resolve to "Yes" if, at any point after market creation and during a trading session of the week of November 9 2026, any 1-minute candle for Gold (XAUUSD) has a final "High" or "Low" price equal to or beyond (above for ↑ High Prices, below for ↓ Low Prices) the listed price. Otherwise, this market will resolve to "No".
+
+Only prices achieved during an applicable trading session of the specified timeframe's business days will be considered. The trading session for a given business day typically begins at 6:00 PM ET on the prior calendar date. Under the standard schedule, trading is open from 6:00:00 PM ET Sunday through 5:00:00 PM ET Friday, with a daily break from 5:00:00 PM ET to 6:00:00 PM ET, except where modified by holiday or special-session hours.
+
+Prices will be used exactly as published by Pyth, without rounding.
+
+If Gold (XAUUSD) does not trade at all during the listed time frame, this market will resolve to "No".
+
+In the event of a contract specification change, feed change, or similar structural modification affecting the market during the listed time frame, this market will resolve based on adjusted prices as displayed on Pyth.
+
+The resolution source for this market is Pyth — specifically, the Gold (XAUUSD) "High" and "Low" prices available at https://pythdata.app/explore/Metal.XAU%2FUSD, with the chart settings configured for 1-minute candles.
+
+Historical 1-minute candles may be accessed by appending a Unix timestamp (seconds) to the Pyth chart UR
+xagusd-hit-month [('what-price-will-xagusd-hit-in-november-2026', '2026-12-01T04:59:59.999Z', 29, 14)]
+[('Will Silver (XAGUSD) hit (HIGH) $66 in November?', False, '["0.01", "0.99"]'), ('Will Silver (XAGUSD) hit (HIGH) $64 in November?', False, '["0.0085", "0.9915"]'), ('Will Silver (XAGUSD) hit (HIGH) $62 in November?', False, '["0.0155", "0.9845"]'), ('Will Silver (XAGUSD) hit (HIGH) $60 in November?', False, '["0.0305", "0.9695"]')]
+This market will resolve to "Yes" if, at any point after market creation and during a trading session of November 2026, any 1-minute candle for Silver (XAGUSD) has a final "High" or "Low" price equal to or beyond (above for ↑ High Prices, below for ↓ Low Prices) the listed price. Otherwise, this market will resolve to "No".
+
+Only prices achieved during an applicable trading session of the specified timeframe's business days will be considered. The trading session for a given business day typically begins at 6:00 PM ET on the prior calendar date. Under the standard schedule, trading is open from 6:00:00 PM ET Sunday through 5:00:00 PM ET Friday, with a daily break from 5:00:00 PM ET to 6:00:00 PM ET, except where modified by holiday or special-session hours.
+
+Prices will be used exactly as published by Pyth, without rounding.
+
+If Silver (XAGUSD) does not trade at all during the listed time frame, this market will resolve to "No".
+
+In the event of a contract specification change, feed change, or similar structural modification affecting the market during the listed time frame, this market will resolve based on adjusted prices as displayed on Pyth.
+
+The resolution source for this market is Pyth — specifically, the Silver (XAGUSD) "High" and "Low" prices available at https://pythdata.app/explore/Metal.XAG%2FUSD, with the chart settings configured for 1-minute candles.
+
+Historical 1-minute candles may be accessed by appending a Unix timestamp (seconds) to the Pyth chart URL using 
+silver-hit-price-weekly [('will-xagusd-hit-week-of-november-9-2026', '2026-11-13T22:00:00Z', 25, 11)]
+[('Will Silver (XAGUSD) hit (HIGH) $58 Week of November 9 2026?', False, '["0.005", "0.995"]'), ('Will Silver (XAGUSD) hit (HIGH) $57 Week of November 9 2026?', False, '["0.205", "0.795"]'), ('Will Silver (XAGUSD) hit (HIGH) $56 Week of November 9 2026?', False, '["0.215", "0.785"]'), ('Will Silver (XAGUSD) hit (HIGH) $55 Week of November 9 2026?', False, '["0.235", "0.765"]')]
+This market will resolve to "Yes" if, at any point after market creation and during a trading session of the week of November 9 2026, any 1-minute candle for Silver (XAGUSD) has a final "High" or "Low" price equal to or beyond (above for ↑ High Prices, below for ↓ Low Prices) the listed price. Otherwise, this market will resolve to "No".
+
+Only prices achieved during an applicable trading session of the specified timeframe's business days will be considered. The trading session for a given business day typically begins at 6:00 PM ET on the prior calendar date. Under the standard schedule, trading is open from 6:00:00 PM ET Sunday through 5:00:00 PM ET Friday, with a daily break from 5:00:00 PM ET to 6:00:00 PM ET, except where modified by holiday or special-session hours.
+
+Prices will be used exactly as published by Pyth, without rounding.
+
+If Silver (XAGUSD) does not trade at all during the listed time frame, this market will resolve to "No".
+
+In the event of a contract specification change, feed change, or similar structural modification affecting the market during the listed time frame, this market will resolve based on adjusted prices as displayed on Pyth.
+
+The resolution source for this market is Pyth — specifically, the Silver (XAGUSD) "High" and "Low" prices available at https://pythdata.app/explore/Metal.XAG%2FUSD, with the chart settings configured for 1-minute candles.
+
+Historical 1-minute candles may be accessed by appending a Unix timestamp (seconds) to the Pyth ch
