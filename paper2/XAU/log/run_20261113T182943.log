@@ -1,0 +1,16 @@
+[11-13 18:29:43] start run 20261113T182943 asset=XAU minutes=330.0 strats={'hs1': 0.01, 'hs2': 0.02, 'hs4': 0.04, 'hs2b': 0.02, 'hs1q': 0.01, 'hs2q': 0.02, 'hs2bq': 0.02, 'hs03q': 0.003, 'hs03bq': 0.003}
+[11-13 18:29:43] discover: 32 markets in 2 events; 18 closed
+[11-13 18:29:44] http fail https://hermes.pyth.network/v2/updates/price/latest?ids[]=765d2ba906dbc32ca17cc11f5310a89e <HTTPError 401: 'Unauthorized'>
+[11-13 18:29:45] tick not ok: spot False perp True surf 0 mkts 32
+[11-13 18:30:04] http fail https://hermes.pyth.network/v2/updates/price/latest?ids[]=765d2ba906dbc32ca17cc11f5310a89e <HTTPError 401: 'Unauthorized'>
+[11-13 18:30:24] http fail https://hermes.pyth.network/v2/updates/price/latest?ids[]=765d2ba906dbc32ca17cc11f5310a89e <HTTPError 401: 'Unauthorized'>
+[11-13 18:30:44] http fail https://hermes.pyth.network/v2/updates/price/latest?ids[]=765d2ba906dbc32ca17cc11f5310a89e <HTTPError 401: 'Unauthorized'>
+[11-13 18:31:04] http fail https://hermes.pyth.network/v2/updates/price/latest?ids[]=765d2ba906dbc32ca17cc11f5310a89e <HTTPError 401: 'Unauthorized'>
+[11-13 18:31:24] http fail https://hermes.pyth.network/v2/updates/price/latest?ids[]=765d2ba906dbc32ca17cc11f5310a89e <HTTPError 401: 'Unauthorized'>
+[11-13 18:31:44] http fail https://hermes.pyth.network/v2/updates/price/latest?ids[]=765d2ba906dbc32ca17cc11f5310a89e <HTTPError 401: 'Unauthorized'>
+[11-13 18:32:04] http fail https://hermes.pyth.network/v2/updates/price/latest?ids[]=765d2ba906dbc32ca17cc11f5310a89e <HTTPError 401: 'Unauthorized'>
+[11-13 18:32:24] http fail https://hermes.pyth.network/v2/updates/price/latest?ids[]=765d2ba906dbc32ca17cc11f5310a89e <HTTPError 401: 'Unauthorized'>
+[11-13 18:32:44] http fail https://hermes.pyth.network/v2/updates/price/latest?ids[]=765d2ba906dbc32ca17cc11f5310a89e <HTTPError 401: 'Unauthorized'>
+[11-13 18:33:04] http fail https://hermes.pyth.network/v2/updates/price/latest?ids[]=765d2ba906dbc32ca17cc11f5310a89e <HTTPError 401: 'Unauthorized'>
+[11-13 18:33:24] http fail https://hermes.pyth.network/v2/updates/price/latest?ids[]=765d2ba906dbc32ca17cc11f5310a89e <HTTPError 401: 'Unauthorized'>
+[11-13 18:33:44] http fail https://hermes.pyth.network/v2/updates/price/latest?ids[]=765d2ba906dbc32ca17cc11f5310a89e <HTTPError 401: 'Unauthorized'>
