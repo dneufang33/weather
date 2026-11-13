@@ -1,78 +1,14 @@
-XAU [{"id": "765d2ba906dbc32ca17cc11f5310a89e9ee1f6420508c63861f2f8ba4ee34bb2", "market_hours": {"is_open": true, "next_open": 1794783600, "next_close": 1794607200}, "attributes": {"asset_type": "Metal", "description": "GOLD / US DOLLAR", "display_symbol": "XAUUSD", "quote_currency": "USD", "schedule": "America/New_York;0000-1700&1800-2400,0000-1700&1800-2400,0000-1700&1800-2400,0000-1700&1800-2400,0000-1700,C,1800-2400;0907/0000-1430&1800-2400,1126/0000-1430&1800-2400,1127/0000-1445,1224/0000-1345,1225/C,1231/0000-1700,0101/C,0118/0000-1430&1800-2400,0215/0000-1430&1800-2400,0325/0000-1700,0326/C,0531/0000-1430&1800-2400,0618/0000-1300,0705/0000-1430&1800-2400", "symbol": "Metal.XAU/USD", "min_channel": "fixed_rate@200ms"}}]
-match []
-XAG [{"id": "f2fb02c32b055c805e7238d628e5e9dadef274376114eb1f012337cabe93871e", "market_hours": {"is_open": true, "next_open": 1794783600, "next_close": 1794607200}, "attributes": {"asset_type": "Metal", "description": "SILVER / US DOLLAR", "display_symbol": "XAGUSD", "quote_currency": "USD", "schedule": "America/New_York;0000-1700&1800-2400,0000-1700&1800-2400,0000-1700&1800-2400,0000-1700&1800-2400,0000-1700,C,1800-2400;0907/0000-1430&1800-2400,1126/0000-1430&1800-2400,1127/0000-1445,1224/0000-1345,1225/C,1231/0000-1700,0101/C,0118/0000-1430&1800-2400,0215/0000-1430&1800-2400,0325/0000-1700,0326/C,0531/0000-1430&1800-2400,0618/0000-1300,0705/0000-1430&1800-2400", "symbol": "Metal.XAG/USD", "min_channel": "fixed_rate@200ms"}}]
-match []
-ERR https://benchmarks.pyth.network/v1/shims/tradingview/history?symbol=Metal.XAU/USD&resolution=60&from=179200236 <HTTPError 404: 'Not Found'>
-ERR https://benchmarks.pyth.network/v1/shims/tradingview/history?symbol=Metal.XAU/USD&resolution=1&from=1794590760 <HTTPError 404: 'Not Found'>
-ERR https://benchmarks.pyth.network/v1/shims/tradingview/history?symbol=Metal.XAG/USD&resolution=60&from=179200236 <HTTPError 404: 'Not Found'>
-ERR https://benchmarks.pyth.network/v1/shims/tradingview/history?symbol=Metal.XAG/USD&resolution=1&from=1794590760 <HTTPError 404: 'Not Found'>
-eth opts 790 ETH-20NOV26-2050-C
-{"jsonrpc": "2.0", "result": {"timestamp": 1794594361079, "state": "open", "stats": {"high": 2025.85, "low": 1893.9, "price_change": -3.9469, "volume": 153052.032835, "volume_delayed": 0.0, "volume_re
-{'symbol': 'ETHUSDT', 'price': '1941.56000000'} {'symbol': 'PAXGUSDT', 'price': '3880.01000000'}
-usdc opts Counter({'SOL_USDC': 640, 'BTC_USDC': 624, 'ETH_USDC': 522, 'HYPE_USDC': 416, 'XRP_USDC': 394, 'AVAX_USDC': 330, 'TRX_USDC': 280})
-[('ethereum-above-on-november-14-2026', '2026-11-14T17:00:00Z'), ('ethereum-above-on-november-15-2026', '2026-11-15T17:00:00Z'), ('ethereum-above-on-november-16-2026', '2026-11-16T17:00:00Z'), ('ethereum-above-on-november-17-2026', '2026-11-17T17:00:00Z'), ('ethereum-above-on-november-18-2026', '2026-11-18T17:00:00Z'), ('ethereum-above-on-november-19-2026', '2026-11-19T17:00:00Z'), ('ethereum-above-on-november-20-2026', '2026-11-20T17:00:00Z')]
-This market will resolve to "Yes" if the Binance 1 minute candle for ETH/USDT closing at 12:00 in the ET timezone (noon) on the date specified in the title has a final "Close" price higher than the price specified in the title. Otherwise, this market will resolve to "No".
-
-The resolution source for this market is Binance, specifically the ETH/USDT "Close" prices currently available at https://www.binance.com/en/trade/ETH_USDT with "1m" and "Candles" selected on the top bar.
-
-Please note that thi
-xauusd-hit-month [('what-price-will-xauusd-hit-in-november-2026', '2026-12-01T04:59:59.999Z', 25, 10)]
-[('Will Gold (XAUUSD) hit (HIGH) $4,600 in November?', False, '["0.0155", "0.9845"]'), ('Will Gold (XAUUSD) hit (HIGH) $4,500 in November?', False, '["0.0135", "0.9865"]'), ('Will Gold (XAUUSD) hit (HIGH) $4,400 in November?', False, '["0.026", "0.974"]'), ('Will Gold (XAUUSD) hit (HIGH) $4,300 in November?', False, '["0.04", "0.96"]')]
-This market will resolve to "Yes" if, at any point after market creation and during a trading session of November 2026, any 1-minute candle for Gold (XAUUSD) has a final "High" or "Low" price equal to or beyond (above for ↑ High Prices, below for ↓ Low Prices) the listed price. Otherwise, this market will resolve to "No".
-
-Only prices achieved during an applicable trading session of the specified timeframe's business days will be considered. The trading session for a given business day typically begins at 6:00 PM ET on the prior calendar date. Under the standard schedule, trading is open from 6:00:00 PM ET Sunday through 5:00:00 PM ET Friday, with a daily break from 5:00:00 PM ET to 6:00:00 PM ET, except where modified by holiday or special-session hours.
-
-Prices will be used exactly as published by Pyth, without rounding.
-
-If Gold (XAUUSD) does not trade at all during the listed time frame, this market will resolve to "No".
-
-In the event of a contract specification change, feed change, or similar structural modification affecting the market during the listed time frame, this market will resolve based on adjusted prices as displayed on Pyth.
-
-The resolution source for this market is Pyth — specifically, the Gold (XAUUSD) "High" and "Low" prices available at https://pythdata.app/explore/Metal.XAU%2FUSD, with the chart settings configured for 1-minute candles.
-
-Historical 1-minute candles may be accessed by appending a Unix timestamp (seconds) to the Pyth chart URL using the "t
-gold-hit-price-weekly [('will-xauusd-hit-week-of-november-9-2026', '2026-11-13T22:00:00Z', 25, 8)]
-[('Will Gold (XAUUSD) hit (HIGH) $4,400 Week of November 9 2026?', False, '["0.039", "0.961"]'), ('Will Gold (XAUUSD) hit (HIGH) $4,350 Week of November 9 2026?', False, '["0.23", "0.77"]'), ('Will Gold (XAUUSD) hit (HIGH) $4,300 Week of November 9 2026?', False, '["0.09", "0.91"]'), ('Will Gold (XAUUSD) hit (HIGH) $4,250 Week of November 9 2026?', False, '["0.21", "0.79"]')]
-This market will resolve to "Yes" if, at any point after market creation and during a trading session of the week of November 9 2026, any 1-minute candle for Gold (XAUUSD) has a final "High" or "Low" price equal to or beyond (above for ↑ High Prices, below for ↓ Low Prices) the listed price. Otherwise, this market will resolve to "No".
-
-Only prices achieved during an applicable trading session of the specified timeframe's business days will be considered. The trading session for a given business day typically begins at 6:00 PM ET on the prior calendar date. Under the standard schedule, trading is open from 6:00:00 PM ET Sunday through 5:00:00 PM ET Friday, with a daily break from 5:00:00 PM ET to 6:00:00 PM ET, except where modified by holiday or special-session hours.
-
-Prices will be used exactly as published by Pyth, without rounding.
-
-If Gold (XAUUSD) does not trade at all during the listed time frame, this market will resolve to "No".
-
-In the event of a contract specification change, feed change, or similar structural modification affecting the market during the listed time frame, this market will resolve based on adjusted prices as displayed on Pyth.
-
-The resolution source for this market is Pyth — specifically, the Gold (XAUUSD) "High" and "Low" prices available at https://pythdata.app/explore/Metal.XAU%2FUSD, with the chart settings configured for 1-minute candles.
-
-Historical 1-minute candles may be accessed by appending a Unix timestamp (seconds) to the Pyth chart UR
-xagusd-hit-month [('what-price-will-xagusd-hit-in-november-2026', '2026-12-01T04:59:59.999Z', 29, 14)]
-[('Will Silver (XAGUSD) hit (HIGH) $66 in November?', False, '["0.01", "0.99"]'), ('Will Silver (XAGUSD) hit (HIGH) $64 in November?', False, '["0.0085", "0.9915"]'), ('Will Silver (XAGUSD) hit (HIGH) $62 in November?', False, '["0.0155", "0.9845"]'), ('Will Silver (XAGUSD) hit (HIGH) $60 in November?', False, '["0.0305", "0.9695"]')]
-This market will resolve to "Yes" if, at any point after market creation and during a trading session of November 2026, any 1-minute candle for Silver (XAGUSD) has a final "High" or "Low" price equal to or beyond (above for ↑ High Prices, below for ↓ Low Prices) the listed price. Otherwise, this market will resolve to "No".
-
-Only prices achieved during an applicable trading session of the specified timeframe's business days will be considered. The trading session for a given business day typically begins at 6:00 PM ET on the prior calendar date. Under the standard schedule, trading is open from 6:00:00 PM ET Sunday through 5:00:00 PM ET Friday, with a daily break from 5:00:00 PM ET to 6:00:00 PM ET, except where modified by holiday or special-session hours.
-
-Prices will be used exactly as published by Pyth, without rounding.
-
-If Silver (XAGUSD) does not trade at all during the listed time frame, this market will resolve to "No".
-
-In the event of a contract specification change, feed change, or similar structural modification affecting the market during the listed time frame, this market will resolve based on adjusted prices as displayed on Pyth.
-
-The resolution source for this market is Pyth — specifically, the Silver (XAGUSD) "High" and "Low" prices available at https://pythdata.app/explore/Metal.XAG%2FUSD, with the chart settings configured for 1-minute candles.
-
-Historical 1-minute candles may be accessed by appending a Unix timestamp (seconds) to the Pyth chart URL using 
-silver-hit-price-weekly [('will-xagusd-hit-week-of-november-9-2026', '2026-11-13T22:00:00Z', 25, 11)]
-[('Will Silver (XAGUSD) hit (HIGH) $58 Week of November 9 2026?', False, '["0.005", "0.995"]'), ('Will Silver (XAGUSD) hit (HIGH) $57 Week of November 9 2026?', False, '["0.205", "0.795"]'), ('Will Silver (XAGUSD) hit (HIGH) $56 Week of November 9 2026?', False, '["0.215", "0.785"]'), ('Will Silver (XAGUSD) hit (HIGH) $55 Week of November 9 2026?', False, '["0.235", "0.765"]')]
-This market will resolve to "Yes" if, at any point after market creation and during a trading session of the week of November 9 2026, any 1-minute candle for Silver (XAGUSD) has a final "High" or "Low" price equal to or beyond (above for ↑ High Prices, below for ↓ Low Prices) the listed price. Otherwise, this market will resolve to "No".
-
-Only prices achieved during an applicable trading session of the specified timeframe's business days will be considered. The trading session for a given business day typically begins at 6:00 PM ET on the prior calendar date. Under the standard schedule, trading is open from 6:00:00 PM ET Sunday through 5:00:00 PM ET Friday, with a daily break from 5:00:00 PM ET to 6:00:00 PM ET, except where modified by holiday or special-session hours.
-
-Prices will be used exactly as published by Pyth, without rounding.
-
-If Silver (XAGUSD) does not trade at all during the listed time frame, this market will resolve to "No".
-
-In the event of a contract specification change, feed change, or similar structural modification affecting the market during the listed time frame, this market will resolve based on adjusted prices as displayed on Pyth.
-
-The resolution source for this market is Pyth — specifically, the Silver (XAGUSD) "High" and "Low" prices available at https://pythdata.app/explore/Metal.XAG%2FUSD, with the chart settings configured for 1-minute candles.
-
-Historical 1-minute candles may be accessed by appending a Unix timestamp (seconds) to the Pyth ch
+ERR https://hermes.pyth.network/api/latest_price_feeds?ids[]=765d2ba906dbc32ca17cc11f5310a89e9ee1f6 | <HTTPError 401: 'Unauthorized'>
+ERR https://hermes.pyth.network/v2/updates/price/latest?ids%5B%5D=0x765d2ba906dbc32ca17cc11f5310a89 | <HTTPError 401: 'Unauthorized'>
+ERR https://hermes-beta.pyth.network/v2/updates/price/latest?ids[]=765d2ba906dbc32ca17cc11f5310a89e | <HTTPError 401: 'Unauthorized'>
+OK  https://forex-data-feed.swissquote.com/public-quotes/bboquotes/instrument/XAU/USD | [{"topo":{"platform":"SwissquoteCapitalMarkets","server":"Live7"},"spreadProfilePrices":[{"spreadProfile":"premium","bidSpread":25.40,"askSpread":25.40,"bid":3882.391,"ask":3883.049},{"spreadProfile":"prime","bidSpread":24.40,"askSpread":24.40,"bid":3882.401,"ask":3883.039},{"spreadProfile":"elite","bidSpread":17.70,"askSpread":17.70,"bid":3882.468,"ask":3882.972}],"ts":1794595088534},{"topo":{"platform":"SwissquoteL
+OK  https://api.gold-api.com/price/XAU | {"currency":"USD","currencySymbol":"$","exchangeRate":1.0,"name":"Gold","price":3885.399902,"symbol":"XAU","updatedAt":"2026-11-13T18:37:55Z","updatedAtReadable":"a few seconds ago"}
+ERR https://stooq.com/q/l/?s=xauusd&f=sd2t2ohlcv&h&e=csv | URLError(TimeoutError('timed out'))
+ERR https://query1.finance.yahoo.com/v8/finance/chart/XAUUSD=X?interval=1m&range=1h | <HTTPError 404: 'Not Found'>
+OK  https://forex-data-feed.swissquote.com/public-quotes/bboquotes/instrument/XAG/USD | [{"topo":{"platform":"SwissquoteCapitalMarkets","server":"Live7"},"spreadProfilePrices":[{"spreadProfile":"premium","bidSpread":17.50,"askSpread":17.50,"bid":49.0885,"ask":49.1295},{"spreadProfile":"prime","bidSpread":17.30,"askSpread":17.30,"bid":49.0887,"ask":49.1293},{"spreadProfile":"elite","bidSpread":13.95,"askSpread":13.95,"bid":49.0921,"ask":49.1260}],"ts":1794595148967},{"topo":{"platform":"AT","server":"AT"
+OK  https://api.gold-api.com/price/XAG | {"currency":"USD","currencySymbol":"$","exchangeRate":1.0,"name":"Silver","price":49.028,"symbol":"XAG","updatedAt":"2026-11-13T18:38:55Z","updatedAtReadable":"a few seconds ago"}
+ERR https://stooq.com/q/l/?s=xagusd&f=sd2t2ohlcv&h&e=csv | URLError(TimeoutError('timed out'))
+ERR https://query1.finance.yahoo.com/v8/finance/chart/XAGUSD=X?interval=1m&range=1h | <HTTPError 404: 'Not Found'>
+OK  https://query1.finance.yahoo.com/v8/finance/chart/GC=F?interval=1h&range=1mo | {"chart":{"result":[{"meta":{"currency":"USD","symbol":"GC=F","exchangeName":"CMX","fullExchangeName":"COMEX","instrumentType":"FUTURE","firstTradeDate":967608000,"regularMarketTime":1794594608,"hasPrePostMarketData":false,"gmtoffset":-18000,"timezone":"EST","exchangeTimezoneName":"America/New_York","regularMarketPrice":3886.2,"regularMarketChangePercent":0.023,"fulldayPrice":3886.2,"fulldayChange":0.9,"fulldayChange
+OK  https://query1.finance.yahoo.com/v8/finance/chart/SI=F?interval=1h&range=1mo | {"chart":{"result":[{"meta":{"currency":"USD","symbol":"SI=F","exchangeName":"CMX","fullExchangeName":"COMEX","instrumentType":"FUTURE","firstTradeDate":967608000,"regularMarketTime":1794594608,"hasPrePostMarketData":false,"gmtoffset":-18000,"timezone":"EST","exchangeTimezoneName":"America/New_York","regularMarketPrice":49.075,"regularMarketChangePercent":-1.977,"fulldayPrice":49.075,"fulldayChange":-0.99,"fulldayCha
+ERR https://stooq.com/q/d/l/?s=xagusd&i=d | URLError(TimeoutError('timed out'))
