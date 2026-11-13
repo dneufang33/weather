@@ -17,8 +17,45 @@ CFG = {
                 perp="ETH-PERPETUAL", band=0.2),
     "XAU": dict(kind="hit", series=["xauusd-hit-month", "gold-hit-price-weekly"], vol="GC=F", band=0.1, sq="XAU"),
     "XAG": dict(kind="hit", series=["xagusd-hit-month", "silver-hit-price-weekly"], vol="SI=F", band=8.0, sq="XAG"),
+    # WTI: real-time moves from the Hyperliquid xyz:CL perp, level anchored to the (10-min delayed) Yahoo quote of
+    # the active futures month (Dec 2026 until the session of Nov 17, then Jan 2027)
+    "WTI": dict(kind="hit", series=["crude-oil-cl-hit", "wti-crude-oil-hit-price-weekly"], vol="CL=F", band=5.0,
+                hl="xyz:CL"),
 }[ASSET]
 KIND = CFG["kind"]
+ROLL = dt.datetime(2026, 11, 16, 23, 0, tzinfo=dt.timezone.utc).timestamp()
+HL, BAS = [], {"b": None, "try": 0, "ty": 0, "sym": None}
+YUA = "Mozilla/5.0 (X11; Linux x86_64)"
+
+
+def wti_price(now):
+    d = http("https://api.hyperliquid.xyz/info", data={"type": "allMids", "dex": "xyz"})
+    try:
+        x = float(d[CFG["hl"]])
+    except Exception:
+        return None
+    HL.append((now, x))
+    del HL[:-400]
+    if now - BAS["try"] > 60:
+        BAS["try"] = now
+        for sym in (("CLZ26.NYM" if now < ROLL else "CLF27.NYM"), "CL=F"):
+            y = http(f"https://query1.finance.yahoo.com/v8/finance/chart/{sym}?interval=1m&range=1d", ua=YUA, tries=1)
+            try:
+                meta = y["chart"]["result"][0]["meta"]
+                ty, py = float(meta["regularMarketTime"]), float(meta["regularMarketPrice"])
+            except Exception:
+                continue
+            near = min(HL, key=lambda h: abs(h[0] - ty))
+            if abs(near[0] - ty) < 45:
+                nb = py - near[1]
+                BAS["b"] = nb if BAS["b"] is None or BAS["sym"] != sym else 0.8 * BAS["b"] + 0.2 * nb
+            if BAS["sym"] != sym or ty - BAS["ty"] > 1700:
+                log(f"wti anchor {sym}: yahoo {py} at {int(now - ty)}s ago, basis {BAS['b']}, hl {x}")
+            BAS["ty"], BAS["sym"] = ty, sym
+            break
+    if BAS["b"] is None or now - BAS["ty"] > 1800:
+        return None
+    return x + BAS["b"]
 BASE, LOG = f"paper2/{ASSET}", f"paper2/{ASSET}/log"
 os.makedirs(LOG, exist_ok=True)
 STRATS = {"hs1": 0.01, "hs2": 0.02, "hs4": 0.04, "hs2b": 0.02, "hs1q": 0.01, "hs2q": 0.02, "hs2bq": 0.02,
@@ -371,11 +408,17 @@ def main():
                 if ok:
                     S, perp = float(b["price"]), float(p["result"]["mark_price"])
             else:
-                b = http(f"https://forex-data-feed.swissquote.com/public-quotes/bboquotes/instrument/{CFG['sq']}/USD")
                 ok = False
+                if CFG.get("hl"):
+                    b = wti_price(now)
+                    if b and is_open(now):
+                        S = perp = b
+                        ok = True
+                else:
+                    b = http(f"https://forex-data-feed.swissquote.com/public-quotes/bboquotes/instrument/{CFG['sq']}/USD")
                 try:
-                    pp = b[0]["spreadProfilePrices"][0]
-                    if now - float(b[0]["ts"]) / 1000 < 120 and is_open(now):
+                    pp = b[0]["spreadProfilePrices"][0] if not CFG.get("hl") else None
+                    if pp and now - float(b[0]["ts"]) / 1000 < 120 and is_open(now):
                         S = perp = (float(pp["bid"]) + float(pp["ask"])) / 2
                         ok = True
                 except Exception:

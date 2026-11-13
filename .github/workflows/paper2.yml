@@ -1,4 +1,4 @@
-name: Paper trading bot 2 - ETH, gold, silver (simulation only)
+name: Paper trading bot 2 - ETH, gold, silver, oil (simulation only)
 
 on:
   push:
@@ -40,7 +40,7 @@ jobs:
         run: |
           git config user.email "action@github.com"
           git config user.name "GitHub Actions"
-          for A in ETH XAU XAG; do python -u tools/paper_bot2.py $A ${{ steps.p.outputs.min }} > /tmp/$A.out 2>&1 & done
+          for A in ETH XAU XAG WTI; do python -u tools/paper_bot2.py $A ${{ steps.p.outputs.min }} > /tmp/$A.out 2>&1 & done
           commit() { git add paper2 && (git diff --staged --quiet || git commit -qm "paper2: $(date -u +%Y%m%dT%H%M%S)") && git pull -q --rebase --autostash origin claude/data-pull && git push -q origin HEAD:claude/data-pull || echo "commit cycle failed"; }
           sleep 20
           while pgrep -f paper_bot2.py > /dev/null; do sleep 300; commit; done
