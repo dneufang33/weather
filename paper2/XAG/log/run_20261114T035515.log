@@ -65,3 +65,8 @@
 [11-14 07:25:15] discover: 29 markets in 2 events; 14 closed
 [11-14 07:25:16] tick not ok: spot True perp True surf 0 mkts 29
 [11-14 07:30:15] tick not ok: spot True perp True surf 0 mkts 29
+[11-14 07:35:15] discover: 29 markets in 2 events; 14 closed
+[11-14 07:35:16] tick not ok: spot True perp True surf 0 mkts 29
+[11-14 07:40:15] tick not ok: spot True perp True surf 0 mkts 29
+[11-14 07:45:15] discover: 29 markets in 2 events; 14 closed
+[11-14 07:45:16] tick not ok: spot True perp True surf 0 mkts 29
