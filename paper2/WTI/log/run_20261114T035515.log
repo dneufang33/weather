@@ -26,3 +26,7 @@
 [11-14 05:10:15] tick not ok: spot False perp True surf 0 mkts 21
 [11-14 05:15:15] discover: 21 markets in 1 events; 7 closed
 [11-14 05:15:16] tick not ok: spot False perp True surf 0 mkts 21
+[11-14 05:20:15] tick not ok: spot False perp True surf 0 mkts 21
+[11-14 05:25:15] discover: 21 markets in 1 events; 7 closed
+[11-14 05:25:16] tick not ok: spot False perp True surf 0 mkts 21
+[11-14 05:30:15] tick not ok: spot False perp True surf 0 mkts 21
