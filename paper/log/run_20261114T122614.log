@@ -81,3 +81,13 @@
 [11-14 16:53:35] tick 803 S=65479 mkts=33 quoted=4 fills={'hs1': 920, 'hs2': 579, 'hs4': 297, 'hs2b': 534, 'hs1q': 117, 'hs2q': 86, 'hs2bq': 50, 'hs03q': 130, 'hs03bq': 138} equity={'hs1': -3544.51, 'hs2': -3061.81, 'hs4': -2539.37, 'hs2b': -2256.45, 'hs1q': -1137.23, 'hs2q': -869.53, 'hs2bq': -493.85, 'hs03q': -931.27, 'hs03bq': -799.96} diag={'prints': 1962, 'prints_quoted': 1009, 'shares_quoted': 103598.81511400004}
 [11-14 16:56:14] discover: 33 markets in 3 events
 [11-14 16:58:55] tick 819 S=65455 mkts=33 quoted=4 fills={'hs1': 921, 'hs2': 580, 'hs4': 297, 'hs2b': 535, 'hs1q': 117, 'hs2q': 86, 'hs2bq': 50, 'hs03q': 130, 'hs03bq': 138} equity={'hs1': -3547.6, 'hs2': -3066.39, 'hs4': -2543.97, 'hs2b': -2257.71, 'hs1q': -1137.86, 'hs2q': -870.25, 'hs2bq': -494.72, 'hs03q': -932.3, 'hs03bq': -800.59} diag={'prints': 2007, 'prints_quoted': 1022, 'shares_quoted': 104079.91150000005}
+[11-14 17:02:15] settled 66000.0 close 65189.03 payout 0.0
+[11-14 17:02:15] settled 68000.0 close 65189.03 payout 0.0
+[11-14 17:02:15] settled 70000.0 close 65189.03 payout 0.0
+[11-14 17:02:15] settled 72000.0 close 65189.03 payout 0.0
+[11-14 17:02:15] settled 74000.0 close 65189.03 payout 0.0
+[11-14 17:02:15] settled 76000.0 close 65189.03 payout 0.0
+[11-14 17:03:55] tick 834 S=65197 mkts=22 quoted=4 fills={'hs1': 922, 'hs2': 581, 'hs4': 297, 'hs2b': 536, 'hs1q': 117, 'hs2q': 86, 'hs2bq': 50, 'hs03q': 130, 'hs03bq': 138} equity={'hs1': -3548.36, 'hs2': -3066.35, 'hs4': -2543.66, 'hs2b': -2257.82, 'hs1q': -1136.42, 'hs2q': -869.9, 'hs2bq': -494.65, 'hs03q': -930.55, 'hs03bq': -798.68} diag={'prints': 2017, 'prints_quoted': 1028, 'shares_quoted': 104173.36237900004}
+[11-14 17:06:14] discover: 33 markets in 3 events
+[11-14 17:09:15] tick 850 S=65119 mkts=33 quoted=9 fills={'hs1': 923, 'hs2': 582, 'hs4': 298, 'hs2b': 537, 'hs1q': 118, 'hs2q': 87, 'hs2bq': 50, 'hs03q': 131, 'hs03bq': 139} equity={'hs1': -3551.61, 'hs2': -3069.79, 'hs4': -2545.56, 'hs2b': -2259.25, 'hs1q': -1136.88, 'hs2q': -870.12, 'hs2bq': -494.87, 'hs03q': -931.02, 'hs03bq': -799.02} diag={'prints': 2239, 'prints_quoted': 1040, 'shares_quoted': 105662.77018500006}
+[11-14 17:14:15] tick 865 S=65193 mkts=33 quoted=9 fills={'hs1': 927, 'hs2': 582, 'hs4': 298, 'hs2b': 537, 'hs1q': 120, 'hs2q': 87, 'hs2bq': 50, 'hs03q': 133, 'hs03bq': 141} equity={'hs1': -3551.16, 'hs2': -3069.37, 'hs4': -2544.7, 'hs2b': -2259.46, 'hs1q': -1136.23, 'hs2q': -869.95, 'hs2bq': -494.58, 'hs03q': -929.85, 'hs03bq': -798.16} diag={'prints': 2268, 'prints_quoted': 1047, 'shares_quoted': 105870.74264900007}
