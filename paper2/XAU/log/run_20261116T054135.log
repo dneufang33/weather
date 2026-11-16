@@ -32,3 +32,8 @@
 [11-16 07:11:35] discover: 27 markets in 2 events; 12 closed
 [11-16 07:11:56] vol update: 22.4% annualised from 462 hourly returns
 [11-16 07:14:36] tick 280 S=3855 mkts=27 quoted=13 fills={'hs1': 42, 'hs2': 38, 'hs4': 32, 'hs2b': 37, 'hs1q': 10, 'hs2q': 9, 'hs2bq': 3, 'hs03q': 10, 'hs03bq': 8} equity={'hs1': -2.61, 'hs2': 6.53, 'hs4': 25.75, 'hs2b': 12.93, 'hs1q': 3.05, 'hs2q': 2.07, 'hs2bq': 2.81, 'hs03q': 2.94, 'hs03bq': 1.65} diag={'prints': 32, 'prints_quoted': 23, 'shares_quoted': 1214.9416769999998}
+[11-16 07:19:56] tick 296 S=3854 mkts=27 quoted=13 fills={'hs1': 42, 'hs2': 38, 'hs4': 32, 'hs2b': 37, 'hs1q': 10, 'hs2q': 9, 'hs2bq': 3, 'hs03q': 10, 'hs03bq': 8} equity={'hs1': -2.58, 'hs2': 6.56, 'hs4': 25.79, 'hs2b': 12.95, 'hs1q': 3.01, 'hs2q': 2.09, 'hs2bq': 2.78, 'hs03q': 2.9, 'hs03bq': 1.69} diag={'prints': 32, 'prints_quoted': 23, 'shares_quoted': 1214.9416769999998}
+[11-16 07:21:36] discover: 27 markets in 2 events; 12 closed
+[11-16 07:25:16] tick 312 S=3852 mkts=27 quoted=13 fills={'hs1': 42, 'hs2': 38, 'hs4': 32, 'hs2b': 37, 'hs1q': 10, 'hs2q': 9, 'hs2bq': 3, 'hs03q': 10, 'hs03bq': 8} equity={'hs1': -2.4, 'hs2': 6.73, 'hs4': 25.95, 'hs2b': 13.12, 'hs1q': 2.98, 'hs2q': 2.15, 'hs2bq': 2.75, 'hs03q': 2.87, 'hs03bq': 1.77} diag={'prints': 32, 'prints_quoted': 23, 'shares_quoted': 1214.9416769999998}
+[11-16 07:30:36] tick 328 S=3858 mkts=27 quoted=13 fills={'hs1': 42, 'hs2': 38, 'hs4': 32, 'hs2b': 37, 'hs1q': 10, 'hs2q': 9, 'hs2bq': 3, 'hs03q': 10, 'hs03bq': 8} equity={'hs1': -2.73, 'hs2': 6.42, 'hs4': 25.58, 'hs2b': 12.82, 'hs1q': 3.17, 'hs2q': 2.06, 'hs2bq': 2.92, 'hs03q': 3.06, 'hs03bq': 1.58} diag={'prints': 32, 'prints_quoted': 23, 'shares_quoted': 1214.9416769999998}
+[11-16 07:31:35] discover: 27 markets in 2 events; 12 closed
