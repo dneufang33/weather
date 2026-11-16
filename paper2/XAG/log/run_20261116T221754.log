@@ -1,3 +1,7 @@
 [11-16 22:17:54] start run 20261116T221754 asset=XAG minutes=330.0 strats={'hs1': 0.01, 'hs2': 0.02, 'hs4': 0.04, 'hs2b': 0.02, 'hs1q': 0.01, 'hs2q': 0.02, 'hs2bq': 0.02, 'hs03q': 0.003, 'hs03bq': 0.003}
 [11-16 22:17:55] discover: 27 markets in 2 events; 19 closed
 [11-16 22:17:56] tick not ok: spot True perp True surf 0 mkts 27
+[11-16 22:22:55] tick not ok: spot True perp True surf 0 mkts 27
+[11-16 22:27:55] discover: 27 markets in 2 events; 19 closed
+[11-16 22:27:56] tick not ok: spot True perp True surf 0 mkts 27
+[11-16 22:32:55] tick not ok: spot True perp True surf 0 mkts 27
