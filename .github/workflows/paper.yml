@@ -49,6 +49,10 @@ jobs:
         run: |
           MODE="${{ steps.p.outputs.mode }}"
           git pull -q --rebase origin claude/data-pull || true
+          # watchdog: restart the other bot's chain if it died (e.g. runner failure)
+          alive() { gh run list --workflow "$1" --limit 5 --json status -q '[.[] | select(.status != "completed")] | length'; }
+          if [ ! -f paper/STOP ] && [ ! -f paper/DONE ] && [ "$(alive paper.yml)" = "0" ]; then gh workflow run paper.yml --ref claude/data-pull -f minutes=330 -f mode=chain || true; fi
+          if [ ! -f paper2/STOP ] && [ ! -f paper2/ETH/DONE ] && [ "$(alive paper2.yml)" = "0" ]; then gh workflow run paper2.yml --ref claude/data-pull -f minutes=330 -f mode=chain || true; fi
           if [ -f paper/STOP ] || [ -f paper/DONE ]; then echo "stop/done marker present"; exit 0; fi
           if [ "$MODE" = "chain" ]; then
             gh workflow run paper.yml --ref claude/data-pull -f minutes=330 -f mode=chain
