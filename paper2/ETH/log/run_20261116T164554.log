@@ -1,3 +1,12 @@
 [11-16 16:45:54] start run 20261116T164554 asset=ETH minutes=330.0 strats={'hs1': 0.01, 'hs2': 0.02, 'hs4': 0.04, 'hs2b': 0.02, 'hs1q': 0.01, 'hs2q': 0.02, 'hs2bq': 0.02, 'hs03q': 0.003, 'hs03bq': 0.003}
 [11-16 16:45:54] discover: 33 markets in 3 events; 0 closed
 [11-16 16:45:56] tick 1 S=1823 mkts=33 quoted=5 fills={'hs1': 699, 'hs2': 465, 'hs4': 168, 'hs2b': 365, 'hs1q': 71, 'hs2q': 55, 'hs2bq': 25, 'hs03q': 85, 'hs03bq': 92} equity={'hs1': -835.0, 'hs2': -508.7, 'hs4': -300.63, 'hs2b': -149.43, 'hs1q': -176.21, 'hs2q': -269.82, 'hs2bq': -21.66, 'hs03q': -180.4, 'hs03bq': -144.46} diag={'prints': 0, 'prints_quoted': 0, 'shares_quoted': 0.0}
+[11-16 16:51:15] tick 17 S=1824 mkts=33 quoted=5 fills={'hs1': 699, 'hs2': 465, 'hs4': 168, 'hs2b': 365, 'hs1q': 71, 'hs2q': 55, 'hs2bq': 25, 'hs03q': 85, 'hs03bq': 92} equity={'hs1': -834.91, 'hs2': -508.87, 'hs4': -302.02, 'hs2b': -149.66, 'hs1q': -175.99, 'hs2q': -269.58, 'hs2bq': -21.76, 'hs03q': -180.17, 'hs03bq': -144.32} diag={'prints': 4, 'prints_quoted': 0, 'shares_quoted': 0.0}
+[11-16 16:55:54] discover: 33 markets in 3 events; 0 closed
+[11-16 16:56:35] tick 33 S=1827 mkts=33 quoted=5 fills={'hs1': 699, 'hs2': 465, 'hs4': 168, 'hs2b': 365, 'hs1q': 71, 'hs2q': 55, 'hs2bq': 25, 'hs03q': 85, 'hs03bq': 92} equity={'hs1': -835.49, 'hs2': -509.48, 'hs4': -302.06, 'hs2b': -149.91, 'hs1q': -176.84, 'hs2q': -270.2, 'hs2bq': -21.85, 'hs03q': -180.8, 'hs03bq': -145.0} diag={'prints': 7, 'prints_quoted': 0, 'shares_quoted': 0.0}
+[11-16 17:01:55] tick 49 S=1829 mkts=22 quoted=5 fills={'hs1': 704, 'hs2': 470, 'hs4': 173, 'hs2b': 369, 'hs1q': 71, 'hs2q': 55, 'hs2bq': 25, 'hs03q': 85, 'hs03bq': 92} equity={'hs1': -821.65, 'hs2': -490.03, 'hs4': -281.36, 'hs2b': -141.0, 'hs1q': -176.77, 'hs2q': -270.47, 'hs2bq': -21.98, 'hs03q': -181.07, 'hs03bq': -145.88} diag={'prints': 23, 'prints_quoted': 13, 'shares_quoted': 1154.093214}
+[11-16 17:02:15] settled 1600.0 close 1829.22 payout 1.0
+[11-16 17:02:15] settled 1700.0 close 1829.22 payout 1.0
+[11-16 17:02:15] settled 1800.0 close 1829.22 payout 1.0
+[11-16 17:02:15] settled 1900.0 close 1829.22 payout 0.0
+[11-16 17:02:15] settled 2000.0 close 1829.22 payout 0.0
