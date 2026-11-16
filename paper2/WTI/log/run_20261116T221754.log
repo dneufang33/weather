@@ -11,3 +11,8 @@
 [11-16 22:42:55] tick not ok: spot False perp True surf 0 mkts 21
 [11-16 22:47:55] discover: 21 markets in 1 events; 7 closed
 [11-16 22:47:55] tick not ok: spot False perp True surf 0 mkts 21
+[11-16 22:52:55] tick not ok: spot False perp True surf 0 mkts 21
+[11-16 22:57:55] discover: 21 markets in 1 events; 7 closed
+[11-16 22:57:55] tick not ok: spot False perp True surf 0 mkts 21
+[11-16 23:00:55] wti anchor CLF27.NYM: yahoo 83.83 at 3656s ago, basis None, hl 84.077
+[11-16 23:02:55] tick not ok: spot False perp True surf 0 mkts 21
