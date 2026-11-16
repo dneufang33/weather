@@ -52,3 +52,8 @@
 [11-16 13:43:24] discover: 21 markets in 1 events; 7 closed
 [11-16 13:44:07] tick 453 S=88 mkts=21 quoted=7 fills={'hs1': 35, 'hs2': 31, 'hs4': 20, 'hs2b': 22, 'hs1q': 19, 'hs2q': 15, 'hs2bq': 7, 'hs03q': 23, 'hs03bq': 24} equity={'hs1': 78.36, 'hs2': 75.56, 'hs4': 49.66, 'hs2b': 65.37, 'hs1q': 45.57, 'hs2q': 36.5, 'hs2bq': 28.13, 'hs03q': 45.46, 'hs03bq': 39.64} diag={'prints': 68, 'prints_quoted': 48, 'shares_quoted': 3028.565715}
 [11-16 13:49:25] tick 469 S=88 mkts=21 quoted=7 fills={'hs1': 35, 'hs2': 31, 'hs4': 20, 'hs2b': 22, 'hs1q': 19, 'hs2q': 15, 'hs2bq': 7, 'hs03q': 23, 'hs03bq': 24} equity={'hs1': 78.37, 'hs2': 75.56, 'hs4': 49.66, 'hs2b': 65.37, 'hs1q': 45.57, 'hs2q': 36.5, 'hs2bq': 28.14, 'hs03q': 45.46, 'hs03bq': 39.64} diag={'prints': 72, 'prints_quoted': 51, 'shares_quoted': 3094.275715}
+[11-16 13:53:24] discover: 21 markets in 1 events; 7 closed
+[11-16 13:54:25] vol update: 46.3% annualised from 466 hourly returns
+[11-16 13:54:25] tick 484 S=88 mkts=21 quoted=7 fills={'hs1': 35, 'hs2': 31, 'hs4': 20, 'hs2b': 22, 'hs1q': 19, 'hs2q': 15, 'hs2bq': 7, 'hs03q': 23, 'hs03bq': 24} equity={'hs1': 78.24, 'hs2': 75.35, 'hs4': 49.52, 'hs2b': 65.32, 'hs1q': 45.67, 'hs2q': 36.54, 'hs2bq': 28.15, 'hs03q': 45.49, 'hs03bq': 39.67} diag={'prints': 75, 'prints_quoted': 54, 'shares_quoted': 3149.273493}
+[11-16 13:59:25] tick 499 S=88 mkts=21 quoted=7 fills={'hs1': 35, 'hs2': 31, 'hs4': 20, 'hs2b': 22, 'hs1q': 19, 'hs2q': 15, 'hs2bq': 7, 'hs03q': 23, 'hs03bq': 24} equity={'hs1': 78.21, 'hs2': 75.35, 'hs4': 49.52, 'hs2b': 65.32, 'hs1q': 45.67, 'hs2q': 36.54, 'hs2bq': 28.09, 'hs03q': 45.49, 'hs03bq': 39.66} diag={'prints': 75, 'prints_quoted': 54, 'shares_quoted': 3149.273493}
+[11-16 14:03:24] discover: 21 markets in 1 events; 7 closed
