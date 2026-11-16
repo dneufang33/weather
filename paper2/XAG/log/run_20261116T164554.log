@@ -109,3 +109,7 @@
 [11-16 21:47:34] vol update: 41.2% annualised from 463 hourly returns
 [11-16 21:48:55] tick 910 S=47 mkts=27 quoted=15 fills={'hs1': 40, 'hs2': 30, 'hs4': 13, 'hs2b': 25, 'hs1q': 16, 'hs2q': 11, 'hs2bq': 7, 'hs03q': 24, 'hs03bq': 22} equity={'hs1': 19.18, 'hs2': 13.8, 'hs4': 3.65, 'hs2b': 20.81, 'hs1q': 3.78, 'hs2q': -1.19, 'hs2bq': 1.76, 'hs03q': 2.77, 'hs03bq': 2.88} diag={'prints': 21, 'prints_quoted': 10, 'shares_quoted': 406.489113}
 [11-16 21:53:55] tick 925 S=47 mkts=27 quoted=14 fills={'hs1': 40, 'hs2': 30, 'hs4': 13, 'hs2b': 25, 'hs1q': 16, 'hs2q': 11, 'hs2bq': 7, 'hs03q': 24, 'hs03bq': 22} equity={'hs1': 19.35, 'hs2': 13.95, 'hs4': 4.02, 'hs2b': 20.87, 'hs1q': 4.07, 'hs2q': -1.14, 'hs2bq': 1.97, 'hs03q': 2.91, 'hs03bq': 2.95} diag={'prints': 21, 'prints_quoted': 10, 'shares_quoted': 406.489113}
+[11-16 21:55:54] discover: 27 markets in 2 events; 19 closed
+[11-16 22:00:54] tick not ok: spot True perp True surf 0 mkts 27
+[11-16 22:05:54] discover: 27 markets in 2 events; 19 closed
+[11-16 22:05:55] tick not ok: spot True perp True surf 0 mkts 27
