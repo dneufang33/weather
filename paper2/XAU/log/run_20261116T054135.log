@@ -42,3 +42,11 @@
 [11-16 07:41:36] discover: 27 markets in 2 events; 12 closed
 [11-16 07:41:56] vol update: 22.4% annualised from 465 hourly returns
 [11-16 07:46:36] tick 376 S=3855 mkts=27 quoted=13 fills={'hs1': 42, 'hs2': 38, 'hs4': 32, 'hs2b': 37, 'hs1q': 10, 'hs2q': 9, 'hs2bq': 3, 'hs03q': 10, 'hs03bq': 8} equity={'hs1': -3.89, 'hs2': 5.36, 'hs4': 24.72, 'hs2b': 11.8, 'hs1q': 2.99, 'hs2q': 2.0, 'hs2bq': 2.78, 'hs03q': 2.88, 'hs03bq': 1.57} diag={'prints': 33, 'prints_quoted': 24, 'shares_quoted': 1289.216677}
+[11-16 07:51:36] settled early 3850.0 payout 1.0 hs1 -120
+[11-16 07:51:36] settled early 3850.0 payout 1.0 hs2 -120
+[11-16 07:51:36] settled early 3850.0 payout 1.0 hs2b -120
+[11-16 07:51:36] discover: 26 markets in 2 events; 13 closed
+[11-16 07:51:36] tick 391 S=3854 mkts=26 quoted=13 fills={'hs1': 42, 'hs2': 38, 'hs4': 32, 'hs2b': 37, 'hs1q': 10, 'hs2q': 9, 'hs2bq': 3, 'hs03q': 10, 'hs03bq': 8} equity={'hs1': -8.58, 'hs2': 0.66, 'hs4': 24.81, 'hs2b': 7.09, 'hs1q': 2.99, 'hs2q': 2.04, 'hs2bq': 2.78, 'hs03q': 2.88, 'hs03bq': 1.63} diag={'prints': 33, 'prints_quoted': 24, 'shares_quoted': 1289.216677}
+[11-16 07:56:56] tick 407 S=3855 mkts=26 quoted=13 fills={'hs1': 42, 'hs2': 38, 'hs4': 32, 'hs2b': 37, 'hs1q': 10, 'hs2q': 9, 'hs2bq': 3, 'hs03q': 10, 'hs03bq': 8} equity={'hs1': -8.55, 'hs2': 0.69, 'hs4': 24.91, 'hs2b': 7.12, 'hs1q': 3.03, 'hs2q': 2.01, 'hs2bq': 2.82, 'hs03q': 2.92, 'hs03bq': 1.57} diag={'prints': 33, 'prints_quoted': 24, 'shares_quoted': 1289.216677}
+[11-16 08:01:35] discover: 26 markets in 2 events; 13 closed
+[11-16 08:01:56] tick 422 S=3855 mkts=26 quoted=13 fills={'hs1': 42, 'hs2': 38, 'hs4': 32, 'hs2b': 37, 'hs1q': 10, 'hs2q': 9, 'hs2bq': 3, 'hs03q': 10, 'hs03bq': 8} equity={'hs1': -8.37, 'hs2': 0.86, 'hs4': 25.04, 'hs2b': 7.28, 'hs1q': 3.05, 'hs2q': 2.05, 'hs2bq': 2.83, 'hs03q': 2.94, 'hs03bq': 1.61} diag={'prints': 33, 'prints_quoted': 24, 'shares_quoted': 1289.216677}
