@@ -1,0 +1,4 @@
+[11-17 09:21:38] start run 20261117T092138 asset=WTI minutes=330.0 strats={'hs1': 0.01, 'hs2': 0.02, 'hs4': 0.04, 'hs2b': 0.02, 'hs1q': 0.01, 'hs2q': 0.02, 'hs2bq': 0.02, 'hs03q': 0.003, 'hs03bq': 0.003}
+[11-17 09:21:38] discover: 20 markets in 1 events; 8 closed
+[11-17 09:21:39] wti anchor CLF27.NYM: yahoo 84.42 at 605s ago, basis None, hl 84.375
+[11-17 09:21:39] tick not ok: spot False perp True surf 0 mkts 20
