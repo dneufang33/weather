@@ -31,3 +31,13 @@
 [11-17 16:41:11] tick 297 S=63754 mkts=33 quoted=5 fills={'hs1': 1526, 'hs2': 974, 'hs4': 471, 'hs2b': 825, 'hs1q': 235, 'hs2q': 183, 'hs2bq': 101, 'hs03q': 263, 'hs03bq': 262} equity={'hs1': -4761.41, 'hs2': -4070.88, 'hs4': -3097.35, 'hs2b': -2702.32, 'hs1q': -1717.19, 'hs2q': -1246.22, 'hs2bq': -666.59, 'hs03q': -1424.4, 'hs03bq': -1196.21} diag={'prints': 1306, 'prints_quoted': 328, 'shares_quoted': 33375.342671000006}
 [11-17 16:42:30] discover: 33 markets in 3 events
 [11-17 16:46:31] tick 313 S=63736 mkts=33 quoted=5 fills={'hs1': 1526, 'hs2': 974, 'hs4': 471, 'hs2b': 825, 'hs1q': 235, 'hs2q': 183, 'hs2bq': 101, 'hs03q': 263, 'hs03bq': 262} equity={'hs1': -4830.96, 'hs2': -4163.13, 'hs4': -3139.17, 'hs2b': -2764.09, 'hs1q': -1767.09, 'hs2q': -1281.14, 'hs2bq': -684.39, 'hs03q': -1473.98, 'hs03bq': -1235.21} diag={'prints': 1352, 'prints_quoted': 331, 'shares_quoted': 33506.780688000006}
+[11-17 16:51:32] tick 328 S=63706 mkts=33 quoted=5 fills={'hs1': 1526, 'hs2': 974, 'hs4': 471, 'hs2b': 825, 'hs1q': 235, 'hs2q': 183, 'hs2bq': 101, 'hs03q': 263, 'hs03bq': 262} equity={'hs1': -4916.62, 'hs2': -4278.72, 'hs4': -3190.8, 'hs2b': -2841.15, 'hs1q': -1865.25, 'hs2q': -1349.98, 'hs2bq': -719.8, 'hs03q': -1572.23, 'hs03bq': -1312.69} diag={'prints': 1419, 'prints_quoted': 334, 'shares_quoted': 33541.434697000004}
+[11-17 16:52:30] discover: 33 markets in 3 events
+[11-17 16:56:51] tick 344 S=63480 mkts=33 quoted=5 fills={'hs1': 1526, 'hs2': 974, 'hs4': 471, 'hs2b': 825, 'hs1q': 236, 'hs2q': 183, 'hs2bq': 101, 'hs03q': 264, 'hs03bq': 263} equity={'hs1': -4945.31, 'hs2': -4312.6, 'hs4': -3205.42, 'hs2b': -2862.44, 'hs1q': -1867.88, 'hs2q': -1352.09, 'hs2bq': -721.09, 'hs03q': -1574.68, 'hs03bq': -1314.76} diag={'prints': 1488, 'prints_quoted': 335, 'shares_quoted': 33551.434697000004}
+[11-17 17:02:12] settled 62000.0 close 63643.26 payout 1.0
+[11-17 17:02:12] settled 64000.0 close 63643.26 payout 0.0
+[11-17 17:02:12] settled 66000.0 close 63643.26 payout 0.0
+[11-17 17:02:12] settled 68000.0 close 63643.26 payout 0.0
+[11-17 17:02:12] settled 70000.0 close 63643.26 payout 0.0
+[11-17 17:02:12] tick 360 S=63700 mkts=22 quoted=5 fills={'hs1': 1527, 'hs2': 974, 'hs4': 471, 'hs2b': 825, 'hs1q': 236, 'hs2q': 183, 'hs2bq': 101, 'hs03q': 264, 'hs03bq': 263} equity={'hs1': -4936.27, 'hs2': -4308.61, 'hs4': -3205.29, 'hs2b': -2861.4, 'hs1q': -1867.08, 'hs2q': -1351.22, 'hs2bq': -719.92, 'hs03q': -1573.67, 'hs03bq': -1313.7} diag={'prints': 1539, 'prints_quoted': 342, 'shares_quoted': 34086.373146}
+[11-17 17:02:30] discover: 33 markets in 3 events
