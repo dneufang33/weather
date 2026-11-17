@@ -27,3 +27,8 @@
 [11-17 21:38:33] tick 218 S=3854 mkts=29 quoted=12 fills={'hs1': 95, 'hs2': 78, 'hs4': 51, 'hs2b': 78, 'hs1q': 25, 'hs2q': 17, 'hs2bq': 10, 'hs03q': 37, 'hs03bq': 27} equity={'hs1': -5.66, 'hs2': 8.97, 'hs4': 44.6, 'hs2b': 30.56, 'hs1q': 8.26, 'hs2q': 0.88, 'hs2bq': 19.63, 'hs03q': 5.56, 'hs03bq': 3.74} diag={'prints': 4, 'prints_quoted': 1, 'shares_quoted': 10.0}
 [11-17 21:43:53] tick 234 S=3851 mkts=29 quoted=12 fills={'hs1': 95, 'hs2': 78, 'hs4': 51, 'hs2b': 78, 'hs1q': 25, 'hs2q': 17, 'hs2bq': 10, 'hs03q': 37, 'hs03bq': 27} equity={'hs1': -6.36, 'hs2': 8.71, 'hs4': 43.94, 'hs2b': 30.12, 'hs1q': 8.34, 'hs2q': 0.89, 'hs2bq': 19.64, 'hs03q': 5.66, 'hs03bq': 3.83} diag={'prints': 4, 'prints_quoted': 1, 'shares_quoted': 10.0}
 [11-17 21:46:12] discover: 28 markets in 2 events; 15 closed
+[11-17 21:49:13] tick 250 S=3850 mkts=28 quoted=12 fills={'hs1': 95, 'hs2': 78, 'hs4': 51, 'hs2b': 78, 'hs1q': 25, 'hs2q': 17, 'hs2bq': 10, 'hs03q': 37, 'hs03bq': 27} equity={'hs1': -6.39, 'hs2': 8.68, 'hs4': 43.9, 'hs2b': 30.1, 'hs1q': 8.32, 'hs2q': 0.86, 'hs2bq': 19.59, 'hs03q': 5.63, 'hs03bq': 3.83} diag={'prints': 4, 'prints_quoted': 1, 'shares_quoted': 10.0}
+[11-17 21:54:33] tick 266 S=3850 mkts=28 quoted=12 fills={'hs1': 95, 'hs2': 78, 'hs4': 51, 'hs2b': 78, 'hs1q': 25, 'hs2q': 17, 'hs2bq': 10, 'hs03q': 37, 'hs03bq': 27} equity={'hs1': -6.14, 'hs2': 8.97, 'hs4': 44.23, 'hs2b': 30.32, 'hs1q': 8.42, 'hs2q': 0.92, 'hs2bq': 19.7, 'hs03q': 5.77, 'hs03bq': 3.88} diag={'prints': 4, 'prints_quoted': 1, 'shares_quoted': 10.0}
+[11-17 21:56:13] discover: 28 markets in 2 events; 15 closed
+[11-17 21:56:33] vol update: 22.3% annualised from 487 hourly returns
+[11-17 22:01:13] tick not ok: spot True perp True surf 0 mkts 28
