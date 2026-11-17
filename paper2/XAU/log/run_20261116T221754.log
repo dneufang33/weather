@@ -105,3 +105,5 @@
 [11-17 03:36:36] vol update: 22.5% annualised from 469 hourly returns
 [11-17 03:37:55] discover: 27 markets in 2 events; 14 closed
 [11-17 03:38:56] tick 964 S=3873 mkts=27 quoted=13 fills={'hs1': 72, 'hs2': 63, 'hs4': 44, 'hs2b': 58, 'hs1q': 22, 'hs2q': 15, 'hs2bq': 6, 'hs03q': 27, 'hs03bq': 17} equity={'hs1': -9.5, 'hs2': 3.88, 'hs4': 36.55, 'hs2b': 14.53, 'hs1q': 7.78, 'hs2q': 4.86, 'hs2bq': 9.84, 'hs03q': 6.47, 'hs03bq': -0.21} diag={'prints': 34, 'prints_quoted': 7, 'shares_quoted': 465.855117}
+[11-17 03:43:56] tick 979 S=3874 mkts=27 quoted=13 fills={'hs1': 72, 'hs2': 63, 'hs4': 44, 'hs2b': 58, 'hs1q': 22, 'hs2q': 15, 'hs2bq': 6, 'hs03q': 27, 'hs03bq': 17} equity={'hs1': -9.16, 'hs2': 4.19, 'hs4': 36.81, 'hs2b': 14.49, 'hs1q': 7.85, 'hs2q': 4.95, 'hs2bq': 9.87, 'hs03q': 6.54, 'hs03bq': -0.21} diag={'prints': 34, 'prints_quoted': 7, 'shares_quoted': 465.855117}
+[11-17 03:47:55] end run, ticks 990
