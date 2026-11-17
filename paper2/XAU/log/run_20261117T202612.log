@@ -32,3 +32,8 @@
 [11-17 21:56:13] discover: 28 markets in 2 events; 15 closed
 [11-17 21:56:33] vol update: 22.3% annualised from 487 hourly returns
 [11-17 22:01:13] tick not ok: spot True perp True surf 0 mkts 28
+[11-17 22:06:12] discover: 28 markets in 2 events; 15 closed
+[11-17 22:06:13] tick not ok: spot True perp True surf 0 mkts 28
+[11-17 22:11:13] tick not ok: spot True perp True surf 0 mkts 28
+[11-17 22:16:13] discover: 28 markets in 2 events; 15 closed
+[11-17 22:16:13] tick not ok: spot True perp True surf 0 mkts 28

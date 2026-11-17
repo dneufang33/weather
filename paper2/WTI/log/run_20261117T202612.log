@@ -33,3 +33,9 @@
 [11-17 21:56:13] discover: 20 markets in 1 events; 8 closed
 [11-17 21:58:33] tick 278 S=84 mkts=20 quoted=4 fills={'hs1': 149, 'hs2': 120, 'hs4': 67, 'hs2b': 93, 'hs1q': 89, 'hs2q': 63, 'hs2bq': 40, 'hs03q': 107, 'hs03bq': 102} equity={'hs1': 341.81, 'hs2': 355.58, 'hs4': 339.11, 'hs2b': 324.21, 'hs1q': 187.63, 'hs2q': 178.65, 'hs2bq': 150.64, 'hs03q': 190.08, 'hs03bq': 157.86} diag={'prints': 19, 'prints_quoted': 17, 'shares_quoted': 582.339963}
 [11-17 22:01:13] tick not ok: spot True perp True surf 0 mkts 20
+[11-17 22:06:12] discover: 20 markets in 1 events; 8 closed
+[11-17 22:06:13] tick not ok: spot True perp True surf 0 mkts 20
+[11-17 22:11:13] tick not ok: spot True perp True surf 0 mkts 20
+[11-17 22:14:54] http fail https://api.hyperliquid.xyz/info <HTTPError 429: 'Too Many Requests'>
+[11-17 22:16:12] discover: 20 markets in 1 events; 8 closed
+[11-17 22:16:13] tick not ok: spot True perp True surf 0 mkts 20
