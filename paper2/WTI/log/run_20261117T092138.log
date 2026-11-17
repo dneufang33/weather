@@ -2,3 +2,8 @@
 [11-17 09:21:38] discover: 20 markets in 1 events; 8 closed
 [11-17 09:21:39] wti anchor CLF27.NYM: yahoo 84.42 at 605s ago, basis None, hl 84.375
 [11-17 09:21:39] tick not ok: spot False perp True surf 0 mkts 20
+[11-17 09:26:38] tick not ok: spot False perp True surf 0 mkts 20
+[11-17 09:31:38] discover: 20 markets in 1 events; 8 closed
+[11-17 09:31:39] vol update: 45.6% annualised from 476 hourly returns
+[11-17 09:31:39] tick 31 S=85 mkts=20 quoted=5 fills={'hs1': 100, 'hs2': 87, 'hs4': 54, 'hs2b': 70, 'hs1q': 56, 'hs2q': 43, 'hs2bq': 26, 'hs03q': 71, 'hs03bq': 67} equity={'hs1': 304.27, 'hs2': 311.17, 'hs4': 316.63, 'hs2b': 292.51, 'hs1q': 169.02, 'hs2q': 157.71, 'hs2bq': 140.49, 'hs03q': 173.37, 'hs03bq': 164.26} diag={'prints': 0, 'prints_quoted': 0, 'shares_quoted': 0.0}
+[11-17 09:36:59] tick 47 S=85 mkts=20 quoted=5 fills={'hs1': 100, 'hs2': 87, 'hs4': 54, 'hs2b': 70, 'hs1q': 56, 'hs2q': 43, 'hs2bq': 26, 'hs03q': 72, 'hs03bq': 68} equity={'hs1': 304.57, 'hs2': 311.17, 'hs4': 316.74, 'hs2b': 292.73, 'hs1q': 169.23, 'hs2q': 157.92, 'hs2bq': 140.38, 'hs03q': 173.56, 'hs03bq': 164.23} diag={'prints': 4, 'prints_quoted': 4, 'shares_quoted': 38.595556}
