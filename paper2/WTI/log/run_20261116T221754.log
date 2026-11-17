@@ -93,3 +93,13 @@
 [11-17 02:47:55] discover: 21 markets in 1 events; 7 closed
 [11-17 02:48:15] tick 812 S=84 mkts=21 quoted=4 fills={'hs1': 81, 'hs2': 72, 'hs4': 48, 'hs2b': 61, 'hs1q': 42, 'hs2q': 32, 'hs2bq': 18, 'hs03q': 55, 'hs03bq': 54} equity={'hs1': 291.1, 'hs2': 300.72, 'hs4': 315.95, 'hs2b': 284.88, 'hs1q': 157.64, 'hs2q': 145.42, 'hs2bq': 132.65, 'hs03q': 160.25, 'hs03bq': 147.37} diag={'prints': 104, 'prints_quoted': 66, 'shares_quoted': 10255.935943}
 [11-17 02:53:35] tick 828 S=84 mkts=21 quoted=4 fills={'hs1': 81, 'hs2': 72, 'hs4': 48, 'hs2b': 61, 'hs1q': 42, 'hs2q': 32, 'hs2bq': 18, 'hs03q': 55, 'hs03bq': 54} equity={'hs1': 290.7, 'hs2': 300.32, 'hs4': 315.5, 'hs2b': 284.58, 'hs1q': 157.37, 'hs2q': 145.29, 'hs2bq': 132.47, 'hs03q': 160.13, 'hs03bq': 147.21} diag={'prints': 105, 'prints_quoted': 67, 'shares_quoted': 10263.935943}
+[11-17 02:57:55] discover: 21 markets in 1 events; 7 closed
+[11-17 02:58:55] tick 844 S=84 mkts=21 quoted=4 fills={'hs1': 81, 'hs2': 72, 'hs4': 48, 'hs2b': 61, 'hs1q': 42, 'hs2q': 32, 'hs2bq': 18, 'hs03q': 55, 'hs03bq': 54} equity={'hs1': 290.66, 'hs2': 300.28, 'hs4': 315.49, 'hs2b': 284.56, 'hs1q': 157.31, 'hs2q': 145.29, 'hs2bq': 132.46, 'hs03q': 160.13, 'hs03bq': 147.2} diag={'prints': 105, 'prints_quoted': 67, 'shares_quoted': 10263.935943}
+[11-17 03:03:55] tick 859 S=84 mkts=21 quoted=4 fills={'hs1': 82, 'hs2': 72, 'hs4': 48, 'hs2b': 61, 'hs1q': 43, 'hs2q': 33, 'hs2bq': 18, 'hs03q': 56, 'hs03bq': 54} equity={'hs1': 290.6, 'hs2': 299.96, 'hs4': 315.18, 'hs2b': 284.33, 'hs1q': 157.28, 'hs2q': 145.46, 'hs2bq': 132.32, 'hs03q': 160.23, 'hs03bq': 147.08} diag={'prints': 106, 'prints_quoted': 68, 'shares_quoted': 10268.935943}
+[11-17 03:07:55] settled early 85.0 payout 1.0 hs1 -420
+[11-17 03:07:55] settled early 85.0 payout 1.0 hs2 -446
+[11-17 03:07:55] settled early 85.0 payout 1.0 hs4 -667
+[11-17 03:07:55] settled early 85.0 payout 1.0 hs2b -242
+[11-17 03:07:55] settled early 85.0 payout 1.0 hs03q -4
+[11-17 03:07:55] discover: 20 markets in 1 events; 8 closed
+[11-17 03:09:15] tick 875 S=84 mkts=20 quoted=4 fills={'hs1': 82, 'hs2': 72, 'hs4': 48, 'hs2b': 61, 'hs1q': 43, 'hs2q': 33, 'hs2bq': 18, 'hs03q': 56, 'hs03bq': 54} equity={'hs1': 290.58, 'hs2': 299.95, 'hs4': 315.14, 'hs2b': 284.32, 'hs1q': 157.31, 'hs2q': 145.43, 'hs2bq': 132.31, 'hs03q': 160.22, 'hs03bq': 147.07} diag={'prints': 107, 'prints_quoted': 68, 'shares_quoted': 10268.935943}
