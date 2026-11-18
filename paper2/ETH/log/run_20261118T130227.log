@@ -1,0 +1,3 @@
+[11-18 13:02:27] start run 20261118T130227 asset=ETH minutes=330.0 strats={'hs1': 0.01, 'hs2': 0.02, 'hs4': 0.04, 'hs2b': 0.02, 'hs1q': 0.01, 'hs2q': 0.02, 'hs2bq': 0.02, 'hs03q': 0.003, 'hs03bq': 0.003}
+[11-18 13:02:27] discover: 33 markets in 3 events; 0 closed
+[11-18 13:02:29] tick 1 S=1796 mkts=33 quoted=6 fills={'hs1': 845, 'hs2': 555, 'hs4': 198, 'hs2b': 411, 'hs1q': 92, 'hs2q': 70, 'hs2bq': 33, 'hs03q': 109, 'hs03bq': 123} equity={'hs1': -1107.16, 'hs2': -768.15, 'hs4': -499.86, 'hs2b': -328.71, 'hs1q': -166.13, 'hs2q': -261.97, 'hs2bq': 15.37, 'hs03q': -174.92, 'hs03bq': -113.62} diag={'prints': 0, 'prints_quoted': 0, 'shares_quoted': 0.0}
