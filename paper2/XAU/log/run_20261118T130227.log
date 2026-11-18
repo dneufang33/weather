@@ -32,3 +32,17 @@
 [11-18 14:32:27] discover: 26 markets in 2 events; 17 closed
 [11-18 14:32:48] vol update: 22.6% annualised from 502 hourly returns
 [11-18 14:36:28] tick 283 S=3766 mkts=26 quoted=8 fills={'hs1': 142, 'hs2': 120, 'hs4': 77, 'hs2b': 123, 'hs1q': 37, 'hs2q': 28, 'hs2bq': 21, 'hs03q': 49, 'hs03bq': 40} equity={'hs1': -109.19, 'hs2': -75.89, 'hs4': -60.17, 'hs2b': -26.82, 'hs1q': -1.12, 'hs2q': -0.32, 'hs2bq': 10.06, 'hs03q': -23.15, 'hs03bq': 1.9} diag={'prints': 24, 'prints_quoted': 18, 'shares_quoted': 1119.136324}
+[11-18 14:41:48] tick 299 S=3768 mkts=26 quoted=8 fills={'hs1': 142, 'hs2': 120, 'hs4': 77, 'hs2b': 125, 'hs1q': 37, 'hs2q': 28, 'hs2bq': 21, 'hs03q': 49, 'hs03bq': 40} equity={'hs1': -111.59, 'hs2': -78.34, 'hs4': -62.63, 'hs2b': -29.17, 'hs1q': -0.83, 'hs2q': -0.06, 'hs2bq': 10.43, 'hs03q': -23.69, 'hs03bq': 2.09} diag={'prints': 26, 'prints_quoted': 20, 'shares_quoted': 1149.136324}
+[11-18 14:42:27] discover: 26 markets in 2 events; 17 closed
+[11-18 14:46:48] tick 314 S=3774 mkts=26 quoted=8 fills={'hs1': 142, 'hs2': 120, 'hs4': 77, 'hs2b': 125, 'hs1q': 37, 'hs2q': 28, 'hs2bq': 21, 'hs03q': 49, 'hs03bq': 40} equity={'hs1': -113.61, 'hs2': -80.42, 'hs4': -64.71, 'hs2b': -29.97, 'hs1q': -1.55, 'hs2q': -0.7, 'hs2bq': 10.23, 'hs03q': -24.5, 'hs03bq': 1.63} diag={'prints': 31, 'prints_quoted': 22, 'shares_quoted': 1395.996324}
+[11-18 14:51:48] tick 329 S=3768 mkts=26 quoted=8 fills={'hs1': 142, 'hs2': 120, 'hs4': 77, 'hs2b': 125, 'hs1q': 37, 'hs2q': 28, 'hs2bq': 21, 'hs03q': 49, 'hs03bq': 40} equity={'hs1': -115.64, 'hs2': -82.51, 'hs4': -66.8, 'hs2b': -31.63, 'hs1q': -2.19, 'hs2q': -1.26, 'hs2bq': 9.59, 'hs03q': -25.43, 'hs03bq': 0.89} diag={'prints': 32, 'prints_quoted': 22, 'shares_quoted': 1395.996324}
+[11-18 14:52:27] settled early 3750.0 payout 1.0 hs1 -189
+[11-18 14:52:27] settled early 3750.0 payout 1.0 hs2 -280
+[11-18 14:52:27] settled early 3750.0 payout 1.0 hs4 -256
+[11-18 14:52:27] settled early 3750.0 payout 1.0 hs2b -208
+[11-18 14:52:27] settled early 3750.0 payout 1.0 hs1q -88
+[11-18 14:52:27] settled early 3750.0 payout 1.0 hs2q -30
+[11-18 14:52:27] settled early 3750.0 payout 1.0 hs2bq -90
+[11-18 14:52:27] settled early 3750.0 payout 1.0 hs03q -90
+[11-18 14:52:27] settled early 3750.0 payout 1.0 hs03bq -21
+[11-18 14:52:27] discover: 25 markets in 2 events; 18 closed
