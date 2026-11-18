@@ -66,3 +66,7 @@
 [11-18 21:48:02] tick 580 S=45 mkts=32 quoted=12 fills={'hs1': 91, 'hs2': 66, 'hs4': 34, 'hs2b': 56, 'hs1q': 33, 'hs2q': 22, 'hs2bq': 17, 'hs03q': 43, 'hs03bq': 41} equity={'hs1': -83.35, 'hs2': -25.1, 'hs4': -20.97, 'hs2b': -30.82, 'hs1q': -22.39, 'hs2q': -9.34, 'hs2bq': -4.49, 'hs03q': -41.56, 'hs03bq': -36.42} diag={'prints': 9, 'prints_quoted': 7, 'shares_quoted': 244.62804}
 [11-18 21:53:02] tick 595 S=45 mkts=32 quoted=12 fills={'hs1': 91, 'hs2': 66, 'hs4': 34, 'hs2b': 56, 'hs1q': 33, 'hs2q': 22, 'hs2bq': 17, 'hs03q': 43, 'hs03bq': 41} equity={'hs1': -82.86, 'hs2': -24.73, 'hs4': -20.65, 'hs2b': -30.58, 'hs1q': -22.27, 'hs2q': -9.22, 'hs2bq': -4.43, 'hs03q': -41.4, 'hs03bq': -36.38} diag={'prints': 9, 'prints_quoted': 7, 'shares_quoted': 244.62804}
 [11-18 21:55:02] discover: 32 markets in 2 events; 24 closed
+[11-18 22:00:02] tick not ok: spot True perp True surf 0 mkts 32
+[11-18 22:05:02] discover: 32 markets in 2 events; 24 closed
+[11-18 22:05:02] tick not ok: spot True perp True surf 0 mkts 32
+[11-18 22:10:02] tick not ok: spot True perp True surf 0 mkts 32
