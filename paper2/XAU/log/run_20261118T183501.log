@@ -1,0 +1,4 @@
+[11-18 18:35:01] start run 20261118T183501 asset=XAU minutes=330.0 strats={'hs1': 0.01, 'hs2': 0.02, 'hs4': 0.04, 'hs2b': 0.02, 'hs1q': 0.01, 'hs2q': 0.02, 'hs2bq': 0.02, 'hs03q': 0.003, 'hs03bq': 0.003}
+[11-18 18:35:02] discover: 32 markets in 2 events; 18 closed
+[11-18 18:35:03] vol update: 22.7% annualised from 506 hourly returns
+[11-18 18:35:03] tick 1 S=3740 mkts=32 quoted=12 fills={'hs1': 156, 'hs2': 131, 'hs4': 81, 'hs2b': 136, 'hs1q': 42, 'hs2q': 33, 'hs2bq': 26, 'hs03q': 55, 'hs03bq': 51} equity={'hs1': -171.56, 'hs2': -149.55, 'hs4': -120.22, 'hs2b': -63.62, 'hs1q': -5.45, 'hs2q': 6.76, 'hs2bq': 8.18, 'hs03q': -37.28, 'hs03bq': 12.2} diag={'prints': 0, 'prints_quoted': 0, 'shares_quoted': 0.0}
