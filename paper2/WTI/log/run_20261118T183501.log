@@ -86,3 +86,10 @@
 [11-18 22:50:02] tick not ok: spot False perp True surf 0 mkts 20
 [11-18 22:55:02] discover: 20 markets in 1 events; 8 closed
 [11-18 22:55:02] tick not ok: spot False perp True surf 0 mkts 20
+[11-18 23:00:02] tick not ok: spot False perp True surf 0 mkts 20
+[11-18 23:05:02] discover: 20 markets in 1 events; 8 closed
+[11-18 23:05:02] tick not ok: spot False perp True surf 0 mkts 20
+[11-18 23:10:02] tick not ok: spot False perp True surf 0 mkts 20
+[11-18 23:11:02] wti anchor CLF27.NYM: yahoo 82.03 at 601s ago, basis -0.0018000075464138744, hl 81.911
+[11-18 23:11:02] vol update: 45.4% annualised from 512 hourly returns
+[11-18 23:11:02] tick 829 S=82 mkts=20 quoted=4 fills={'hs1': 185, 'hs2': 136, 'hs4': 71, 'hs2b': 114, 'hs1q': 113, 'hs2q': 83, 'hs2bq': 54, 'hs03q': 136, 'hs03bq': 128} equity={'hs1': 358.18, 'hs2': 394.95, 'hs4': 327.45, 'hs2b': 352.23, 'hs1q': 217.02, 'hs2q': 201.33, 'hs2bq': 160.98, 'hs03q': 224.99, 'hs03bq': 186.02} diag={'prints': 98, 'prints_quoted': 69, 'shares_quoted': 5313.035073000003}
