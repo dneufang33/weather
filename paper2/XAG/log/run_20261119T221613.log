@@ -9,3 +9,7 @@
 [11-19 22:16:13] settled early 44.0 payout 1.0 hs03bq -102
 [11-19 22:16:13] discover: 32 markets in 2 events; 26 closed
 [11-19 22:16:14] tick not ok: spot True perp True surf 0 mkts 32
+[11-19 22:21:13] tick not ok: spot True perp True surf 0 mkts 32
+[11-19 22:26:13] discover: 32 markets in 2 events; 26 closed
+[11-19 22:26:14] tick not ok: spot True perp True surf 0 mkts 32
+[11-19 22:31:13] tick not ok: spot True perp True surf 0 mkts 32

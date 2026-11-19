@@ -2,3 +2,7 @@
 [11-19 22:16:13] discover: 20 markets in 1 events; 8 closed
 [11-19 22:16:14] wti anchor CLF27.NYM: yahoo 83.16 at 976s ago, basis None, hl 83.126
 [11-19 22:16:14] tick not ok: spot False perp True surf 0 mkts 20
+[11-19 22:21:13] tick not ok: spot False perp True surf 0 mkts 20
+[11-19 22:26:13] discover: 20 markets in 1 events; 8 closed
+[11-19 22:26:14] tick not ok: spot False perp True surf 0 mkts 20
+[11-19 22:31:13] tick not ok: spot False perp True surf 0 mkts 20
