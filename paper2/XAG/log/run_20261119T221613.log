@@ -33,3 +33,17 @@
 [11-19 23:26:13] discover: 32 markets in 2 events; 26 closed
 [11-19 23:30:54] tick 225 S=43 mkts=32 quoted=8 fills={'hs1': 104, 'hs2': 78, 'hs4': 39, 'hs2b': 63, 'hs1q': 39, 'hs2q': 25, 'hs2bq': 20, 'hs03q': 50, 'hs03bq': 49} equity={'hs1': -247.21, 'hs2': -137.05, 'hs4': -88.81, 'hs2b': -109.55, 'hs1q': -71.24, 'hs2q': -24.01, 'hs2bq': -17.93, 'hs03q': -101.6, 'hs03bq': -61.51} diag={'prints': 11, 'prints_quoted': 8, 'shares_quoted': 215.514131}
 [11-19 23:35:14] vol update: 43.3% annualised from 507 hourly returns
+[11-19 23:36:13] settled early 43.0 payout 1.0 hs1 -244
+[11-19 23:36:13] settled early 43.0 payout 1.0 hs2 -244
+[11-19 23:36:13] settled early 43.0 payout 1.0 hs4 -244
+[11-19 23:36:13] settled early 43.0 payout 1.0 hs2b -244
+[11-19 23:36:13] settled early 43.0 payout 1.0 hs1q -25
+[11-19 23:36:13] settled early 43.0 payout 1.0 hs2q -25
+[11-19 23:36:13] settled early 43.0 payout 1.0 hs2bq -25
+[11-19 23:36:13] settled early 43.0 payout 1.0 hs03q -25
+[11-19 23:36:13] settled early 43.0 payout 1.0 hs03bq -25
+[11-19 23:36:13] discover: 31 markets in 2 events; 27 closed
+[11-19 23:36:14] tick 241 S=43 mkts=31 quoted=7 fills={'hs1': 105, 'hs2': 79, 'hs4': 40, 'hs2b': 64, 'hs1q': 39, 'hs2q': 25, 'hs2bq': 20, 'hs03q': 50, 'hs03bq': 49} equity={'hs1': -251.6, 'hs2': -141.07, 'hs4': -91.44, 'hs2b': -107.18, 'hs1q': -71.65, 'hs2q': -24.07, 'hs2bq': -18.0, 'hs03q': -102.02, 'hs03bq': -61.65} diag={'prints': 12, 'prints_quoted': 9, 'shares_quoted': 893.654131}
+[11-19 23:41:34] tick 257 S=43 mkts=31 quoted=7 fills={'hs1': 105, 'hs2': 79, 'hs4': 40, 'hs2b': 64, 'hs1q': 39, 'hs2q': 25, 'hs2bq': 20, 'hs03q': 50, 'hs03bq': 49} equity={'hs1': -258.19, 'hs2': -147.17, 'hs4': -95.42, 'hs2b': -112.79, 'hs1q': -72.32, 'hs2q': -24.19, 'hs2bq': -18.12, 'hs03q': -102.73, 'hs03bq': -61.92} diag={'prints': 12, 'prints_quoted': 9, 'shares_quoted': 893.654131}
+[11-19 23:46:13] discover: 31 markets in 2 events; 27 closed
+[11-19 23:46:54] tick 273 S=43 mkts=31 quoted=7 fills={'hs1': 105, 'hs2': 79, 'hs4': 40, 'hs2b': 64, 'hs1q': 39, 'hs2q': 25, 'hs2bq': 20, 'hs03q': 50, 'hs03bq': 49} equity={'hs1': -261.6, 'hs2': -150.33, 'hs4': -97.34, 'hs2b': -116.07, 'hs1q': -72.48, 'hs2q': -24.22, 'hs2bq': -18.15, 'hs03q': -102.9, 'hs03bq': -61.99} diag={'prints': 13, 'prints_quoted': 10, 'shares_quoted': 905.414131}
