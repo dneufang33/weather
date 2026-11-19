@@ -100,3 +100,18 @@
 [11-19 21:43:45] discover: 34 markets in 2 events; 24 closed
 [11-19 21:45:46] tick 907 S=43 mkts=34 quoted=8 fills={'hs1': 104, 'hs2': 78, 'hs4': 39, 'hs2b': 63, 'hs1q': 39, 'hs2q': 25, 'hs2bq': 20, 'hs03q': 50, 'hs03bq': 49} equity={'hs1': -261.85, 'hs2': -155.22, 'hs4': -113.5, 'hs2b': -130.44, 'hs1q': -73.25, 'hs2q': -27.22, 'hs2bq': -21.11, 'hs03q': -103.5, 'hs03bq': -64.19} diag={'prints': 32, 'prints_quoted': 14, 'shares_quoted': 1227.27086}
 [11-19 21:46:26] vol update: 43.2% annualised from 507 hourly returns
+[11-19 21:51:06] tick 923 S=43 mkts=34 quoted=8 fills={'hs1': 104, 'hs2': 78, 'hs4': 39, 'hs2b': 63, 'hs1q': 39, 'hs2q': 25, 'hs2bq': 20, 'hs03q': 50, 'hs03bq': 49} equity={'hs1': -266.09, 'hs2': -158.27, 'hs4': -113.39, 'hs2b': -132.34, 'hs1q': -73.93, 'hs2q': -27.2, 'hs2bq': -21.11, 'hs03q': -104.27, 'hs03bq': -64.57} diag={'prints': 32, 'prints_quoted': 14, 'shares_quoted': 1227.27086}
+[11-19 21:53:45] discover: 34 markets in 2 events; 24 closed
+[11-19 21:56:26] tick 939 S=43 mkts=34 quoted=8 fills={'hs1': 104, 'hs2': 78, 'hs4': 39, 'hs2b': 63, 'hs1q': 39, 'hs2q': 25, 'hs2bq': 20, 'hs03q': 50, 'hs03bq': 49} equity={'hs1': -267.82, 'hs2': -160.67, 'hs4': -115.28, 'hs2b': -134.47, 'hs1q': -73.5, 'hs2q': -26.83, 'hs2bq': -20.74, 'hs03q': -103.83, 'hs03bq': -64.19} diag={'prints': 32, 'prints_quoted': 14, 'shares_quoted': 1227.27086}
+[11-19 21:58:45] tick not ok: spot True perp True surf 0 mkts 34
+[11-19 22:03:45] settled early 44.0 payout 1.0 hs1 -156
+[11-19 22:03:45] settled early 44.0 payout 1.0 hs2 -156
+[11-19 22:03:45] settled early 44.0 payout 1.0 hs4 -156
+[11-19 22:03:45] settled early 44.0 payout 1.0 hs2b -154
+[11-19 22:03:45] settled early 44.0 payout 1.0 hs1q -78
+[11-19 22:03:45] settled early 44.0 payout 1.0 hs2q -78
+[11-19 22:03:45] settled early 44.0 payout 1.0 hs2bq -50
+[11-19 22:03:45] settled early 44.0 payout 1.0 hs03q -78
+[11-19 22:03:45] settled early 44.0 payout 1.0 hs03bq -78
+[11-19 22:03:45] discover: 33 markets in 2 events; 25 closed
+[11-19 22:03:46] tick not ok: spot True perp True surf 0 mkts 33

@@ -101,3 +101,9 @@
 [11-19 21:43:25] tick 900 S=83 mkts=20 quoted=4 fills={'hs1': 224, 'hs2': 158, 'hs4': 88, 'hs2b': 132, 'hs1q': 140, 'hs2q': 105, 'hs2bq': 67, 'hs03q': 169, 'hs03bq': 166} equity={'hs1': 373.04, 'hs2': 399.81, 'hs4': 334.77, 'hs2b': 375.34, 'hs1q': 251.15, 'hs2q': 236.84, 'hs2bq': 191.6, 'hs03q': 238.2, 'hs03bq': 200.21} diag={'prints': 118, 'prints_quoted': 76, 'shares_quoted': 4355.434302}
 [11-19 21:43:45] discover: 20 markets in 1 events; 8 closed
 [11-19 21:48:25] tick 915 S=83 mkts=20 quoted=4 fills={'hs1': 224, 'hs2': 158, 'hs4': 88, 'hs2b': 132, 'hs1q': 140, 'hs2q': 105, 'hs2bq': 67, 'hs03q': 169, 'hs03bq': 166} equity={'hs1': 373.14, 'hs2': 400.11, 'hs4': 334.88, 'hs2b': 375.06, 'hs1q': 251.08, 'hs2q': 237.09, 'hs2bq': 191.69, 'hs03q': 238.17, 'hs03bq': 200.11} diag={'prints': 119, 'prints_quoted': 77, 'shares_quoted': 4365.434302}
+[11-19 21:53:45] discover: 20 markets in 1 events; 8 closed
+[11-19 21:53:46] tick 931 S=83 mkts=20 quoted=4 fills={'hs1': 224, 'hs2': 158, 'hs4': 88, 'hs2b': 132, 'hs1q': 140, 'hs2q': 105, 'hs2bq': 67, 'hs03q': 169, 'hs03bq': 166} equity={'hs1': 372.72, 'hs2': 399.68, 'hs4': 334.48, 'hs2b': 374.96, 'hs1q': 250.71, 'hs2q': 236.75, 'hs2bq': 191.46, 'hs03q': 237.72, 'hs03bq': 199.92} diag={'prints': 122, 'prints_quoted': 80, 'shares_quoted': 4436.434302}
+[11-19 21:55:25] vol update: 45.6% annualised from 512 hourly returns
+[11-19 21:59:05] tick 947 S=83 mkts=20 quoted=4 fills={'hs1': 224, 'hs2': 158, 'hs4': 88, 'hs2b': 132, 'hs1q': 140, 'hs2q': 105, 'hs2bq': 67, 'hs03q': 169, 'hs03bq': 166} equity={'hs1': 372.69, 'hs2': 399.58, 'hs4': 334.44, 'hs2b': 375.04, 'hs1q': 250.73, 'hs2q': 236.67, 'hs2bq': 191.43, 'hs03q': 237.73, 'hs03bq': 199.95} diag={'prints': 123, 'prints_quoted': 81, 'shares_quoted': 4451.434302}
+[11-19 22:03:45] discover: 20 markets in 1 events; 8 closed
+[11-19 22:03:45] tick not ok: spot True perp True surf 0 mkts 20
