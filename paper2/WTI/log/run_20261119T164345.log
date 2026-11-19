@@ -107,3 +107,5 @@
 [11-19 21:59:05] tick 947 S=83 mkts=20 quoted=4 fills={'hs1': 224, 'hs2': 158, 'hs4': 88, 'hs2b': 132, 'hs1q': 140, 'hs2q': 105, 'hs2bq': 67, 'hs03q': 169, 'hs03bq': 166} equity={'hs1': 372.69, 'hs2': 399.58, 'hs4': 334.44, 'hs2b': 375.04, 'hs1q': 250.73, 'hs2q': 236.67, 'hs2bq': 191.43, 'hs03q': 237.73, 'hs03bq': 199.95} diag={'prints': 123, 'prints_quoted': 81, 'shares_quoted': 4451.434302}
 [11-19 22:03:45] discover: 20 markets in 1 events; 8 closed
 [11-19 22:03:45] tick not ok: spot True perp True surf 0 mkts 20
+[11-19 22:08:45] tick not ok: spot True perp True surf 0 mkts 20
+[11-19 22:13:45] end run, ticks 990
