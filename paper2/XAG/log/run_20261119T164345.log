@@ -1,0 +1,4 @@
+[11-19 16:43:45] start run 20261119T164345 asset=XAG minutes=330.0 strats={'hs1': 0.01, 'hs2': 0.02, 'hs4': 0.04, 'hs2b': 0.02, 'hs1q': 0.01, 'hs2q': 0.02, 'hs2bq': 0.02, 'hs03q': 0.003, 'hs03bq': 0.003}
+[11-19 16:43:45] discover: 32 markets in 2 events; 24 closed
+[11-19 16:43:46] vol update: 42.6% annualised from 507 hourly returns
+[11-19 16:43:46] tick 1 S=45 mkts=32 quoted=10 fills={'hs1': 101, 'hs2': 76, 'hs4': 38, 'hs2b': 61, 'hs1q': 39, 'hs2q': 25, 'hs2bq': 20, 'hs03q': 50, 'hs03bq': 47} equity={'hs1': -200.74, 'hs2': -109.4, 'hs4': -83.06, 'hs2b': -93.51, 'hs1q': -55.56, 'hs2q': -15.32, 'hs2bq': -12.23, 'hs03q': -82.38, 'hs03bq': -53.58} diag={'prints': 0, 'prints_quoted': 0, 'shares_quoted': 0.0}
