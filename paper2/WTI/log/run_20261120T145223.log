@@ -1,0 +1,6 @@
+[11-20 14:52:23] start run 20261120T145223 asset=WTI minutes=330.0 strats={'hs1': 0.01, 'hs2': 0.02, 'hs4': 0.04, 'hs2b': 0.02, 'hs1q': 0.01, 'hs2q': 0.02, 'hs2bq': 0.02, 'hs03q': 0.003, 'hs03bq': 0.003}
+[11-20 14:52:23] discover: 20 markets in 1 events; 8 closed
+[11-20 14:52:23] wti anchor CLF27.NYM: yahoo 81.73 at 668s ago, basis None, hl 81.44
+[11-20 14:52:24] tick not ok: spot False perp True surf 0 mkts 20
+[11-20 14:52:44] http fail https://api.hyperliquid.xyz/info <HTTPError 429: 'Too Many Requests'>
+[11-20 14:55:44] http fail https://api.hyperliquid.xyz/info <HTTPError 429: 'Too Many Requests'>
