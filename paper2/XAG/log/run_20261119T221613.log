@@ -116,3 +116,24 @@
 [11-20 03:14:34] tick 896 S=41 mkts=31 quoted=6 fills={'hs1': 108, 'hs2': 81, 'hs4': 42, 'hs2b': 69, 'hs1q': 39, 'hs2q': 25, 'hs2bq': 24, 'hs03q': 50, 'hs03bq': 53} equity={'hs1': -236.13, 'hs2': -143.77, 'hs4': -73.57, 'hs2b': -124.77, 'hs1q': -73.37, 'hs2q': -24.85, 'hs2bq': -11.15, 'hs03q': -103.02, 'hs03bq': -56.58} diag={'prints': 104, 'prints_quoted': 27, 'shares_quoted': 1776.7338499999998}
 [11-20 03:16:13] discover: 31 markets in 2 events; 27 closed
 [11-20 03:19:54] tick 912 S=42 mkts=31 quoted=5 fills={'hs1': 108, 'hs2': 81, 'hs4': 42, 'hs2b': 69, 'hs1q': 39, 'hs2q': 25, 'hs2bq': 24, 'hs03q': 50, 'hs03bq': 53} equity={'hs1': -236.2, 'hs2': -144.09, 'hs4': -73.36, 'hs2b': -123.67, 'hs1q': -74.19, 'hs2q': -24.83, 'hs2bq': -11.01, 'hs03q': -103.59, 'hs03bq': -56.04} diag={'prints': 104, 'prints_quoted': 27, 'shares_quoted': 1776.7338499999998}
+[11-20 03:25:14] tick 928 S=41 mkts=31 quoted=5 fills={'hs1': 108, 'hs2': 81, 'hs4': 42, 'hs2b': 69, 'hs1q': 39, 'hs2q': 25, 'hs2bq': 24, 'hs03q': 50, 'hs03bq': 53} equity={'hs1': -236.01, 'hs2': -143.79, 'hs4': -73.45, 'hs2b': -124.13, 'hs1q': -73.76, 'hs2q': -24.83, 'hs2bq': -11.07, 'hs03q': -103.28, 'hs03bq': -56.26} diag={'prints': 104, 'prints_quoted': 27, 'shares_quoted': 1776.7338499999998}
+[11-20 03:26:13] discover: 31 markets in 2 events; 27 closed
+[11-20 03:30:14] tick 943 S=41 mkts=31 quoted=5 fills={'hs1': 109, 'hs2': 82, 'hs4': 43, 'hs2b': 70, 'hs1q': 39, 'hs2q': 25, 'hs2bq': 24, 'hs03q': 50, 'hs03bq': 53} equity={'hs1': -236.53, 'hs2': -143.86, 'hs4': -72.38, 'hs2b': -118.39, 'hs1q': -73.69, 'hs2q': -24.83, 'hs2bq': -11.08, 'hs03q': -103.23, 'hs03bq': -56.28} diag={'prints': 105, 'prints_quoted': 28, 'shares_quoted': 1826.7338499999998}
+[11-20 03:35:34] tick 959 S=42 mkts=31 quoted=5 fills={'hs1': 110, 'hs2': 83, 'hs4': 44, 'hs2b': 71, 'hs1q': 39, 'hs2q': 25, 'hs2bq': 24, 'hs03q': 50, 'hs03bq': 53} equity={'hs1': -229.39, 'hs2': -136.52, 'hs4': -65.1, 'hs2b': -111.07, 'hs1q': -74.25, 'hs2q': -24.83, 'hs2bq': -10.99, 'hs03q': -103.63, 'hs03bq': -55.96} diag={'prints': 106, 'prints_quoted': 29, 'shares_quoted': 1876.7338499999998}
+[11-20 03:36:13] settled early 42.0 payout 1.0 hs1 -357
+[11-20 03:36:13] settled early 42.0 payout 1.0 hs2 -57
+[11-20 03:36:13] settled early 42.0 payout 1.0 hs4 -23
+[11-20 03:36:13] settled early 42.0 payout 1.0 hs2b -27
+[11-20 03:36:13] settled early 42.0 payout 1.0 hs1q -18
+[11-20 03:36:13] settled early 42.0 payout 1.0 hs2q -8
+[11-20 03:36:13] settled early 42.0 payout 1.0 hs2bq -14
+[11-20 03:36:13] settled early 42.0 payout 1.0 hs03q -18
+[11-20 03:36:13] settled early 42.0 payout 1.0 hs03bq -33
+[11-20 03:36:13] settled early 42.0 payout 1.0 hs1 -600
+[11-20 03:36:13] settled early 42.0 payout 1.0 hs2 -400
+[11-20 03:36:13] settled early 42.0 payout 1.0 hs4 -380
+[11-20 03:36:13] settled early 42.0 payout 1.0 hs2b -291
+[11-20 03:36:13] settled early 42.0 payout 1.0 hs2bq -68
+[11-20 03:36:13] settled early 42.0 payout 1.0 hs03bq -68
+[11-20 03:36:13] discover: 29 markets in 2 events; 29 closed
+[11-20 03:36:14] vol update: 43.7% annualised from 507 hourly returns
