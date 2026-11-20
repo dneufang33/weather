@@ -118,3 +118,8 @@
 [11-20 19:47:45] discover: 33 markets in 3 events
 [11-20 19:47:48] tick not ok: spot True perp False surf 12 mkts 33
 [11-20 19:52:47] tick not ok: spot True perp False surf 12 mkts 33
+[11-20 19:57:45] discover: 33 markets in 3 events
+[11-20 19:57:48] tick not ok: spot True perp False surf 12 mkts 33
+[11-20 20:02:47] tick not ok: spot True perp False surf 12 mkts 33
+[11-20 20:04:48] http fail https://www.deribit.com/api/v2/public/ticker?instrument_name=BTC-PERPETUAL <HTTPError 503: 'Service Unavailable'>
+[11-20 20:07:45] end run, ticks 990
