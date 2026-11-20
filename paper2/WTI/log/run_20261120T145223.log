@@ -4,3 +4,9 @@
 [11-20 14:52:24] tick not ok: spot False perp True surf 0 mkts 20
 [11-20 14:52:44] http fail https://api.hyperliquid.xyz/info <HTTPError 429: 'Too Many Requests'>
 [11-20 14:55:44] http fail https://api.hyperliquid.xyz/info <HTTPError 429: 'Too Many Requests'>
+[11-20 14:57:23] tick not ok: spot False perp True surf 0 mkts 20
+[11-20 15:01:44] http fail https://api.hyperliquid.xyz/info <HTTPError 429: 'Too Many Requests'>
+[11-20 15:02:23] discover: 20 markets in 1 events; 8 closed
+[11-20 15:02:24] vol update: 44.8% annualised from 511 hourly returns
+[11-20 15:02:24] tick 31 S=82 mkts=20 quoted=3 fills={'hs1': 277, 'hs2': 199, 'hs4': 111, 'hs2b': 163, 'hs1q': 172, 'hs2q': 131, 'hs2bq': 89, 'hs03q': 209, 'hs03bq': 202} equity={'hs1': 370.57, 'hs2': 433.18, 'hs4': 348.4, 'hs2b': 413.38, 'hs1q': 250.36, 'hs2q': 245.34, 'hs2bq': 198.15, 'hs03q': 231.67, 'hs03bq': 205.31} diag={'prints': 12, 'prints_quoted': 0, 'shares_quoted': 0.0}
+[11-20 15:07:43] tick 47 S=82 mkts=20 quoted=3 fills={'hs1': 277, 'hs2': 199, 'hs4': 111, 'hs2b': 163, 'hs1q': 172, 'hs2q': 131, 'hs2bq': 89, 'hs03q': 209, 'hs03bq': 202} equity={'hs1': 370.33, 'hs2': 434.12, 'hs4': 347.8, 'hs2b': 412.45, 'hs1q': 249.43, 'hs2q': 244.02, 'hs2bq': 196.97, 'hs03q': 231.71, 'hs03bq': 204.64} diag={'prints': 23, 'prints_quoted': 3, 'shares_quoted': 167.64}
