@@ -6,3 +6,13 @@
 [11-20 03:58:10] discover: 31 markets in 2 events; 24 closed
 [11-20 03:58:31] tick 32 S=3548 mkts=31 quoted=6 fills={'hs1': 232, 'hs2': 196, 'hs4': 129, 'hs2b': 212, 'hs1q': 65, 'hs2q': 56, 'hs2bq': 45, 'hs03q': 78, 'hs03bq': 74} equity={'hs1': -927.08, 'hs2': -898.54, 'hs4': -782.02, 'hs2b': -415.58, 'hs1q': -162.21, 'hs2q': -137.54, 'hs2bq': -125.5, 'hs03q': -236.51, 'hs03bq': -107.0} diag={'prints': 2, 'prints_quoted': 1, 'shares_quoted': 10.0}
 [11-20 04:03:51] tick 48 S=3546 mkts=31 quoted=6 fills={'hs1': 233, 'hs2': 197, 'hs4': 129, 'hs2b': 213, 'hs1q': 65, 'hs2q': 56, 'hs2bq': 45, 'hs03q': 78, 'hs03bq': 74} equity={'hs1': -940.68, 'hs2': -910.33, 'hs4': -794.17, 'hs2b': -420.03, 'hs1q': -162.34, 'hs2q': -137.67, 'hs2bq': -125.38, 'hs03q': -236.66, 'hs03bq': -107.06} diag={'prints': 3, 'prints_quoted': 2, 'shares_quoted': 907.0}
+[11-20 04:08:10] discover: 31 markets in 2 events; 24 closed
+[11-20 04:09:11] tick 64 S=3539 mkts=31 quoted=7 fills={'hs1': 233, 'hs2': 197, 'hs4': 129, 'hs2b': 213, 'hs1q': 65, 'hs2q': 56, 'hs2bq': 45, 'hs03q': 78, 'hs03bq': 74} equity={'hs1': -946.01, 'hs2': -915.74, 'hs4': -799.68, 'hs2b': -421.7, 'hs1q': -162.99, 'hs2q': -138.32, 'hs2bq': -125.21, 'hs03q': -237.31, 'hs03bq': -107.39} diag={'prints': 3, 'prints_quoted': 2, 'shares_quoted': 907.0}
+[11-20 04:14:31] tick 80 S=3545 mkts=31 quoted=6 fills={'hs1': 233, 'hs2': 197, 'hs4': 129, 'hs2b': 213, 'hs1q': 65, 'hs2q': 56, 'hs2bq': 45, 'hs03q': 78, 'hs03bq': 74} equity={'hs1': -949.55, 'hs2': -919.26, 'hs4': -803.19, 'hs2b': -421.79, 'hs1q': -162.81, 'hs2q': -138.14, 'hs2bq': -125.35, 'hs03q': -237.16, 'hs03bq': -107.06} diag={'prints': 5, 'prints_quoted': 3, 'shares_quoted': 939.18868}
+[11-20 04:18:10] settled early 3550.0 payout 1.0 hs1 -316
+[11-20 04:18:10] settled early 3550.0 payout 1.0 hs2 -316
+[11-20 04:18:10] settled early 3550.0 payout 1.0 hs4 -316
+[11-20 04:18:10] settled early 3550.0 payout 1.0 hs2b -66
+[11-20 04:18:10] discover: 30 markets in 2 events; 25 closed
+[11-20 04:18:11] vol update: 24.0% annualised from 511 hourly returns
+[11-20 04:19:31] tick 95 S=3539 mkts=30 quoted=7 fills={'hs1': 233, 'hs2': 197, 'hs4': 129, 'hs2b': 213, 'hs1q': 65, 'hs2q': 56, 'hs2bq': 45, 'hs03q': 78, 'hs03bq': 74} equity={'hs1': -953.45, 'hs2': -923.06, 'hs4': -807.17, 'hs2b': -424.67, 'hs1q': -162.77, 'hs2q': -138.1, 'hs2bq': -125.15, 'hs03q': -237.13, 'hs03bq': -107.31} diag={'prints': 5, 'prints_quoted': 3, 'shares_quoted': 939.18868}
