@@ -97,3 +97,20 @@
 [11-20 19:17:33] discover: 33 markets in 3 events
 [11-20 19:20:46] tick 850 S=57994 mkts=33 quoted=0 fills={'hs1': 2252, 'hs2': 1403, 'hs4': 693, 'hs2b': 1176, 'hs1q': 381, 'hs2q': 279, 'hs2bq': 132, 'hs03q': 457, 'hs03bq': 436} equity={'hs1': -6336.26, 'hs2': -5287.91, 'hs4': -3572.37, 'hs2b': -3236.81, 'hs1q': -2622.39, 'hs2q': -1817.67, 'hs2bq': -889.5, 'hs03q': -2344.74, 'hs03bq': -1735.04} diag={'prints': 3317, 'prints_quoted': 1198, 'shares_quoted': 114652.02351500004}
 [11-20 19:25:57] tick 865 S=57958 mkts=33 quoted=0 fills={'hs1': 2252, 'hs2': 1403, 'hs4': 693, 'hs2b': 1176, 'hs1q': 381, 'hs2q': 279, 'hs2bq': 132, 'hs03q': 457, 'hs03bq': 436} equity={'hs1': -6665.55, 'hs2': -5446.26, 'hs4': -3617.89, 'hs2b': -3264.65, 'hs1q': -2621.44, 'hs2q': -1816.72, 'hs2bq': -886.59, 'hs03q': -2239.89, 'hs03bq': -1730.87} diag={'prints': 3410, 'prints_quoted': 1198, 'shares_quoted': 114652.02351500004}
+[11-20 19:27:45] discover: 33 markets in 3 events
+[11-20 19:31:20] tick 881 S=58200 mkts=33 quoted=0 fills={'hs1': 2252, 'hs2': 1403, 'hs4': 693, 'hs2b': 1176, 'hs1q': 381, 'hs2q': 279, 'hs2bq': 132, 'hs03q': 457, 'hs03bq': 436} equity={'hs1': -6621.99, 'hs2': -5411.86, 'hs4': -3591.65, 'hs2b': -3239.26, 'hs1q': -2617.22, 'hs2q': -1812.59, 'hs2bq': -877.83, 'hs03q': -2228.91, 'hs03bq': -1722.52} diag={'prints': 3467, 'prints_quoted': 1198, 'shares_quoted': 114652.02351500004}
+[11-20 19:34:27] http fail https://www.deribit.com/api/v2/public/ticker?instrument_name=BTC-PERPETUAL <HTTPError 502: 'Bad Gateway'>
+[11-20 19:34:47] http fail https://www.deribit.com/api/v2/public/ticker?instrument_name=BTC-PERPETUAL <HTTPError 502: 'Bad Gateway'>
+[11-20 19:35:07] http fail https://www.deribit.com/api/v2/public/ticker?instrument_name=BTC-PERPETUAL <HTTPError 502: 'Bad Gateway'>
+[11-20 19:35:27] http fail https://www.deribit.com/api/v2/public/ticker?instrument_name=BTC-PERPETUAL <HTTPError 502: 'Bad Gateway'>
+[11-20 19:35:47] http fail https://www.deribit.com/api/v2/public/ticker?instrument_name=BTC-PERPETUAL <HTTPError 502: 'Bad Gateway'>
+[11-20 19:36:07] http fail https://www.deribit.com/api/v2/public/ticker?instrument_name=BTC-PERPETUAL <HTTPError 502: 'Bad Gateway'>
+[11-20 19:36:27] http fail https://www.deribit.com/api/v2/public/ticker?instrument_name=BTC-PERPETUAL <HTTPError 502: 'Bad Gateway'>
+[11-20 19:36:47] http fail https://www.deribit.com/api/v2/public/ticker?instrument_name=BTC-PERPETUAL <HTTPError 502: 'Bad Gateway'>
+[11-20 19:37:07] http fail https://www.deribit.com/api/v2/public/ticker?instrument_name=BTC-PERPETUAL <HTTPError 502: 'Bad Gateway'>
+[11-20 19:37:27] http fail https://www.deribit.com/api/v2/public/ticker?instrument_name=BTC-PERPETUAL <HTTPError 502: 'Bad Gateway'>
+[11-20 19:37:45] discover: 33 markets in 3 events
+[11-20 19:37:47] http fail https://www.deribit.com/api/v2/public/ticker?instrument_name=BTC-PERPETUAL <HTTPError 502: 'Bad Gateway'>
+[11-20 19:37:47] tick not ok: spot True perp False surf 12 mkts 33
+[11-20 19:38:07] http fail https://www.deribit.com/api/v2/public/ticker?instrument_name=BTC-PERPETUAL <HTTPError 502: 'Bad Gateway'>
+[11-20 19:38:27] http fail https://www.deribit.com/api/v2/public/ticker?instrument_name=BTC-PERPETUAL <HTTPError 502: 'Bad Gateway'>
