@@ -14,7 +14,7 @@ cids = sorted(cids); out = {}
 for i in range(0, len(cids), 20):
     q = "&".join("condition_ids=" + c for c in cids[i:i + 20])
     try:
-        for m in http("https://gamma-api.polymarket.com/markets?limit=50&" + q):
+        for m in http("https://gamma-api.polymarket.com/markets?limit=50&closed=true&" + q) + http("https://gamma-api.polymarket.com/markets?limit=50&closed=false&" + q):
             out[m["conditionId"]] = {"closed": m.get("closed"), "op": m.get("outcomePrices"), "outcomes": m.get("outcomes"), "q": m.get("question"), "end": m.get("endDate"), "umaStatus": m.get("umaResolutionStatus")}
     except Exception as e:
         print("ERR", i, repr(e)[:200])
